@@ -1855,11 +1855,11 @@ namespace Sigesoft.Node.WinClient.BLL
             {
                 SigesoftEntitiesModel dbContext = new SigesoftEntitiesModel();
                 var query = (from ccc in dbContext.recommendation
-                             join ddd in dbContext.masterrecommendationrestricction on ccc.v_MasterRecommendationId equals ddd.v_MasterRecommendationRestricctionId                                                  
-
+                             join ddd in dbContext.masterrecommendationrestricction on ccc.v_MasterRecommendationId equals ddd.v_MasterRecommendationRestricctionId
+                             join aaa in dbContext.diagnosticrepository on ccc.v_DiagnosticRepositoryId equals aaa.v_DiagnosticRepositoryId
 
                              where ccc.v_ServiceId == pstrServiceId && ccc.v_ComponentId == pstrComponentId &&
-                                   ccc.i_IsDeleted == 0
+                                   ccc.i_IsDeleted == 0 && aaa.i_IsDeleted == 0
 
                              select new
                              {

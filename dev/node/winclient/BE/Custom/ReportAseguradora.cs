@@ -150,6 +150,17 @@ namespace Sigesoft.Node.WinClient.BE
         public string GrupoFactorSanguineo { get; set; }
         public string TestAltura { get; set; }
         public string TestSomnolencia { get; set; }
-        
+
+        public string Fr { get; set; }
+        public string Fc { get; set; }
+        public string VisionCercaOD { get; set; }
+        public string VisionCercaOI { get; set; }
+        public string AgudezaVisualLejosOD { get; set; }
+        public string AgudezaVisualLejosOI { get; set; }
+        public string VisionCercaCorregidaOD { get; set; }
+        public string VisionCercaCorregidaOI { get; set; }
+        public string AgudezaVisualLejosCorregidaOD { get; set; }
+        public string AgudezaVisualLejosCorregidaOI { get; set; }
+        public string Oftalmologia { get; set; }
     }
 }

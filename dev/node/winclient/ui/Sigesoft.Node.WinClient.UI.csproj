@@ -760,6 +760,12 @@
     <Compile Include="frmServicioFacturadoEditar.Designer.cs">
       <DependentUpon>frmServicioFacturadoEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSubirInterconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubirInterconsulta.designer.cs">
+      <DependentUpon>frmSubirInterconsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="History\frmOtroEPP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2028,6 +2034,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmServicioFacturadoEditar.resx">
       <DependentUpon>frmServicioFacturadoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubirInterconsulta.resx">
+      <DependentUpon>frmSubirInterconsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="History\frmOtroEPP.resx">
       <DependentUpon>frmOtroEPP.cs</DependentUpon>

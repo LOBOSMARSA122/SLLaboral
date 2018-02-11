@@ -103,6 +103,17 @@
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("GrupoFactorSanguineo");
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("TestAltura");
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("TestSomnolencia");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Fr");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn9 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Fc");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn10 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("VisionCercaOD");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn12 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("VisionCercaOI");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn13 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgudezaVisualLejosOD");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn15 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgudezaVisualLejosOI");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn17 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("VisionCercaCorregidaOD");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn35 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("VisionCercaCorregidaOI");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn41 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgudezaVisualLejosCorregidaOD");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn42 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgudezaVisualLejosCorregidaOI");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn43 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Oftalmologia");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
@@ -447,6 +458,17 @@
             ultraGridColumn1.Header.VisiblePosition = 34;
             ultraGridColumn2.Header.VisiblePosition = 47;
             ultraGridColumn4.Header.VisiblePosition = 48;
+            ultraGridColumn8.Header.VisiblePosition = 72;
+            ultraGridColumn9.Header.VisiblePosition = 73;
+            ultraGridColumn10.Header.VisiblePosition = 74;
+            ultraGridColumn12.Header.VisiblePosition = 75;
+            ultraGridColumn13.Header.VisiblePosition = 76;
+            ultraGridColumn15.Header.VisiblePosition = 77;
+            ultraGridColumn17.Header.VisiblePosition = 78;
+            ultraGridColumn35.Header.VisiblePosition = 79;
+            ultraGridColumn41.Header.VisiblePosition = 80;
+            ultraGridColumn42.Header.VisiblePosition = 81;
+            ultraGridColumn43.Header.VisiblePosition = 82;
             ultraGridBand1.Columns.AddRange(new object[] {
             ultraGridColumn6,
             ultraGridColumn7,
@@ -519,7 +541,18 @@
             ultraGridColumn114,
             ultraGridColumn1,
             ultraGridColumn2,
-            ultraGridColumn4});
+            ultraGridColumn4,
+            ultraGridColumn8,
+            ultraGridColumn9,
+            ultraGridColumn10,
+            ultraGridColumn12,
+            ultraGridColumn13,
+            ultraGridColumn15,
+            ultraGridColumn17,
+            ultraGridColumn35,
+            ultraGridColumn41,
+            ultraGridColumn42,
+            ultraGridColumn43});
             this.grdData.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.grdData.DisplayLayout.InterBandSpacing = 10;
             this.grdData.DisplayLayout.MaxColScrollRegions = 1;

@@ -117,49 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>924, 10</value>
-  </metadata>
-  <metadata name="cmAntecedentes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>609, 10</value>
-  </metadata>
-  <metadata name="cmVerServicioAnterior.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>751, 10</value>
-  </metadata>
-  <metadata name="uvAnamnesis.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>379, 10</value>
-  </metadata>
-  <metadata name="uvExamen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>502, 10</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>924, 10</value>
-  </metadata>
-  <metadata name="uvAnalisisDx.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>260, 10</value>
-  </metadata>
-  <metadata name="cmTotalDx.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1146, 17</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>163, 10</value>
-  </metadata>
-  <metadata name="uvExamen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>502, 10</value>
-  </metadata>
-  <metadata name="uvAnamnesis.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>379, 10</value>
-  </metadata>
-  <metadata name="uvAnalisisDx.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>260, 10</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>163, 10</value>
-  </metadata>
-  <metadata name="bgwSaveExamen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>20, 10</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>46</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAceptar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIYAAAB4AJfBl0umSwC+AM3hzS5nLgCsAIOmgxvOG77PviOOIwDzAHWndQDuAACDACqi
+        KhmnGQDpAOXy5TOZMwDdAJ63nmigaBiXGBVsFYPHgzaRNrfJtwDMAHzJedzw3MnYyRFrEUF9QTiiOAOd
+        A7bdtlK5TBi5GNDr0B+9HwyzDB2aHe/27wr1CjGiMQSVBBZ5FghzCNfj14uwiwDVAAu+CwjtCDugO4zD
+        jL7dvlWiVQCyACOkI529nZfGlyGXIQD/AMbfxjWvNf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQF
+        FABCACwAAAAAEAAQAAAIhQCFCBxIsKDBgwQlICTooUOJFiQWSsigYscJERdwGFxxIwgEGwpvmNgBZKCE
+        Hg8QoBCgUAiOFDV8EBASQMQAFjRyrDA5YQEFBRp0RPhhgIFBCxwWzJjRoIELowZ5jKBAlYMDGQhjvODA
+        YQCMCguFhNChAwTYsAcAYNgQVuCHAgnayp17MCAAOw==
+</value>
+  </data>
+  <data name="btnBrowser.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIYAAG90jZDC63mfzrh/Oebn7YKeuN2zW7jV3c7i63aGnI9aK8eliaTH2N6CE7jj8N3e
+        5Oj1+c73/Zylu/nRcLi8yYmTqtDQ2aKls8GOWad8WKfV8fb2+O3v8rGyudji9uH3+NqePI2nzJe95MXt
+        9qWWj6meoMrs8YllQ67c+NOTU5ugs66wxfry6q7T6biDVcXW6vj7/eTp9uDn7ub+/dj4+e7x95K14ZWZ
+        rN7+/n57jszx/IGcwcSYZqTI6n2EmuizVbbB1peSmtLT26WruavY88Xt/p7M8r3m893y99f5/e32/rK0
+        vbDC0+Pj6L7AzLPO5qesu7Pc8v7Wc8qkgsmLUfb4/Pbw7N73/5JrRenx9oajw+fr8v///73X4NyEGZac
+        tnN0jdy3ZO/3987Q3srw9s/Z5YCGnJ/I7M7o7cDn8t7m5rbAzpfG5pyjtcCHU93s8q3W99b//67H3bLe
+        9////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQF
+        FAB0ACwAAAAAEAAQAAAI4wDp0OHwoseZJ2U4CFwocEMZGwE0aDDCRk4ThgKbiEAxgkyaFi00MKmBEYgR
+        HThm6EiTZgQDCxhDEIkwY0YEEyZwmFCBUUCUIjpQojnQpYsPJwx3zAGapOmHNwjMXGAoQUORIk4/ZFlz
+        AwpDC1qKRIhAAwkEGWC+dGBIAEoBB2NpdAEAIAgGFgtrEBBSIYHfGytKDGiQAu9AAlxqbCHAWMkUEBO8
+        ULFyGMaGGpi3bHnAw4AUL26scCAAA3NmGTHGYPHsxQWHLVy4wJht2gOJBWF+KKhBYYjv3xcutFlCJ8OJ
+        HAEBADs=
+</value>
+  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

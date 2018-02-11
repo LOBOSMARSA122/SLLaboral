@@ -5819,6 +5819,18 @@ namespace Sigesoft.Node.WinClient.UI.Operations
             }
         }
 
+        private void btnInterConsulta_Click(object sender, EventArgs e)
+        {
+            frmInterconsulta frm = new frmInterconsulta(_serviceId);
+            frm.ShowDialog();
+        }
+
+        private void btnSubirInterconsulta_Click(object sender, EventArgs e)
+        {
+            frmSubirInterconsulta frm = new frmSubirInterconsulta(_serviceId, _personName);
+            frm.ShowDialog();
+        }
+
     }
 
 }
