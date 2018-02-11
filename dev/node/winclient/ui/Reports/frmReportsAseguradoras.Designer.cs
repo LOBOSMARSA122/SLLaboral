@@ -114,6 +114,7 @@
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn41 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgudezaVisualLejosCorregidaOD");
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn42 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgudezaVisualLejosCorregidaOI");
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn43 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Oftalmologia");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn44 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Trigliceridos");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
@@ -469,6 +470,7 @@
             ultraGridColumn41.Header.VisiblePosition = 80;
             ultraGridColumn42.Header.VisiblePosition = 81;
             ultraGridColumn43.Header.VisiblePosition = 82;
+            ultraGridColumn44.Header.VisiblePosition = 83;
             ultraGridBand1.Columns.AddRange(new object[] {
             ultraGridColumn6,
             ultraGridColumn7,
@@ -552,7 +554,8 @@
             ultraGridColumn35,
             ultraGridColumn41,
             ultraGridColumn42,
-            ultraGridColumn43});
+            ultraGridColumn43,
+            ultraGridColumn44});
             this.grdData.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.grdData.DisplayLayout.InterBandSpacing = 10;
             this.grdData.DisplayLayout.MaxColScrollRegions = 1;
