@@ -65,7 +65,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Controls">
-      <HintPath>..\..\..\..\ExternalLibraries\Windows\Controls.dll</HintPath>
+      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\Controls.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -115,6 +115,9 @@
     <Reference Include="Infragistics4.Win.v13.1, Version=13.1.20131.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -130,7 +133,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="SigPlusNET">
-      <HintPath>..\..\..\..\ExternalLibraries\Windows\SigPlusNET.dll</HintPath>
+      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\SigPlusNET.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -155,7 +158,7 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WebCam_Capture">
-      <HintPath>..\..\..\..\ExternalLibraries\WebCam_Capture.dll</HintPath>
+      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\WebCam_Capture.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -3640,6 +3643,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
