@@ -680,6 +680,12 @@ namespace Sigesoft.Node.WinClient.UI.Operations
                                             ucAudiometria.AfterValueChange += new EventHandler<AudiometriaAfterValueChangeEventArgs>(ucAudiometria_AfterValueChange);
                                             ctl = ucAudiometria;
                                             break;
+                                        case ControlType.UcCuestionarioNordico:
+                                            var ucCuestionarioNordico = new Sigesoft.Node.WinClient.UI.UserControls.UcCuestNordico();
+                                            ucCuestionarioNordico.Name = f.v_ComponentFieldId;
+                                            ucCuestionarioNordico.PersonId = _personId;
+                                            ctl = ucCuestionarioNordico;
+                                            break;
 
                                         case ControlType.UcBoton:
                                             var ucBoton = new Sigesoft.Node.WinClient.UI.UserControls.ucBoton();
@@ -1092,6 +1098,13 @@ namespace Sigesoft.Node.WinClient.UI.Operations
                                         ucAudiometria.AfterValueChange += new EventHandler<AudiometriaAfterValueChangeEventArgs>(ucAudiometria_AfterValueChange);
                                         ctl = ucAudiometria;
                                         break;
+
+                                    case ControlType.UcCuestionarioNordico:
+                                        var ucCuestionarioNordico = new Sigesoft.Node.WinClient.UI.UserControls.UcCuestNordico();
+                                        ucCuestionarioNordico.Name = f.v_ComponentFieldId;
+                                        ctl = ucCuestionarioNordico;
+                                        break;
+
                                     case ControlType.UcBoton:
                                         var ucBoton = new Sigesoft.Node.WinClient.UI.UserControls.ucBoton();
                                         ucBoton.Name = f.v_ComponentFieldId;
@@ -1700,7 +1713,7 @@ namespace Sigesoft.Node.WinClient.UI.Operations
                         // Datos de servicecomponentfieldValues Ejem: 1.80 ; 95 KG
                         value1 = GetValueControl(keyTagControl.i_ControlId, fields[0]);
 
-                        if (keyTagControl.i_ControlId == (int)ControlType.UcOdontograma || keyTagControl.i_ControlId == (int)ControlType.UcAudiometria )
+                        if (keyTagControl.i_ControlId == (int)ControlType.UcOdontograma || keyTagControl.i_ControlId == (int)ControlType.UcAudiometria || keyTagControl.i_ControlId == (int)ControlType.UcCuestionarioNordico)
                         {
                             foreach (var value in _tmpListValuesOdontograma)
                             {
@@ -2343,6 +2356,22 @@ namespace Sigesoft.Node.WinClient.UI.Operations
 
                     }
                 }
+
+
+                var cuestionarioNordico = _tmpServiceComponentsForBuildMenuList
+                                      .Find(p => p.v_ComponentId == _componentId)
+                                      .Fields.Find(p => p.i_ControlId == (int)ControlType.UcCuestionarioNordico);
+
+                if (cuestionarioNordico != null)
+                {
+                    var ucCuestionarioNordico = (UserControls.UcCuestNordico)FindControlInCurrentTab(cuestionarioNordico.v_ComponentFieldId)[0];
+
+                    if (ucCuestionarioNordico.IsChangeValueControl)
+                    {
+                        _isChangeValue = true;
+                    }
+                }
+
             }
 
             if (_isChangeValue)
@@ -2747,6 +2776,18 @@ namespace Sigesoft.Node.WinClient.UI.Operations
 
                             #endregion
                         }
+                        else if (keyTagControl.i_ControlId == (int)ControlType.UcCuestionarioNordico)
+                        {
+                            #region Setear valores en udiometria
+
+                            dataSourceUserControls = _serviceComponentsInfo.ServiceComponentFields.SelectMany(p => p.ServiceComponentFieldValues).ToList();
+                            dataSourceUserControls = dataSourceUserControls.FindAll(p => p.v_ComponentFieldId.Contains("CSN"));
+                            ((UserControls.UcCuestNordico)ctrl).DataSource = new List<ServiceComponentFieldValuesList>();
+                            ((UserControls.UcCuestNordico)ctrl).DataSource = dataSourceUserControls;
+                            breakHazChildrenUC = true;
+
+                            #endregion
+                        }
                         else
                         {
                             foreach (var item in _serviceComponentsInfo.ServiceComponentFields)
@@ -2878,6 +2919,9 @@ namespace Sigesoft.Node.WinClient.UI.Operations
                     break;
                 case ControlType.UcAudiometria:
                     _tmpListValuesOdontograma = ((UserControls.ucAudiometria)ctrl).DataSource;
+                    break;
+                case ControlType.UcCuestionarioNordico:
+                    _tmpListValuesOdontograma = ((UserControls.UcCuestNordico)ctrl).DataSource;
                     break;
                 default:
                     break;
@@ -3269,6 +3313,9 @@ namespace Sigesoft.Node.WinClient.UI.Operations
                                 case ControlType.UcAudiometria:
                                     ((UserControls.ucAudiometria)ctrl__[0]).ClearValueControl();
                                     break;
+                                case ControlType.UcCuestionarioNordico:
+                                    ((UserControls.UcCuestNordico)ctrl__[0]).ClearValueControl();
+                                    break;
                                 default:
                                     break;
                             }
@@ -3351,6 +3398,9 @@ namespace Sigesoft.Node.WinClient.UI.Operations
                                 break;
                             case ControlType.UcAudiometria:
                                 ((UserControls.ucAudiometria)field[0]).ClearValueControl();
+                                break;
+                            case ControlType.UcCuestionarioNordico:
+                                ((UserControls.UcCuestNordico)field[0]).ClearValueControl();
                                 break;
                             default:
                                 break;

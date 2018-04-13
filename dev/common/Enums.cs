@@ -274,7 +274,8 @@ namespace Sigesoft.Common
         Lista = 9,
         UcAudiometria = 10,
         UcOdontograma = 11,
-        UcBoton = 12
+        UcBoton = 12,
+        UcCuestionarioNordico = 13
     }
 
     public enum ComponentType

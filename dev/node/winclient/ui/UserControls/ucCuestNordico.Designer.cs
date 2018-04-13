@@ -1,6 +1,6 @@
 ﻿namespace Sigesoft.Node.WinClient.UI.UserControls
 {
-    partial class ucCuestNordico
+    partial class UcCuestNordico
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,37 +30,28 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.pbd18 = new System.Windows.Forms.PictureBox();
-            this.ddlSiNoCuelloPreg1 = new System.Windows.Forms.ComboBox();
+            this.cbo1Cuello = new System.Windows.Forms.ComboBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbo1ManoDir = new System.Windows.Forms.ComboBox();
+            this.cbo1CodoDir = new System.Windows.Forms.ComboBox();
+            this.cbo1HombroDir = new System.Windows.Forms.ComboBox();
+            this.cbo1Mano = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbo1Codo = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbo1Hombro = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbo1Dorsal = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt11Mano = new System.Windows.Forms.TextBox();
+            this.txt11Codo = new System.Windows.Forms.TextBox();
+            this.txt11Dorsal = new System.Windows.Forms.TextBox();
+            this.txt11Hombro = new System.Windows.Forms.TextBox();
+            this.txt11Cuello = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -72,22 +63,22 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.cbo3Mano = new System.Windows.Forms.ComboBox();
+            this.cbo3Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo3Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo3Codo = new System.Windows.Forms.ComboBox();
+            this.cbo3Hombro = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.cbo4Mano = new System.Windows.Forms.ComboBox();
+            this.cbo4Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo4Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo4Codo = new System.Windows.Forms.ComboBox();
+            this.cbo4Hombro = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -95,74 +86,74 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.cbo5Mano = new System.Windows.Forms.ComboBox();
+            this.cbo5Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo5Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo5Codo = new System.Windows.Forms.ComboBox();
+            this.cbo5Hombro = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.cbo6Mano = new System.Windows.Forms.ComboBox();
+            this.cbo6Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo6Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo6Codo = new System.Windows.Forms.ComboBox();
+            this.cbo6Hombro = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.cbo7Mano = new System.Windows.Forms.ComboBox();
+            this.cbo7Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo7Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo7Codo = new System.Windows.Forms.ComboBox();
+            this.cbo7Hombro = new System.Windows.Forms.ComboBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
-            this.comboBox33 = new System.Windows.Forms.ComboBox();
-            this.comboBox34 = new System.Windows.Forms.ComboBox();
+            this.cbo8Mano = new System.Windows.Forms.ComboBox();
+            this.cbo8Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo8Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo8Codo = new System.Windows.Forms.ComboBox();
+            this.cbo8Hombro = new System.Windows.Forms.ComboBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.comboBox35 = new System.Windows.Forms.ComboBox();
-            this.comboBox36 = new System.Windows.Forms.ComboBox();
-            this.comboBox37 = new System.Windows.Forms.ComboBox();
-            this.comboBox38 = new System.Windows.Forms.ComboBox();
-            this.comboBox39 = new System.Windows.Forms.ComboBox();
+            this.cbo9Mano = new System.Windows.Forms.ComboBox();
+            this.cbo9Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo9Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo9Codo = new System.Windows.Forms.ComboBox();
+            this.cbo9Hombro = new System.Windows.Forms.ComboBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
-            this.comboBox40 = new System.Windows.Forms.ComboBox();
-            this.comboBox41 = new System.Windows.Forms.ComboBox();
-            this.comboBox42 = new System.Windows.Forms.ComboBox();
-            this.comboBox43 = new System.Windows.Forms.ComboBox();
-            this.comboBox44 = new System.Windows.Forms.ComboBox();
+            this.cbo10Mano = new System.Windows.Forms.ComboBox();
+            this.cbo10Cuello = new System.Windows.Forms.ComboBox();
+            this.cbo10Dorsal = new System.Windows.Forms.ComboBox();
+            this.cbo10Codo = new System.Windows.Forms.ComboBox();
+            this.cbo10Hombro = new System.Windows.Forms.ComboBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtComentarios = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt2Mano = new System.Windows.Forms.TextBox();
+            this.txt2Codo = new System.Windows.Forms.TextBox();
+            this.txt2Dorsal = new System.Windows.Forms.TextBox();
+            this.txt2Hombro = new System.Windows.Forms.TextBox();
+            this.txt2Cuello = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
@@ -192,7 +183,6 @@
             this.label8.Size = new System.Drawing.Size(235, 20);
             this.label8.TabIndex = 22;
             this.label8.Text = " CUESTIONARIO NÓRDICO";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pbd18
             // 
@@ -203,40 +193,30 @@
             this.pbd18.TabIndex = 23;
             this.pbd18.TabStop = false;
             // 
-            // ddlSiNoCuelloPreg1
+            // cbo1Cuello
             // 
-            this.ddlSiNoCuelloPreg1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ddlSiNoCuelloPreg1.FormattingEnabled = true;
-            this.ddlSiNoCuelloPreg1.Location = new System.Drawing.Point(6, 36);
-            this.ddlSiNoCuelloPreg1.Name = "ddlSiNoCuelloPreg1";
-            this.ddlSiNoCuelloPreg1.Size = new System.Drawing.Size(81, 21);
-            this.ddlSiNoCuelloPreg1.TabIndex = 24;
-            this.ddlSiNoCuelloPreg1.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo1Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1Cuello.FormattingEnabled = true;
+            this.cbo1Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo1Cuello.Name = "cbo1Cuello";
+            this.cbo1Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo1Cuello.TabIndex = 24;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label16);
-            this.groupBox6.Controls.Add(this.label11);
-            this.groupBox6.Controls.Add(this.label4);
-            this.groupBox6.Controls.Add(this.label15);
-            this.groupBox6.Controls.Add(this.label10);
-            this.groupBox6.Controls.Add(this.label39);
-            this.groupBox6.Controls.Add(this.comboBox4);
+            this.groupBox6.Controls.Add(this.cbo1ManoDir);
+            this.groupBox6.Controls.Add(this.cbo1CodoDir);
+            this.groupBox6.Controls.Add(this.cbo1HombroDir);
+            this.groupBox6.Controls.Add(this.cbo1Mano);
             this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Controls.Add(this.comboBox3);
+            this.groupBox6.Controls.Add(this.cbo1Codo);
             this.groupBox6.Controls.Add(this.label9);
-            this.groupBox6.Controls.Add(this.comboBox1);
+            this.groupBox6.Controls.Add(this.cbo1Hombro);
             this.groupBox6.Controls.Add(this.label2);
-            this.groupBox6.Controls.Add(this.comboBox2);
+            this.groupBox6.Controls.Add(this.cbo1Dorsal);
             this.groupBox6.Controls.Add(this.label5);
-            this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Controls.Add(this.ddlSiNoCuelloPreg1);
-            this.groupBox6.Controls.Add(this.label7);
-            this.groupBox6.Controls.Add(this.label12);
+            this.groupBox6.Controls.Add(this.cbo1Cuello);
             this.groupBox6.Controls.Add(this.label1);
-            this.groupBox6.Controls.Add(this.label6);
-            this.groupBox6.Controls.Add(this.label3);
-            this.groupBox6.Controls.Add(this.label40);
             this.groupBox6.Location = new System.Drawing.Point(132, 58);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(745, 97);
@@ -244,81 +224,41 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "1. ¿ha tenido molestias en ...?";
             // 
-            // label16
+            // cbo1ManoDir
             // 
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label16.Location = new System.Drawing.Point(658, 79);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(13, 13);
-            this.label16.TabIndex = 412;
+            this.cbo1ManoDir.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1ManoDir.FormattingEnabled = true;
+            this.cbo1ManoDir.Location = new System.Drawing.Point(658, 63);
+            this.cbo1ManoDir.Name = "cbo1ManoDir";
+            this.cbo1ManoDir.Size = new System.Drawing.Size(81, 21);
+            this.cbo1ManoDir.TabIndex = 416;
             // 
-            // label11
+            // cbo1CodoDir
             // 
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label11.Location = new System.Drawing.Point(495, 79);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(13, 13);
-            this.label11.TabIndex = 412;
+            this.cbo1CodoDir.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1CodoDir.FormattingEnabled = true;
+            this.cbo1CodoDir.Location = new System.Drawing.Point(498, 63);
+            this.cbo1CodoDir.Name = "cbo1CodoDir";
+            this.cbo1CodoDir.Size = new System.Drawing.Size(81, 21);
+            this.cbo1CodoDir.TabIndex = 415;
             // 
-            // label4
+            // cbo1HombroDir
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(169, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 412;
+            this.cbo1HombroDir.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1HombroDir.FormattingEnabled = true;
+            this.cbo1HombroDir.Location = new System.Drawing.Point(169, 63);
+            this.cbo1HombroDir.Name = "cbo1HombroDir";
+            this.cbo1HombroDir.Size = new System.Drawing.Size(81, 21);
+            this.cbo1HombroDir.TabIndex = 414;
             // 
-            // label15
+            // cbo1Mano
             // 
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label15.Location = new System.Drawing.Point(658, 62);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 13);
-            this.label15.TabIndex = 412;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label10.Location = new System.Drawing.Point(495, 62);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 13);
-            this.label10.TabIndex = 412;
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.White;
-            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label39.Location = new System.Drawing.Point(169, 62);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(13, 13);
-            this.label39.TabIndex = 412;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(658, 36);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(81, 21);
-            this.comboBox4.TabIndex = 24;
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo1Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1Mano.FormattingEnabled = true;
+            this.cbo1Mano.Location = new System.Drawing.Point(658, 36);
+            this.cbo1Mano.Name = "cbo1Mano";
+            this.cbo1Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo1Mano.TabIndex = 24;
             // 
             // label14
             // 
@@ -329,15 +269,14 @@
             this.label14.TabIndex = 413;
             this.label14.Text = "Muñeca o Mano";
             // 
-            // comboBox3
+            // cbo1Codo
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(495, 36);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(81, 21);
-            this.comboBox3.TabIndex = 24;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo1Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1Codo.FormattingEnabled = true;
+            this.cbo1Codo.Location = new System.Drawing.Point(498, 36);
+            this.cbo1Codo.Name = "cbo1Codo";
+            this.cbo1Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo1Codo.TabIndex = 24;
             // 
             // label9
             // 
@@ -348,15 +287,14 @@
             this.label9.TabIndex = 413;
             this.label9.Text = "Codo o Antebrazo";
             // 
-            // comboBox1
+            // cbo1Hombro
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(169, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(81, 21);
-            this.comboBox1.TabIndex = 24;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo1Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1Hombro.FormattingEnabled = true;
+            this.cbo1Hombro.Location = new System.Drawing.Point(169, 36);
+            this.cbo1Hombro.Name = "cbo1Hombro";
+            this.cbo1Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo1Hombro.TabIndex = 24;
             // 
             // label2
             // 
@@ -367,15 +305,14 @@
             this.label2.TabIndex = 413;
             this.label2.Text = "Hombro";
             // 
-            // comboBox2
+            // cbo1Dorsal
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(332, 36);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(81, 21);
-            this.comboBox2.TabIndex = 24;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo1Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1Dorsal.FormattingEnabled = true;
+            this.cbo1Dorsal.Location = new System.Drawing.Point(332, 36);
+            this.cbo1Dorsal.Name = "cbo1Dorsal";
+            this.cbo1Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo1Dorsal.TabIndex = 24;
             // 
             // label5
             // 
@@ -386,33 +323,6 @@
             this.label5.TabIndex = 413;
             this.label5.Text = "Dorsal o Lumbar";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(671, 79);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 13);
-            this.label13.TabIndex = 413;
-            this.label13.Text = "Derecho";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(509, 79);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 13);
-            this.label7.TabIndex = 413;
-            this.label7.Text = "Derecho";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(672, 62);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(50, 13);
-            this.label12.TabIndex = 413;
-            this.label12.Text = "Izquierdo";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -421,33 +331,6 @@
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 413;
             this.label1.Text = "Cuello";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(510, 62);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 413;
-            this.label6.Text = "Izquierdo";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(183, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
-            this.label3.TabIndex = 413;
-            this.label3.Text = "Derecho";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(184, 62);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(50, 13);
-            this.label40.TabIndex = 413;
-            this.label40.Text = "Izquierdo";
             // 
             // label17
             // 
@@ -458,7 +341,6 @@
             this.label17.Size = new System.Drawing.Size(365, 15);
             this.label17.TabIndex = 22;
             this.label17.Text = " Cuestionario Nórdico de síntomas músculo-tendinosos.";
-            this.label17.Click += new System.EventHandler(this.label8_Click);
             // 
             // label18
             // 
@@ -469,15 +351,14 @@
             this.label18.Size = new System.Drawing.Size(500, 15);
             this.label18.TabIndex = 22;
             this.label18.Text = "Si ha contestado NO a la pregunta 1, no conteste más y devuelva la encuesta";
-            this.label18.Click += new System.EventHandler(this.label8_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt11Mano);
+            this.groupBox1.Controls.Add(this.txt11Codo);
+            this.groupBox1.Controls.Add(this.txt11Dorsal);
+            this.groupBox1.Controls.Add(this.txt11Hombro);
+            this.groupBox1.Controls.Add(this.txt11Cuello);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.label27);
@@ -490,40 +371,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "11. ¿a qué atribuye estas molestias?";
             // 
-            // textBox5
+            // txt11Mano
             // 
-            this.textBox5.Location = new System.Drawing.Point(734, 36);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(126, 20);
-            this.textBox5.TabIndex = 419;
+            this.txt11Mano.Location = new System.Drawing.Point(734, 36);
+            this.txt11Mano.Name = "txt11Mano";
+            this.txt11Mano.Size = new System.Drawing.Size(126, 20);
+            this.txt11Mano.TabIndex = 419;
             // 
-            // textBox4
+            // txt11Codo
             // 
-            this.textBox4.Location = new System.Drawing.Point(552, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(126, 20);
-            this.textBox4.TabIndex = 419;
+            this.txt11Codo.Location = new System.Drawing.Point(552, 36);
+            this.txt11Codo.Name = "txt11Codo";
+            this.txt11Codo.Size = new System.Drawing.Size(126, 20);
+            this.txt11Codo.TabIndex = 419;
             // 
-            // textBox3
+            // txt11Dorsal
             // 
-            this.textBox3.Location = new System.Drawing.Point(370, 36);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(126, 20);
-            this.textBox3.TabIndex = 419;
+            this.txt11Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.txt11Dorsal.Name = "txt11Dorsal";
+            this.txt11Dorsal.Size = new System.Drawing.Size(126, 20);
+            this.txt11Dorsal.TabIndex = 419;
             // 
-            // textBox2
+            // txt11Hombro
             // 
-            this.textBox2.Location = new System.Drawing.Point(188, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 20);
-            this.textBox2.TabIndex = 419;
+            this.txt11Hombro.Location = new System.Drawing.Point(188, 36);
+            this.txt11Hombro.Name = "txt11Hombro";
+            this.txt11Hombro.Size = new System.Drawing.Size(126, 20);
+            this.txt11Hombro.TabIndex = 419;
             // 
-            // textBox1
+            // txt11Cuello
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 419;
+            this.txt11Cuello.Location = new System.Drawing.Point(6, 36);
+            this.txt11Cuello.Name = "txt11Cuello";
+            this.txt11Cuello.Size = new System.Drawing.Size(126, 20);
+            this.txt11Cuello.TabIndex = 419;
             // 
             // label25
             // 
@@ -577,11 +458,11 @@
             this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.comboBox9);
-            this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Controls.Add(this.comboBox6);
-            this.groupBox2.Controls.Add(this.comboBox8);
-            this.groupBox2.Controls.Add(this.comboBox7);
+            this.groupBox2.Controls.Add(this.cbo3Mano);
+            this.groupBox2.Controls.Add(this.cbo3Cuello);
+            this.groupBox2.Controls.Add(this.cbo3Dorsal);
+            this.groupBox2.Controls.Add(this.cbo3Codo);
+            this.groupBox2.Controls.Add(this.cbo3Hombro);
             this.groupBox2.Location = new System.Drawing.Point(8, 269);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(874, 69);
@@ -634,55 +515,50 @@
             this.label23.TabIndex = 413;
             this.label23.Text = "Cuello";
             // 
-            // comboBox9
+            // cbo3Mano
             // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(734, 36);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(81, 21);
-            this.comboBox9.TabIndex = 24;
-            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo3Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo3Mano.FormattingEnabled = true;
+            this.cbo3Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo3Mano.Name = "cbo3Mano";
+            this.cbo3Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo3Mano.TabIndex = 24;
             // 
-            // comboBox5
+            // cbo3Cuello
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(6, 36);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(81, 21);
-            this.comboBox5.TabIndex = 24;
-            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo3Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo3Cuello.FormattingEnabled = true;
+            this.cbo3Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo3Cuello.Name = "cbo3Cuello";
+            this.cbo3Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo3Cuello.TabIndex = 24;
             // 
-            // comboBox6
+            // cbo3Dorsal
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(370, 36);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(81, 21);
-            this.comboBox6.TabIndex = 24;
-            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo3Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo3Dorsal.FormattingEnabled = true;
+            this.cbo3Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo3Dorsal.Name = "cbo3Dorsal";
+            this.cbo3Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo3Dorsal.TabIndex = 24;
             // 
-            // comboBox8
+            // cbo3Codo
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(552, 36);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(81, 21);
-            this.comboBox8.TabIndex = 24;
-            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo3Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo3Codo.FormattingEnabled = true;
+            this.cbo3Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo3Codo.Name = "cbo3Codo";
+            this.cbo3Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo3Codo.TabIndex = 24;
             // 
-            // comboBox7
+            // cbo3Hombro
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(188, 36);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(81, 21);
-            this.comboBox7.TabIndex = 24;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo3Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo3Hombro.FormattingEnabled = true;
+            this.cbo3Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo3Hombro.Name = "cbo3Hombro";
+            this.cbo3Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo3Hombro.TabIndex = 24;
             // 
             // groupBox3
             // 
@@ -691,11 +567,11 @@
             this.groupBox3.Controls.Add(this.label30);
             this.groupBox3.Controls.Add(this.label31);
             this.groupBox3.Controls.Add(this.label33);
-            this.groupBox3.Controls.Add(this.comboBox10);
-            this.groupBox3.Controls.Add(this.comboBox11);
-            this.groupBox3.Controls.Add(this.comboBox12);
-            this.groupBox3.Controls.Add(this.comboBox13);
-            this.groupBox3.Controls.Add(this.comboBox14);
+            this.groupBox3.Controls.Add(this.cbo4Mano);
+            this.groupBox3.Controls.Add(this.cbo4Cuello);
+            this.groupBox3.Controls.Add(this.cbo4Dorsal);
+            this.groupBox3.Controls.Add(this.cbo4Codo);
+            this.groupBox3.Controls.Add(this.cbo4Hombro);
             this.groupBox3.Location = new System.Drawing.Point(6, 344);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(874, 69);
@@ -748,55 +624,50 @@
             this.label33.TabIndex = 413;
             this.label33.Text = "Cuello";
             // 
-            // comboBox10
+            // cbo4Mano
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(734, 36);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(81, 21);
-            this.comboBox10.TabIndex = 24;
-            this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo4Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo4Mano.FormattingEnabled = true;
+            this.cbo4Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo4Mano.Name = "cbo4Mano";
+            this.cbo4Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo4Mano.TabIndex = 24;
             // 
-            // comboBox11
+            // cbo4Cuello
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(6, 36);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(81, 21);
-            this.comboBox11.TabIndex = 24;
-            this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo4Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo4Cuello.FormattingEnabled = true;
+            this.cbo4Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo4Cuello.Name = "cbo4Cuello";
+            this.cbo4Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo4Cuello.TabIndex = 24;
             // 
-            // comboBox12
+            // cbo4Dorsal
             // 
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(370, 36);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(81, 21);
-            this.comboBox12.TabIndex = 24;
-            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo4Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo4Dorsal.FormattingEnabled = true;
+            this.cbo4Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo4Dorsal.Name = "cbo4Dorsal";
+            this.cbo4Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo4Dorsal.TabIndex = 24;
             // 
-            // comboBox13
+            // cbo4Codo
             // 
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(552, 36);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(81, 21);
-            this.comboBox13.TabIndex = 24;
-            this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo4Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo4Codo.FormattingEnabled = true;
+            this.cbo4Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo4Codo.Name = "cbo4Codo";
+            this.cbo4Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo4Codo.TabIndex = 24;
             // 
-            // comboBox14
+            // cbo4Hombro
             // 
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(188, 36);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(81, 21);
-            this.comboBox14.TabIndex = 24;
-            this.comboBox14.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo4Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo4Hombro.FormattingEnabled = true;
+            this.cbo4Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo4Hombro.Name = "cbo4Hombro";
+            this.cbo4Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo4Hombro.TabIndex = 24;
             // 
             // label34
             // 
@@ -807,7 +678,6 @@
             this.label34.Size = new System.Drawing.Size(500, 15);
             this.label34.TabIndex = 22;
             this.label34.Text = "Si ha contestado NO a la pregunta 4, no conteste más y devuelva la encuesta";
-            this.label34.Click += new System.EventHandler(this.label8_Click);
             // 
             // groupBox4
             // 
@@ -816,11 +686,11 @@
             this.groupBox4.Controls.Add(this.label37);
             this.groupBox4.Controls.Add(this.label38);
             this.groupBox4.Controls.Add(this.label41);
-            this.groupBox4.Controls.Add(this.comboBox15);
-            this.groupBox4.Controls.Add(this.comboBox16);
-            this.groupBox4.Controls.Add(this.comboBox17);
-            this.groupBox4.Controls.Add(this.comboBox18);
-            this.groupBox4.Controls.Add(this.comboBox19);
+            this.groupBox4.Controls.Add(this.cbo5Mano);
+            this.groupBox4.Controls.Add(this.cbo5Cuello);
+            this.groupBox4.Controls.Add(this.cbo5Dorsal);
+            this.groupBox4.Controls.Add(this.cbo5Codo);
+            this.groupBox4.Controls.Add(this.cbo5Hombro);
             this.groupBox4.Location = new System.Drawing.Point(8, 446);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(874, 69);
@@ -873,55 +743,50 @@
             this.label41.TabIndex = 413;
             this.label41.Text = "Cuello";
             // 
-            // comboBox15
+            // cbo5Mano
             // 
-            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(734, 36);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(81, 21);
-            this.comboBox15.TabIndex = 24;
-            this.comboBox15.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo5Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo5Mano.FormattingEnabled = true;
+            this.cbo5Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo5Mano.Name = "cbo5Mano";
+            this.cbo5Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo5Mano.TabIndex = 24;
             // 
-            // comboBox16
+            // cbo5Cuello
             // 
-            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(6, 36);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(81, 21);
-            this.comboBox16.TabIndex = 24;
-            this.comboBox16.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo5Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo5Cuello.FormattingEnabled = true;
+            this.cbo5Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo5Cuello.Name = "cbo5Cuello";
+            this.cbo5Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo5Cuello.TabIndex = 24;
             // 
-            // comboBox17
+            // cbo5Dorsal
             // 
-            this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(370, 36);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(81, 21);
-            this.comboBox17.TabIndex = 24;
-            this.comboBox17.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo5Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo5Dorsal.FormattingEnabled = true;
+            this.cbo5Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo5Dorsal.Name = "cbo5Dorsal";
+            this.cbo5Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo5Dorsal.TabIndex = 24;
             // 
-            // comboBox18
+            // cbo5Codo
             // 
-            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(552, 36);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(81, 21);
-            this.comboBox18.TabIndex = 24;
-            this.comboBox18.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo5Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo5Codo.FormattingEnabled = true;
+            this.cbo5Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo5Codo.Name = "cbo5Codo";
+            this.cbo5Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo5Codo.TabIndex = 24;
             // 
-            // comboBox19
+            // cbo5Hombro
             // 
-            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(188, 36);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(81, 21);
-            this.comboBox19.TabIndex = 24;
-            this.comboBox19.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo5Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo5Hombro.FormattingEnabled = true;
+            this.cbo5Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo5Hombro.Name = "cbo5Hombro";
+            this.cbo5Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo5Hombro.TabIndex = 24;
             // 
             // groupBox5
             // 
@@ -930,11 +795,11 @@
             this.groupBox5.Controls.Add(this.label44);
             this.groupBox5.Controls.Add(this.label45);
             this.groupBox5.Controls.Add(this.label46);
-            this.groupBox5.Controls.Add(this.comboBox20);
-            this.groupBox5.Controls.Add(this.comboBox21);
-            this.groupBox5.Controls.Add(this.comboBox22);
-            this.groupBox5.Controls.Add(this.comboBox23);
-            this.groupBox5.Controls.Add(this.comboBox24);
+            this.groupBox5.Controls.Add(this.cbo6Mano);
+            this.groupBox5.Controls.Add(this.cbo6Cuello);
+            this.groupBox5.Controls.Add(this.cbo6Dorsal);
+            this.groupBox5.Controls.Add(this.cbo6Codo);
+            this.groupBox5.Controls.Add(this.cbo6Hombro);
             this.groupBox5.Location = new System.Drawing.Point(8, 521);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(874, 69);
@@ -987,55 +852,50 @@
             this.label46.TabIndex = 413;
             this.label46.Text = "Cuello";
             // 
-            // comboBox20
+            // cbo6Mano
             // 
-            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(734, 36);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(81, 21);
-            this.comboBox20.TabIndex = 24;
-            this.comboBox20.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo6Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo6Mano.FormattingEnabled = true;
+            this.cbo6Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo6Mano.Name = "cbo6Mano";
+            this.cbo6Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo6Mano.TabIndex = 24;
             // 
-            // comboBox21
+            // cbo6Cuello
             // 
-            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(6, 36);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(81, 21);
-            this.comboBox21.TabIndex = 24;
-            this.comboBox21.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo6Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo6Cuello.FormattingEnabled = true;
+            this.cbo6Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo6Cuello.Name = "cbo6Cuello";
+            this.cbo6Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo6Cuello.TabIndex = 24;
             // 
-            // comboBox22
+            // cbo6Dorsal
             // 
-            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(370, 36);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(81, 21);
-            this.comboBox22.TabIndex = 24;
-            this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo6Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo6Dorsal.FormattingEnabled = true;
+            this.cbo6Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo6Dorsal.Name = "cbo6Dorsal";
+            this.cbo6Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo6Dorsal.TabIndex = 24;
             // 
-            // comboBox23
+            // cbo6Codo
             // 
-            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(552, 36);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(81, 21);
-            this.comboBox23.TabIndex = 24;
-            this.comboBox23.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo6Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo6Codo.FormattingEnabled = true;
+            this.cbo6Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo6Codo.Name = "cbo6Codo";
+            this.cbo6Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo6Codo.TabIndex = 24;
             // 
-            // comboBox24
+            // cbo6Hombro
             // 
-            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(188, 36);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(81, 21);
-            this.comboBox24.TabIndex = 24;
-            this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo6Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo6Hombro.FormattingEnabled = true;
+            this.cbo6Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo6Hombro.Name = "cbo6Hombro";
+            this.cbo6Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo6Hombro.TabIndex = 24;
             // 
             // groupBox7
             // 
@@ -1044,11 +904,11 @@
             this.groupBox7.Controls.Add(this.label49);
             this.groupBox7.Controls.Add(this.label50);
             this.groupBox7.Controls.Add(this.label51);
-            this.groupBox7.Controls.Add(this.comboBox25);
-            this.groupBox7.Controls.Add(this.comboBox26);
-            this.groupBox7.Controls.Add(this.comboBox27);
-            this.groupBox7.Controls.Add(this.comboBox28);
-            this.groupBox7.Controls.Add(this.comboBox29);
+            this.groupBox7.Controls.Add(this.cbo7Mano);
+            this.groupBox7.Controls.Add(this.cbo7Cuello);
+            this.groupBox7.Controls.Add(this.cbo7Dorsal);
+            this.groupBox7.Controls.Add(this.cbo7Codo);
+            this.groupBox7.Controls.Add(this.cbo7Hombro);
             this.groupBox7.Location = new System.Drawing.Point(8, 596);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(874, 69);
@@ -1102,55 +962,50 @@
             this.label51.TabIndex = 413;
             this.label51.Text = "Cuello";
             // 
-            // comboBox25
+            // cbo7Mano
             // 
-            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Location = new System.Drawing.Point(734, 36);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(81, 21);
-            this.comboBox25.TabIndex = 24;
-            this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo7Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo7Mano.FormattingEnabled = true;
+            this.cbo7Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo7Mano.Name = "cbo7Mano";
+            this.cbo7Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo7Mano.TabIndex = 24;
             // 
-            // comboBox26
+            // cbo7Cuello
             // 
-            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(6, 36);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(81, 21);
-            this.comboBox26.TabIndex = 24;
-            this.comboBox26.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo7Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo7Cuello.FormattingEnabled = true;
+            this.cbo7Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo7Cuello.Name = "cbo7Cuello";
+            this.cbo7Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo7Cuello.TabIndex = 24;
             // 
-            // comboBox27
+            // cbo7Dorsal
             // 
-            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(370, 36);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(81, 21);
-            this.comboBox27.TabIndex = 24;
-            this.comboBox27.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo7Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo7Dorsal.FormattingEnabled = true;
+            this.cbo7Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo7Dorsal.Name = "cbo7Dorsal";
+            this.cbo7Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo7Dorsal.TabIndex = 24;
             // 
-            // comboBox28
+            // cbo7Codo
             // 
-            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Location = new System.Drawing.Point(552, 36);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(81, 21);
-            this.comboBox28.TabIndex = 24;
-            this.comboBox28.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo7Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo7Codo.FormattingEnabled = true;
+            this.cbo7Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo7Codo.Name = "cbo7Codo";
+            this.cbo7Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo7Codo.TabIndex = 24;
             // 
-            // comboBox29
+            // cbo7Hombro
             // 
-            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(188, 36);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(81, 21);
-            this.comboBox29.TabIndex = 24;
-            this.comboBox29.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo7Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo7Hombro.FormattingEnabled = true;
+            this.cbo7Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo7Hombro.Name = "cbo7Hombro";
+            this.cbo7Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo7Hombro.TabIndex = 24;
             // 
             // groupBox8
             // 
@@ -1159,11 +1014,11 @@
             this.groupBox8.Controls.Add(this.label54);
             this.groupBox8.Controls.Add(this.label55);
             this.groupBox8.Controls.Add(this.label56);
-            this.groupBox8.Controls.Add(this.comboBox30);
-            this.groupBox8.Controls.Add(this.comboBox31);
-            this.groupBox8.Controls.Add(this.comboBox32);
-            this.groupBox8.Controls.Add(this.comboBox33);
-            this.groupBox8.Controls.Add(this.comboBox34);
+            this.groupBox8.Controls.Add(this.cbo8Mano);
+            this.groupBox8.Controls.Add(this.cbo8Cuello);
+            this.groupBox8.Controls.Add(this.cbo8Dorsal);
+            this.groupBox8.Controls.Add(this.cbo8Codo);
+            this.groupBox8.Controls.Add(this.cbo8Hombro);
             this.groupBox8.Location = new System.Drawing.Point(8, 671);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(874, 69);
@@ -1216,55 +1071,50 @@
             this.label56.TabIndex = 413;
             this.label56.Text = "Cuello";
             // 
-            // comboBox30
+            // cbo8Mano
             // 
-            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Location = new System.Drawing.Point(734, 36);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(81, 21);
-            this.comboBox30.TabIndex = 24;
-            this.comboBox30.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo8Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo8Mano.FormattingEnabled = true;
+            this.cbo8Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo8Mano.Name = "cbo8Mano";
+            this.cbo8Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo8Mano.TabIndex = 24;
             // 
-            // comboBox31
+            // cbo8Cuello
             // 
-            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Location = new System.Drawing.Point(6, 36);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(81, 21);
-            this.comboBox31.TabIndex = 24;
-            this.comboBox31.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo8Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo8Cuello.FormattingEnabled = true;
+            this.cbo8Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo8Cuello.Name = "cbo8Cuello";
+            this.cbo8Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo8Cuello.TabIndex = 24;
             // 
-            // comboBox32
+            // cbo8Dorsal
             // 
-            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Location = new System.Drawing.Point(370, 36);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(81, 21);
-            this.comboBox32.TabIndex = 24;
-            this.comboBox32.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo8Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo8Dorsal.FormattingEnabled = true;
+            this.cbo8Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo8Dorsal.Name = "cbo8Dorsal";
+            this.cbo8Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo8Dorsal.TabIndex = 24;
             // 
-            // comboBox33
+            // cbo8Codo
             // 
-            this.comboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.Location = new System.Drawing.Point(552, 36);
-            this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(81, 21);
-            this.comboBox33.TabIndex = 24;
-            this.comboBox33.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo8Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo8Codo.FormattingEnabled = true;
+            this.cbo8Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo8Codo.Name = "cbo8Codo";
+            this.cbo8Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo8Codo.TabIndex = 24;
             // 
-            // comboBox34
+            // cbo8Hombro
             // 
-            this.comboBox34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.Location = new System.Drawing.Point(188, 36);
-            this.comboBox34.Name = "comboBox34";
-            this.comboBox34.Size = new System.Drawing.Size(81, 21);
-            this.comboBox34.TabIndex = 24;
-            this.comboBox34.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo8Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo8Hombro.FormattingEnabled = true;
+            this.cbo8Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo8Hombro.Name = "cbo8Hombro";
+            this.cbo8Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo8Hombro.TabIndex = 24;
             // 
             // groupBox9
             // 
@@ -1273,11 +1123,11 @@
             this.groupBox9.Controls.Add(this.label59);
             this.groupBox9.Controls.Add(this.label60);
             this.groupBox9.Controls.Add(this.label61);
-            this.groupBox9.Controls.Add(this.comboBox35);
-            this.groupBox9.Controls.Add(this.comboBox36);
-            this.groupBox9.Controls.Add(this.comboBox37);
-            this.groupBox9.Controls.Add(this.comboBox38);
-            this.groupBox9.Controls.Add(this.comboBox39);
+            this.groupBox9.Controls.Add(this.cbo9Mano);
+            this.groupBox9.Controls.Add(this.cbo9Cuello);
+            this.groupBox9.Controls.Add(this.cbo9Dorsal);
+            this.groupBox9.Controls.Add(this.cbo9Codo);
+            this.groupBox9.Controls.Add(this.cbo9Hombro);
             this.groupBox9.Location = new System.Drawing.Point(6, 746);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(874, 69);
@@ -1330,55 +1180,50 @@
             this.label61.TabIndex = 413;
             this.label61.Text = "Cuello";
             // 
-            // comboBox35
+            // cbo9Mano
             // 
-            this.comboBox35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Location = new System.Drawing.Point(734, 36);
-            this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(81, 21);
-            this.comboBox35.TabIndex = 24;
-            this.comboBox35.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo9Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo9Mano.FormattingEnabled = true;
+            this.cbo9Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo9Mano.Name = "cbo9Mano";
+            this.cbo9Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo9Mano.TabIndex = 24;
             // 
-            // comboBox36
+            // cbo9Cuello
             // 
-            this.comboBox36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Location = new System.Drawing.Point(6, 36);
-            this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(81, 21);
-            this.comboBox36.TabIndex = 24;
-            this.comboBox36.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo9Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo9Cuello.FormattingEnabled = true;
+            this.cbo9Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo9Cuello.Name = "cbo9Cuello";
+            this.cbo9Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo9Cuello.TabIndex = 24;
             // 
-            // comboBox37
+            // cbo9Dorsal
             // 
-            this.comboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Location = new System.Drawing.Point(370, 36);
-            this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(81, 21);
-            this.comboBox37.TabIndex = 24;
-            this.comboBox37.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo9Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo9Dorsal.FormattingEnabled = true;
+            this.cbo9Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo9Dorsal.Name = "cbo9Dorsal";
+            this.cbo9Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo9Dorsal.TabIndex = 24;
             // 
-            // comboBox38
+            // cbo9Codo
             // 
-            this.comboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Location = new System.Drawing.Point(552, 36);
-            this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(81, 21);
-            this.comboBox38.TabIndex = 24;
-            this.comboBox38.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo9Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo9Codo.FormattingEnabled = true;
+            this.cbo9Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo9Codo.Name = "cbo9Codo";
+            this.cbo9Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo9Codo.TabIndex = 24;
             // 
-            // comboBox39
+            // cbo9Hombro
             // 
-            this.comboBox39.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox39.FormattingEnabled = true;
-            this.comboBox39.Location = new System.Drawing.Point(188, 36);
-            this.comboBox39.Name = "comboBox39";
-            this.comboBox39.Size = new System.Drawing.Size(81, 21);
-            this.comboBox39.TabIndex = 24;
-            this.comboBox39.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo9Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo9Hombro.FormattingEnabled = true;
+            this.cbo9Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo9Hombro.Name = "cbo9Hombro";
+            this.cbo9Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo9Hombro.TabIndex = 24;
             // 
             // groupBox10
             // 
@@ -1387,11 +1232,11 @@
             this.groupBox10.Controls.Add(this.label64);
             this.groupBox10.Controls.Add(this.label65);
             this.groupBox10.Controls.Add(this.label66);
-            this.groupBox10.Controls.Add(this.comboBox40);
-            this.groupBox10.Controls.Add(this.comboBox41);
-            this.groupBox10.Controls.Add(this.comboBox42);
-            this.groupBox10.Controls.Add(this.comboBox43);
-            this.groupBox10.Controls.Add(this.comboBox44);
+            this.groupBox10.Controls.Add(this.cbo10Mano);
+            this.groupBox10.Controls.Add(this.cbo10Cuello);
+            this.groupBox10.Controls.Add(this.cbo10Dorsal);
+            this.groupBox10.Controls.Add(this.cbo10Codo);
+            this.groupBox10.Controls.Add(this.cbo10Hombro);
             this.groupBox10.Location = new System.Drawing.Point(6, 821);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(874, 69);
@@ -1445,59 +1290,54 @@
             this.label66.TabIndex = 413;
             this.label66.Text = "Cuello";
             // 
-            // comboBox40
+            // cbo10Mano
             // 
-            this.comboBox40.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox40.FormattingEnabled = true;
-            this.comboBox40.Location = new System.Drawing.Point(734, 36);
-            this.comboBox40.Name = "comboBox40";
-            this.comboBox40.Size = new System.Drawing.Size(81, 21);
-            this.comboBox40.TabIndex = 24;
-            this.comboBox40.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo10Mano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo10Mano.FormattingEnabled = true;
+            this.cbo10Mano.Location = new System.Drawing.Point(734, 36);
+            this.cbo10Mano.Name = "cbo10Mano";
+            this.cbo10Mano.Size = new System.Drawing.Size(81, 21);
+            this.cbo10Mano.TabIndex = 24;
             // 
-            // comboBox41
+            // cbo10Cuello
             // 
-            this.comboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox41.FormattingEnabled = true;
-            this.comboBox41.Location = new System.Drawing.Point(6, 36);
-            this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(81, 21);
-            this.comboBox41.TabIndex = 24;
-            this.comboBox41.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo10Cuello.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo10Cuello.FormattingEnabled = true;
+            this.cbo10Cuello.Location = new System.Drawing.Point(6, 36);
+            this.cbo10Cuello.Name = "cbo10Cuello";
+            this.cbo10Cuello.Size = new System.Drawing.Size(81, 21);
+            this.cbo10Cuello.TabIndex = 24;
             // 
-            // comboBox42
+            // cbo10Dorsal
             // 
-            this.comboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox42.FormattingEnabled = true;
-            this.comboBox42.Location = new System.Drawing.Point(370, 36);
-            this.comboBox42.Name = "comboBox42";
-            this.comboBox42.Size = new System.Drawing.Size(81, 21);
-            this.comboBox42.TabIndex = 24;
-            this.comboBox42.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo10Dorsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo10Dorsal.FormattingEnabled = true;
+            this.cbo10Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.cbo10Dorsal.Name = "cbo10Dorsal";
+            this.cbo10Dorsal.Size = new System.Drawing.Size(81, 21);
+            this.cbo10Dorsal.TabIndex = 24;
             // 
-            // comboBox43
+            // cbo10Codo
             // 
-            this.comboBox43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox43.FormattingEnabled = true;
-            this.comboBox43.Location = new System.Drawing.Point(552, 36);
-            this.comboBox43.Name = "comboBox43";
-            this.comboBox43.Size = new System.Drawing.Size(81, 21);
-            this.comboBox43.TabIndex = 24;
-            this.comboBox43.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo10Codo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo10Codo.FormattingEnabled = true;
+            this.cbo10Codo.Location = new System.Drawing.Point(552, 36);
+            this.cbo10Codo.Name = "cbo10Codo";
+            this.cbo10Codo.Size = new System.Drawing.Size(81, 21);
+            this.cbo10Codo.TabIndex = 24;
             // 
-            // comboBox44
+            // cbo10Hombro
             // 
-            this.comboBox44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox44.FormattingEnabled = true;
-            this.comboBox44.Location = new System.Drawing.Point(188, 36);
-            this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(81, 21);
-            this.comboBox44.TabIndex = 24;
-            this.comboBox44.SelectedIndexChanged += new System.EventHandler(this.ddlSiNo_SelectedIndexChanged);
+            this.cbo10Hombro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo10Hombro.FormattingEnabled = true;
+            this.cbo10Hombro.Location = new System.Drawing.Point(188, 36);
+            this.cbo10Hombro.Name = "cbo10Hombro";
+            this.cbo10Hombro.Size = new System.Drawing.Size(81, 21);
+            this.cbo10Hombro.TabIndex = 24;
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.textBox10);
+            this.groupBox11.Controls.Add(this.txtComentarios);
             this.groupBox11.Location = new System.Drawing.Point(6, 971);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(874, 69);
@@ -1505,21 +1345,21 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Comentarios u Observaciones";
             // 
-            // textBox10
+            // txtComentarios
             // 
-            this.textBox10.Location = new System.Drawing.Point(6, 19);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(854, 44);
-            this.textBox10.TabIndex = 419;
+            this.txtComentarios.Location = new System.Drawing.Point(6, 19);
+            this.txtComentarios.Multiline = true;
+            this.txtComentarios.Name = "txtComentarios";
+            this.txtComentarios.Size = new System.Drawing.Size(854, 44);
+            this.txtComentarios.TabIndex = 419;
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.textBox6);
-            this.groupBox12.Controls.Add(this.textBox7);
-            this.groupBox12.Controls.Add(this.textBox8);
-            this.groupBox12.Controls.Add(this.textBox9);
-            this.groupBox12.Controls.Add(this.textBox11);
+            this.groupBox12.Controls.Add(this.txt2Mano);
+            this.groupBox12.Controls.Add(this.txt2Codo);
+            this.groupBox12.Controls.Add(this.txt2Dorsal);
+            this.groupBox12.Controls.Add(this.txt2Hombro);
+            this.groupBox12.Controls.Add(this.txt2Cuello);
             this.groupBox12.Controls.Add(this.label67);
             this.groupBox12.Controls.Add(this.label68);
             this.groupBox12.Controls.Add(this.label69);
@@ -1532,40 +1372,40 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "2. ¿desde hace cuánto tiempo?";
             // 
-            // textBox6
+            // txt2Mano
             // 
-            this.textBox6.Location = new System.Drawing.Point(734, 36);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(126, 20);
-            this.textBox6.TabIndex = 419;
+            this.txt2Mano.Location = new System.Drawing.Point(734, 36);
+            this.txt2Mano.Name = "txt2Mano";
+            this.txt2Mano.Size = new System.Drawing.Size(126, 20);
+            this.txt2Mano.TabIndex = 419;
             // 
-            // textBox7
+            // txt2Codo
             // 
-            this.textBox7.Location = new System.Drawing.Point(552, 36);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(126, 20);
-            this.textBox7.TabIndex = 419;
+            this.txt2Codo.Location = new System.Drawing.Point(552, 36);
+            this.txt2Codo.Name = "txt2Codo";
+            this.txt2Codo.Size = new System.Drawing.Size(126, 20);
+            this.txt2Codo.TabIndex = 419;
             // 
-            // textBox8
+            // txt2Dorsal
             // 
-            this.textBox8.Location = new System.Drawing.Point(370, 36);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(126, 20);
-            this.textBox8.TabIndex = 419;
+            this.txt2Dorsal.Location = new System.Drawing.Point(370, 36);
+            this.txt2Dorsal.Name = "txt2Dorsal";
+            this.txt2Dorsal.Size = new System.Drawing.Size(126, 20);
+            this.txt2Dorsal.TabIndex = 419;
             // 
-            // textBox9
+            // txt2Hombro
             // 
-            this.textBox9.Location = new System.Drawing.Point(188, 36);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(126, 20);
-            this.textBox9.TabIndex = 419;
+            this.txt2Hombro.Location = new System.Drawing.Point(188, 36);
+            this.txt2Hombro.Name = "txt2Hombro";
+            this.txt2Hombro.Size = new System.Drawing.Size(126, 20);
+            this.txt2Hombro.TabIndex = 419;
             // 
-            // textBox11
+            // txt2Cuello
             // 
-            this.textBox11.Location = new System.Drawing.Point(6, 36);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(126, 20);
-            this.textBox11.TabIndex = 419;
+            this.txt2Cuello.Location = new System.Drawing.Point(6, 36);
+            this.txt2Cuello.Name = "txt2Cuello";
+            this.txt2Cuello.Size = new System.Drawing.Size(126, 20);
+            this.txt2Cuello.TabIndex = 419;
             // 
             // label67
             // 
@@ -1612,7 +1452,7 @@
             this.label71.TabIndex = 413;
             this.label71.Text = "Cuello";
             // 
-            // ucCuestNordico
+            // UcCuestNordico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1633,8 +1473,9 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label8);
-            this.Name = "ucCuestNordico";
+            this.Name = "UcCuestNordico";
             this.Size = new System.Drawing.Size(892, 1050);
+            this.Load += new System.EventHandler(this.UcCuestNordico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbd18)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -1669,29 +1510,17 @@
 
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pbd18;
-        private System.Windows.Forms.ComboBox ddlSiNoCuelloPreg1;
+        private System.Windows.Forms.ComboBox cbo1Cuello;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbo1Mano;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbo1Codo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbo1Hombro;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbo1Dorsal;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -1700,33 +1529,33 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt11Mano;
+        private System.Windows.Forms.TextBox txt11Codo;
+        private System.Windows.Forms.TextBox txt11Dorsal;
+        private System.Windows.Forms.TextBox txt11Hombro;
+        private System.Windows.Forms.TextBox txt11Cuello;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox cbo3Mano;
+        private System.Windows.Forms.ComboBox cbo3Cuello;
+        private System.Windows.Forms.ComboBox cbo3Dorsal;
+        private System.Windows.Forms.ComboBox cbo3Codo;
+        private System.Windows.Forms.ComboBox cbo3Hombro;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox cbo4Mano;
+        private System.Windows.Forms.ComboBox cbo4Cuello;
+        private System.Windows.Forms.ComboBox cbo4Dorsal;
+        private System.Windows.Forms.ComboBox cbo4Codo;
+        private System.Windows.Forms.ComboBox cbo4Hombro;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label35;
@@ -1734,78 +1563,81 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox cbo5Mano;
+        private System.Windows.Forms.ComboBox cbo5Cuello;
+        private System.Windows.Forms.ComboBox cbo5Dorsal;
+        private System.Windows.Forms.ComboBox cbo5Codo;
+        private System.Windows.Forms.ComboBox cbo5Hombro;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.ComboBox comboBox23;
-        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox cbo6Mano;
+        private System.Windows.Forms.ComboBox cbo6Cuello;
+        private System.Windows.Forms.ComboBox cbo6Dorsal;
+        private System.Windows.Forms.ComboBox cbo6Codo;
+        private System.Windows.Forms.ComboBox cbo6Hombro;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.ComboBox comboBox26;
-        private System.Windows.Forms.ComboBox comboBox27;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox cbo7Mano;
+        private System.Windows.Forms.ComboBox cbo7Cuello;
+        private System.Windows.Forms.ComboBox cbo7Dorsal;
+        private System.Windows.Forms.ComboBox cbo7Codo;
+        private System.Windows.Forms.ComboBox cbo7Hombro;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.ComboBox comboBox30;
-        private System.Windows.Forms.ComboBox comboBox31;
-        private System.Windows.Forms.ComboBox comboBox32;
-        private System.Windows.Forms.ComboBox comboBox33;
-        private System.Windows.Forms.ComboBox comboBox34;
+        private System.Windows.Forms.ComboBox cbo8Mano;
+        private System.Windows.Forms.ComboBox cbo8Cuello;
+        private System.Windows.Forms.ComboBox cbo8Dorsal;
+        private System.Windows.Forms.ComboBox cbo8Codo;
+        private System.Windows.Forms.ComboBox cbo8Hombro;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.ComboBox comboBox35;
-        private System.Windows.Forms.ComboBox comboBox36;
-        private System.Windows.Forms.ComboBox comboBox37;
-        private System.Windows.Forms.ComboBox comboBox38;
-        private System.Windows.Forms.ComboBox comboBox39;
+        private System.Windows.Forms.ComboBox cbo9Mano;
+        private System.Windows.Forms.ComboBox cbo9Cuello;
+        private System.Windows.Forms.ComboBox cbo9Dorsal;
+        private System.Windows.Forms.ComboBox cbo9Codo;
+        private System.Windows.Forms.ComboBox cbo9Hombro;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.ComboBox comboBox40;
-        private System.Windows.Forms.ComboBox comboBox41;
-        private System.Windows.Forms.ComboBox comboBox42;
-        private System.Windows.Forms.ComboBox comboBox43;
-        private System.Windows.Forms.ComboBox comboBox44;
+        private System.Windows.Forms.ComboBox cbo10Mano;
+        private System.Windows.Forms.ComboBox cbo10Cuello;
+        private System.Windows.Forms.ComboBox cbo10Dorsal;
+        private System.Windows.Forms.ComboBox cbo10Codo;
+        private System.Windows.Forms.ComboBox cbo10Hombro;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtComentarios;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txt2Mano;
+        private System.Windows.Forms.TextBox txt2Codo;
+        private System.Windows.Forms.TextBox txt2Dorsal;
+        private System.Windows.Forms.TextBox txt2Hombro;
+        private System.Windows.Forms.TextBox txt2Cuello;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.ComboBox cbo1ManoDir;
+        private System.Windows.Forms.ComboBox cbo1CodoDir;
+        private System.Windows.Forms.ComboBox cbo1HombroDir;
     }
 }

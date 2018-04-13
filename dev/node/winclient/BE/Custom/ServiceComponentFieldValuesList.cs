@@ -28,5 +28,6 @@ namespace Sigesoft.Node.WinClient.BE
         public string v_Value1Name { get; set; }
 
         public int i_GroupId { get; set; }
+        public string v_ComponentId { get; set; }
     }
 }

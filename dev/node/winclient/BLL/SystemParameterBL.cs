@@ -507,5 +507,36 @@ namespace Sigesoft.Node.WinClient.BLL
             return maxId;
 
         }
+
+        public List<KeyValueDTO> GetSystemParameterForCombo(ref OperationResult pobjOperationResult, int pintGroupId)
+        {
+            //mon.IsActive = true;
+
+            try
+            {
+                SigesoftEntitiesModel dbContext = new SigesoftEntitiesModel();
+                List<KeyValueDTO> DataSystemParameterList;
+                DataSystemParameterList = (from a in dbContext.systemparameter
+                                           where a.i_GroupId == pintGroupId
+                                           select a).AsEnumerable()
+                                           .Select(x => new KeyValueDTO
+                                           {
+                                               Id = x.i_ParameterId.ToString(),
+                                               Value1 = x.v_Value1,
+                                               Value2 = x.v_Value2
+                                           }).ToList();
+
+                pobjOperationResult.Success = 1;
+                return DataSystemParameterList;
+
+            }
+            catch (Exception ex)
+            {
+                pobjOperationResult.Success = 0;
+                pobjOperationResult.ExceptionMessage = ex.Message;
+                return null;
+            }
+        }
+
     }
 }

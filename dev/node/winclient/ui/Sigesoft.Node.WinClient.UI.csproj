@@ -1935,11 +1935,11 @@
     <Compile Include="UserControls\ucBoton.designer.cs">
       <DependentUpon>ucBoton.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucCuestNordico.cs">
+    <Compile Include="UserControls\UcCuestNordico.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ucCuestNordico.Designer.cs">
-      <DependentUpon>ucCuestNordico.cs</DependentUpon>
+    <Compile Include="UserControls\UcCuestNordico.Designer.cs">
+      <DependentUpon>UcCuestNordico.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ucFileUpload.cs">
       <SubType>UserControl</SubType>
@@ -2744,8 +2744,8 @@
     <EmbeddedResource Include="UserControls\ucBoton.resx">
       <DependentUpon>ucBoton.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucCuestNordico.resx">
-      <DependentUpon>ucCuestNordico.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\UcCuestNordico.resx">
+      <DependentUpon>UcCuestNordico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucFileUpload.resx">
       <DependentUpon>ucFileUpload.cs</DependentUpon>

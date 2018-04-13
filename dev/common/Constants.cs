@@ -2504,7 +2504,6 @@ namespace Sigesoft.Common
 
         #endregion
 
-
         #region CIE10
 
         public const string ALERGIA_NO_ESPECIFICADA = "N002-DD000000272";
@@ -2630,7 +2629,6 @@ namespace Sigesoft.Common
 
         #endregion
 
-
         #region Evaluacion PsicoLaboral
         public const string EVALUACION_PSICOLABORAL = "N009-ME000000072";
 
@@ -2681,7 +2679,13 @@ namespace Sigesoft.Common
    
         #endregion
 
-        //
+        #region Cuestionario Nordico
+
+        public const string CUESTIONARIO_NORDICO = "N009-ME000000095";
+
+        
+
+        #endregion
 
     }
 }
