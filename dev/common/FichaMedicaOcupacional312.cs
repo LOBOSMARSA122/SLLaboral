@@ -108,7 +108,7 @@ namespace NetPdf
             PdfPCell cellPhoto1 = null;
 
             if (filiationData.b_Photo != null)
-                cellPhoto1 = new PdfPCell(HandlingItextSharp.GetImage(filiationData.b_Photo, 23F)) { HorizontalAlignment = PdfPCell.ALIGN_RIGHT };
+                cellPhoto1 = new PdfPCell(HandlingItextSharp.GetImage(filiationData.b_Photo, 33F)) { HorizontalAlignment = PdfPCell.ALIGN_RIGHT };
             else
                 cellPhoto1 = new PdfPCell(new Phrase("Sin Foto", fontColumnValue)) { HorizontalAlignment = PdfPCell.ALIGN_RIGHT };
 
@@ -139,7 +139,7 @@ namespace NetPdf
             cells.Add(new PdfPCell(table));
             cells.Add(cellPhoto1);
 
-            columnWidths = new float[] { 20f, 60f, 20f };
+            columnWidths = new float[] { 20f, 60f, 30f };
 
             table = HandlingItextSharp.GenerateTableFromCells(cells, columnWidths, PdfPCell.NO_BORDER, null, fontTitleTable);
             document.Add(table);

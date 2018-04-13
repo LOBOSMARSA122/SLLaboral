@@ -162,5 +162,7 @@ namespace Sigesoft.Node.WinClient.BE
         public string AgudezaVisualLejosCorregidaOD { get; set; }
         public string AgudezaVisualLejosCorregidaOI { get; set; }
         public string Oftalmologia { get; set; }
+        public string Trigliceridos { get; set; }
+       
     }
 }

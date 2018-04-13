@@ -113,6 +113,7 @@ namespace Sigesoft.Node.WinClient.UI.Operations
         bool isDisabledButtonsExamDx = false;
         byte[] _personImage;
         string _personName;
+        string _personName_inter;
 
         private List<ServiceComponentFieldValuesList> _tmpListValuesOdontograma = null;
         frmWaiting frmWaiting = new frmWaiting("Grabando...");
@@ -1245,6 +1246,7 @@ namespace Sigesoft.Node.WinClient.UI.Operations
                 _Dni = personData.v_DocNumber;
                 _FechaServico = personData.d_ServiceDate;
                 _personName = string.Format("{0} {1} {2} {3}", personData.v_FirstLastName, personData.v_SecondLastName, personData.v_FirstName,personData.v_DocNumber);
+                _personName_inter = string.Format("{0} {1} {2}", personData.v_FirstName, personData.v_FirstLastName, personData.v_SecondLastName);
                 gbDatosPaciente.Text = string.Format("Datos del Paciente: {0} Tipo de Servicio: {1} Servicio: {2}", _personName, personData.v_ServiceTypeName, personData.v_MasterServiceName);
                 _personId = personData.v_PersonId;
                 if (personData.b_PersonImage != null)
@@ -5827,7 +5829,7 @@ namespace Sigesoft.Node.WinClient.UI.Operations
 
         private void btnSubirInterconsulta_Click(object sender, EventArgs e)
         {
-            frmSubirInterconsulta frm = new frmSubirInterconsulta(_serviceId, _personName);
+            frmSubirInterconsulta frm = new frmSubirInterconsulta(_serviceId, _personName_inter);
             frm.ShowDialog();
         }
 

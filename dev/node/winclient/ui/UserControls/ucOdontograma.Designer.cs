@@ -3216,7 +3216,7 @@
             this.groupBox6.Controls.Add(this.label37);
             this.groupBox6.Controls.Add(this.label38);
             this.groupBox6.Controls.Add(this.label40);
-            this.groupBox6.Location = new System.Drawing.Point(8, 3);
+            this.groupBox6.Location = new System.Drawing.Point(20, 0);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(508, 43);
             this.groupBox6.TabIndex = 417;

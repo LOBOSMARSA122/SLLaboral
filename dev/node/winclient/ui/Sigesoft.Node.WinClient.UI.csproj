@@ -64,8 +64,18 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ZKFPEngXControl">
+      <HintPath>..\..\..\..\..\SLSanLorenzo\Sigesoft\node\winclient\ui\bin\Debug\AxInterop.ZKFPEngXControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bytescout.Spreadsheet, Version=2.8.5.1643, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\Bytescout.Spreadsheet.dll</HintPath>
+    </Reference>
     <Reference Include="Controls">
-      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\Controls.dll</HintPath>
+      <HintPath>..\..\..\..\..\SLSanLorenzo\Sigesoft\node\winclient\ui\bin\Debug\Controls.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -78,6 +88,9 @@
     </Reference>
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <Private>True</Private>
+    </Reference>
+    <Reference Include="FineUI">
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\FineUI.dll</HintPath>
     </Reference>
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
       <Private>True</Private>
@@ -115,8 +128,8 @@
     <Reference Include="Infragistics4.Win.v13.1, Version=13.1.20131.1001, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ionic.Zip.Reduced">
-      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\Ionic.Zip.Reduced.dll</HintPath>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -130,10 +143,20 @@
     <Reference Include="Microsoft.TeamFoundation.Diff, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NCalc">
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfViewer">
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\PdfViewer.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="SigPlusNET">
-      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\SigPlusNET.dll</HintPath>
+      <HintPath>..\..\..\..\..\SLSanLorenzo\Sigesoft\node\winclient\ui\bin\Debug\SigPlusNET.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -158,7 +181,7 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WebCam_Capture">
-      <HintPath>..\..\..\..\..\SLCajamarca\ExternalLibraries\WebCam_Capture.dll</HintPath>
+      <HintPath>..\..\..\..\..\SLSanLorenzo\Sigesoft\node\winclient\ui\bin\Debug\WebCam_Capture.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -1897,6 +1920,12 @@
     <Compile Include="UserControls\ucBoton.designer.cs">
       <DependentUpon>ucBoton.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucCuestNordico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCuestNordico.Designer.cs">
+      <DependentUpon>ucCuestNordico.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucFileUpload.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1908,6 +1937,12 @@
     </Compile>
     <Compile Include="UserControls\ucOdontograma.Designer.cs">
       <DependentUpon>ucOdontograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucOsteoMuscular.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucOsteoMuscular.Designer.cs">
+      <DependentUpon>ucOsteoMuscular.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\Utils.cs" />
     <EmbeddedResource Include="Configuration\frmExternalUserEdit.resx">
@@ -2690,12 +2725,18 @@
     <EmbeddedResource Include="UserControls\ucBoton.resx">
       <DependentUpon>ucBoton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCuestNordico.resx">
+      <DependentUpon>ucCuestNordico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucFileUpload.resx">
       <DependentUpon>ucFileUpload.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucOdontograma.resx">
       <DependentUpon>ucOdontograma.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucOsteoMuscular.resx">
+      <DependentUpon>ucOsteoMuscular.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
@@ -3287,14 +3328,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="AxZKFPEngXControl">
-      <Guid>{D95CB779-00CB-4B49-97B9-9F0B61CAB3C1}</Guid>
-      <VersionMajor>4</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>2</VersionMajor>
@@ -3375,6 +3408,36 @@
     <Content Include="Backgrounds\FOTO-20.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\rotet03.jpg" />
+    <None Include="Resources\rotet02.jpg" />
+    <None Include="Resources\rotet01.jpg" />
+    <None Include="Resources\rot9003.jpg" />
+    <None Include="Resources\rot9002.jpg" />
+    <None Include="Resources\rot9001.jpg" />
+    <None Include="Resources\ad03.jpg" />
+    <None Include="Resources\ad02.jpg" />
+    <None Include="Resources\ad01.jpg" />
+    <None Include="Resources\ab03.jpg" />
+    <None Include="Resources\ab02.jpg" />
+    <None Include="Resources\ab01.jpg" />
+    <None Include="Resources\abd04.jpg" />
+    <None Include="Resources\abd03.jpg" />
+    <None Include="Resources\abd02.jpg" />
+    <None Include="Resources\abd01.jpg" />
+    <None Include="Resources\muslo04.jpg" />
+    <None Include="Resources\muslo03.jpg" />
+    <None Include="Resources\muslo02.jpg" />
+    <None Include="Resources\muslo01.jpg" />
+    <None Include="Resources\cad04.jpg" />
+    <None Include="Resources\cad03.jpg" />
+    <None Include="Resources\cad02.jpg" />
+    <None Include="Resources\cad01.jpg" />
+    <None Include="Resources\33.jpg" />
+    <None Include="Resources\22.jpg" />
+    <None Include="Resources\011.jpg" />
+    <None Include="Resources\01.jpg" />
+    <None Include="Resources\nordico02.jpg" />
+    <None Include="Resources\nordico.jpg" />
     <None Include="Resources\time.png" />
     <None Include="Resources\cuadroblanco.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

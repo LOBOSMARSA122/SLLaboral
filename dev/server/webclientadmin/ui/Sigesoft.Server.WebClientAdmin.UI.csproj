@@ -57,7 +57,7 @@
     </Reference>
     <Reference Include="FineUI, Version=3.2.6.0, Culture=neutral, PublicKeyToken=0ff1835d01c384a9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\externallibraries\Web\FineUI.dll</HintPath>
+      <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\FineUI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp">
       <Private>True</Private>

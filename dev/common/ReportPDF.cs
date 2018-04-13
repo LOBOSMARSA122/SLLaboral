@@ -117,7 +117,7 @@ namespace NetPdf
                 PdfPCell cellPhoto = null;
 
                 if (filiationData.b_Photo != null)
-                    cellPhoto = new PdfPCell(HandlingItextSharp.GetImage(filiationData.b_Photo, 15F));
+                    cellPhoto = new PdfPCell(HandlingItextSharp.GetImage(filiationData.b_Photo, 30F));
                 else
                     cellPhoto = new PdfPCell(new Phrase("Sin Foto", fontColumnValue));
 
@@ -146,6 +146,7 @@ namespace NetPdf
                     new PdfPCell(new Phrase("Médico: ", fontColumnValue)), new PdfPCell(new Phrase("Dr(a)." + filiationData.v_DoctorPhysicalExamName, fontColumnValue)),                   
                     new PdfPCell(new Phrase("Fecha At: ", fontColumnValue)), new PdfPCell(new Phrase(filiationData.d_ServiceDate.Value.ToShortDateString(), fontColumnValue)),                   
                     new PdfPCell(new Phrase(" ", fontColumnValue)),                  
+
                                                    
                 };
 
@@ -857,7 +858,7 @@ namespace NetPdf
                 PdfPCell cellPhoto = null;
 
                 if (filiationData.b_Photo != null)
-                    cellPhoto = new PdfPCell(HandlingItextSharp.GetImage(filiationData.b_Photo, 15F));
+                    cellPhoto = new PdfPCell(HandlingItextSharp.GetImage(filiationData.b_Photo, 20F));
                 else
                     cellPhoto = new PdfPCell(new Phrase("Sin Foto", fontColumnValue));
 
@@ -869,7 +870,7 @@ namespace NetPdf
                 {
                     new PdfPCell(new Phrase("Nombres: ", fontColumnValue)), new PdfPCell(new Phrase(filiationData.v_FirstName, fontColumnValue)),                   
                     new PdfPCell(new Phrase("Apellidos: ", fontColumnValue)), new PdfPCell(new Phrase(filiationData.v_FirstLastName + " " + filiationData.v_SecondLastName , fontColumnValue)),                   
-                    new PdfPCell(new Phrase("Foto:", fontColumnValue)) { HorizontalAlignment = PdfPCell.ALIGN_RIGHT }, cellPhoto,
+                    new PdfPCell(new Phrase("Foto", fontColumnValue)) { HorizontalAlignment = PdfPCell.ALIGN_RIGHT }, cellPhoto,
                                                                                         
                     new PdfPCell(new Phrase("Edad: ", fontColumnValue)), new PdfPCell(new Phrase(filiationData.i_Age.ToString(), fontColumnValue)),                   
                     new PdfPCell(new Phrase("Seguro: ", fontColumnValue)), new PdfPCell(new Phrase(filiationData.v_TypeOfInsuranceName, fontColumnValue)),                   
@@ -885,7 +886,7 @@ namespace NetPdf
                                                    
                 };
 
-                columnWidths = new float[] { 20.6f, 40.6f, 16.6f, 34.6f, 6.6f, 14.6f };
+                columnWidths = new float[] { 10.6f, 45.6f, 16.6f, 34.6f, 6.6f, 20.0f };
 
                 filiationWorker = HandlingItextSharp.GenerateTableFromCells(cells, columnWidths, PdfPCell.NO_BORDER, "I. DATOS DE FILIACIÓN", fontTitleTableNegro, null);
 
