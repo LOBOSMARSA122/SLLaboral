@@ -497,6 +497,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsRadiologico.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\dsReporteApnea.cs">
+      <DependentUpon>dsReporteApnea.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\dsReporteApnea.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReporteApnea.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\dsRoadMap.cs">
       <DependentUpon>dsRoadMap.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -833,6 +842,12 @@
     </Compile>
     <Compile Include="Operations\Popups\frmSelectSignature.Designer.cs">
       <DependentUpon>frmSelectSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\crApnea.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crApnea.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\crCertificateRetirosSinDx.cs">
       <DependentUpon>crCertificateRetirosSinDx.rpt</DependentUpon>
@@ -2097,6 +2112,10 @@
     <EmbeddedResource Include="Operations\Popups\frmSelectSignature.resx">
       <DependentUpon>frmSelectSignature.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crApnea.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crApnea.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\crCertificateRetirosSinDx.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crCertificateRetirosSinDx.cs</LastGenOutput>
@@ -3202,6 +3221,17 @@
     </None>
     <None Include="Dataset\dsRadiologico.xss">
       <DependentUpon>dsRadiologico.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsReporteApnea.xsc">
+      <DependentUpon>dsReporteApnea.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsReporteApnea.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReporteApnea.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsReporteApnea.xss">
+      <DependentUpon>dsReporteApnea.xsd</DependentUpon>
     </None>
     <None Include="Dataset\dsRoadMap.xsc">
       <DependentUpon>dsRoadMap.xsd</DependentUpon>

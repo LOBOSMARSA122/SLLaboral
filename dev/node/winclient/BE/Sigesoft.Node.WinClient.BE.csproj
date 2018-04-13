@@ -119,6 +119,7 @@
     <Compile Include="Custom\ReportCuestionarioEspirometria.cs" />
     <Compile Include="Custom\ReportCuestionarioNordico.cs" />
     <Compile Include="Custom\ReportCuestionarioOjoSeco.cs" />
+    <Compile Include="Custom\ReporteApnea.cs" />
     <Compile Include="Custom\ReporteAsistencia.cs" />
     <Compile Include="Custom\ReporteAtencionMedicaDetallado.cs" />
     <Compile Include="Custom\ReportEsfuerzoFisico.cs" />

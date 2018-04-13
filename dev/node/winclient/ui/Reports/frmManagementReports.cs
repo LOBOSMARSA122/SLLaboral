@@ -112,6 +112,11 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     var ent = serviceComponents.FirstOrDefault(o => o.v_ComponentId == item.v_ComponentId);
                     ent.Orden = 12;
                 }
+                else if (item.v_ComponentId == "N009-ME000000094")
+                {
+                    var ent = serviceComponents.FirstOrDefault(o => o.v_ComponentId == item.v_ComponentId);
+                    if (ent != null) ent.Orden = 12;
+                }
                 else if (item.v_ComponentId == Constants.TEST_SINTOMATICO_RESP_ID)
                 {
                     var ent = serviceComponents.FirstOrDefault(o => o.v_ComponentId == item.v_ComponentId);
@@ -201,8 +206,8 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                 Constants.PRUEBA_ESFUERZO_ID,
                 Constants.PSICOLOGIA_ID,
                 Constants.GINECOLOGIA_ID,
-                Constants.C_N_ID
-           
+                Constants.C_N_ID,
+                "N009-ME000000094"
                 //Constants.TEST_VERTIGO_ID,
             };
 
@@ -363,7 +368,8 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                 Constants.EVA_CARDIOLOGICA_ID,
                 Constants.TEST_SOMNOLENCIA_ID,
                 Constants.TEST_CHOFERES_ID,
-                Constants.TEST_SINTOMATICO_RESP_ID
+                Constants.TEST_SINTOMATICO_RESP_ID,
+                "N009-ME000000094"
             };
 
             #endregion
@@ -1399,7 +1405,6 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     break;
                 case Constants.TEST_SOMNOLENCIA_ID:
 
-
                     var TEST_SOMNOLENCIA_ID = new ServiceBL().GetReportTestSomnolencia(_serviceId, Constants.TEST_SOMNOLENCIA_ID);
 
                     dsGetRepo = new DataSet();
@@ -1419,6 +1424,28 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     rp.Export();
 
                     break;
+
+                case "N009-ME000000094":
+                    var apnea = new ServiceBL().ReporteApnea(_serviceId, "N009-ME000000094");
+                    dsGetRepo = new DataSet();
+                    DataTable dtApnea = BLL.Utils.ConvertToDatatable(apnea);
+                    dtApnea.TableName = "dtReporteApnea";
+                    dsGetRepo.Tables.Add(dtApnea);
+                    rp = new crApnea();
+                    rp.SetDataSource(dsGetRepo);
+
+                    rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
+                    rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
+                    objDiskOpt = new DiskFileDestinationOptions
+                    {
+                        DiskFileName = Application.StartupPath + @"\TempMerge\" + "N009-ME000000094" + ".pdf"
+                    };
+                    _filesNameToMerge.Add(objDiskOpt.DiskFileName);
+                    rp.ExportOptions.DestinationOptions = objDiskOpt;
+                    rp.Export();
+
+                    break;
+
                 case Constants.TEST_SINTOMATICO_RESP_ID:
                     var TEST_SINTOMATICO_RESP_ID = new ServiceBL().GetReportTestSintomaticoResp(_serviceId, Constants.TEST_SINTOMATICO_RESP_ID);
                     dsGetRepo = new DataSet();
