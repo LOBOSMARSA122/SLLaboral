@@ -2683,9 +2683,9 @@ namespace Sigesoft.Common
 
         public const string CUESTIONARIO_NORDICO = "N009-ME000000095";
 
-        
-
         #endregion
+
+        public const string OSTEO_MUSCULAR_UC = "N009-ME000000096";
 
     }
 }
