@@ -6518,7 +6518,6 @@ namespace Sigesoft.Node.WinClient.BLL
 
         }
 
-
         public List<DiagnosticRepositoryList> GetAptitudeCertificate(ref OperationResult pobjOperationResult, string pstrServiceId)
         {
             //mon.IsActive = true;
@@ -19323,7 +19322,6 @@ namespace Sigesoft.Node.WinClient.BLL
             }
         }
 
-
         public List<ReporteApnea> ReporteApnea(string pstrServiceId, string pstrComponentId)
         {
             try
@@ -19371,7 +19369,7 @@ namespace Sigesoft.Node.WinClient.BLL
                                      FirmaUsuarioGraba = pme.b_SignatureImage,
                                  }).ToList();
 
-                var valor = ValoresComponentesUserControl(pstrServiceId, pstrComponentId).ToList();
+                var valor = ValoresComponente(pstrServiceId, pstrComponentId).ToList();
                 var sql = (from a in servicios.ToList()
                             select new ReporteApnea
                             {
@@ -19426,6 +19424,154 @@ namespace Sigesoft.Node.WinClient.BLL
                                 EstaRecibiendoTratamiento7= valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-MF000001642") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-MF000001642").v_Value1,
                                 SeLeHaRealzadoUnaPsg8= valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-MF000001643") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-MF000001643").v_Value1,
                             }).ToList();
+
+                return sql;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
+        public List<ReporteCuestionarioNordico> ReporteCuestionarioNordico(string pstrServiceId, string pstrComponentId)
+        {
+            try
+            {
+                SigesoftEntitiesModel dbContext = new SigesoftEntitiesModel();
+
+                var servicios = (from ser in dbContext.service
+                                 join serCom in dbContext.servicecomponent on ser.v_ServiceId equals serCom.v_ServiceId
+                                 join per in dbContext.person on ser.v_PersonId equals per.v_PersonId
+                                 join doc in dbContext.datahierarchy on new { a = per.i_DocTypeId.Value, b = 106 } equals new { a = doc.i_ItemId, b = doc.i_GroupId } into doc_join
+                                 from doc in doc_join.DefaultIfEmpty()
+                                 join prot in dbContext.protocol on ser.v_ProtocolId equals prot.v_ProtocolId
+                                 join empCli in dbContext.organization on prot.v_CustomerOrganizationId equals empCli.v_OrganizationId
+                                 join empTrab in dbContext.organization on prot.v_WorkingOrganizationId equals empTrab.v_OrganizationId
+                                 join empEmp in dbContext.organization on prot.v_EmployerOrganizationId equals empEmp.v_OrganizationId
+                                 join gen in dbContext.systemparameter on new { a = per.i_DocTypeId.Value, b = 100 } equals new { a = gen.i_ParameterId, b = gen.i_GroupId } into gen_join
+                                 from gen in gen_join.DefaultIfEmpty()
+                                 join me in dbContext.systemuser on serCom.i_ApprovedUpdateUserId equals me.i_SystemUserId into me_join
+                                 from me in me_join.DefaultIfEmpty()
+                                 join pme in dbContext.professional on me.v_PersonId equals pme.v_PersonId into pme_join
+                                 from pme in pme_join.DefaultIfEmpty()
+                                 where ser.v_ServiceId == pstrServiceId
+                                 select new ReporteCuestionarioNordico
+                                 {
+                                     ServiceId = ser.v_ServiceId,
+                                     ServiceComponentId = serCom.v_ServiceComponentId,
+                                     FechaServicio = ser.d_ServiceDate.Value,
+                                     Nombres = per.v_FirstName,
+                                     ApellidoPaterno = per.v_FirstLastName,
+                                     ApellidoMaterno = per.v_SecondLastName,
+                                     NombreCompleto = per.v_FirstLastName + " " + per.v_SecondLastName + " " + per.v_FirstName,
+                                     FechaNacimiento = per.d_Birthdate.Value,
+                                     //Edad = "",
+                                     TipoDocumentoId = per.i_DocTypeId.Value,
+                                     TipoDocumento = doc.v_Value1,
+                                     NroDocumento = per.v_DocNumber,
+                                     EmpresaCliente = empCli.v_Name,
+                                     EmpresaTrabajo = empTrab.v_Name,
+                                     EmpresaEmpleadora = empEmp.v_Name,
+                                     Puesto = per.v_CurrentOccupation,
+                                     GeneroId = per.i_SexTypeId.Value,
+                                     Genero = gen.v_Value1,
+                                     FirmaTrabajador = per.b_RubricImage,
+                                     HuellaTrabajador = per.b_FingerPrintImage,
+                                     FirmaUsuarioGraba = pme.b_SignatureImage,
+                                 }).ToList();
+
+                var valor = ValoresComponentesUserControl(pstrServiceId, pstrComponentId).ToList();
+                var sql = (from a in servicios.ToList()
+                           select new ReporteCuestionarioNordico
+                           {
+                               ServiceId = a.ServiceId,
+                               ServiceComponentId = a.ServiceComponentId,
+                               FechaServicio = a.FechaServicio,
+                               Nombres = a.Nombres,
+                               ApellidoPaterno = a.ApellidoPaterno,
+                               ApellidoMaterno = a.ApellidoMaterno,
+                               NombreCompleto = a.NombreCompleto,
+                               FechaNacimiento = a.FechaNacimiento,
+                               Edad = GetAge(a.FechaNacimiento.Value),
+                               TipoDocumentoId = a.TipoDocumentoId,
+                               TipoDocumento = a.TipoDocumento,
+                               NroDocumento = a.NroDocumento,
+                               EmpresaCliente = a.EmpresaCliente,
+                               EmpresaTrabajo = a.EmpresaTrabajo,
+                               EmpresaEmpleadora = a.EmpresaEmpleadora,
+                               Puesto = a.Puesto,
+                               GeneroId = a.GeneroId,
+                               Genero = a.Genero,
+                               FirmaTrabajador = a.FirmaTrabajador,
+                               HuellaTrabajador = a.HuellaTrabajador,
+                               FirmaUsuarioGraba = a.FirmaUsuarioGraba,
+                               Cbo1Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000001") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000001").v_Value1,
+                               Cbo1Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000002") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000002").v_Value1,
+                               Cbo1Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000003") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000003").v_Value1,
+                               Cbo1Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000004") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000004").v_Value1,
+                               Cbo1Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000005") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000005").v_Value1,
+                               Cbo1HombroDir = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000006") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000006").v_Value1,
+                               Cbo1CodoDir = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000007") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000007").v_Value1,
+                               Cbo1ManoDir = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000008") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000008").v_Value1,
+
+                               Txt2Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000009") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000009").v_Value1,
+                               Txt2Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000010") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000010").v_Value1,
+                               Txt2Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000011") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000011").v_Value1,
+                               Txt2Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000012") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000012").v_Value1,
+                               Txt2Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000013") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000013").v_Value1,
+                               Cbo3Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000014") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000014").v_Value1,
+                               Cbo3Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000015") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000015").v_Value1,
+                               Cbo3Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000016") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000016").v_Value1,
+                               Cbo3Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000017") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000017").v_Value1,
+                               Cbo3Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000018") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000018").v_Value1,
+
+                               Cbo4Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000019") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000019").v_Value1,
+                               Cbo4Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000020") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000020").v_Value1,
+                               Cbo4Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000021") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000021").v_Value1,
+                               Cbo4Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000022") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000022").v_Value1,
+                               Cbo4Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000023") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000023").v_Value1,
+                               Cbo5Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000024") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000024").v_Value1,
+                               Cbo5Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000025") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000025").v_Value1,
+                               Cbo5Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000026") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000026").v_Value1,
+                               Cbo5Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000027") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000027").v_Value1,
+                               Cbo5Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000028") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000028").v_Value1,
+
+                               Cbo6Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000029") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000029").v_Value1,
+                               Cbo6Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000030") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000030").v_Value1,
+                               Cbo6Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000031") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000031").v_Value1,
+                               Cbo6Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000032") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000032").v_Value1,
+                               Cbo6Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000033") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000033").v_Value1,
+                               Cbo7Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000034") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000034").v_Value1,
+                               Cbo7Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000035") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000035").v_Value1,
+                               Cbo7Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000036") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000036").v_Value1,
+                               Cbo7Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000037") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000037").v_Value1,
+                               Cbo7Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000038") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000038").v_Value1,
+
+                               Cbo8Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000039") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000039").v_Value1,
+                               Cbo8Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000040") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000040").v_Value1,
+                               Cbo8Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000041") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000041").v_Value1,
+                               Cbo8Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000042") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000042").v_Value1,
+                               Cbo8Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000043") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000043").v_Value1,
+                               Cbo9Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000044") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000044").v_Value1,
+                               Cbo9Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000045") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000045").v_Value1,
+                               Cbo9Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000046") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000046").v_Value1,
+                               Cbo9Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000047") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000047").v_Value1,
+                               Cbo9Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000048") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000048").v_Value1,
+
+                               Cbo10Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000049") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000049").v_Value1,
+                               Cbo10Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000050") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000050").v_Value1,
+                               Cbo10Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000051") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000051").v_Value1,
+                               Cbo10Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000052") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000052").v_Value1,
+                               Cbo10Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000053") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000053").v_Value1,
+                               Txt11Cuello = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000054") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000054").v_Value1,
+                               Txt11Hombro = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000055") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000055").v_Value1,
+                               Txt11Dorsal = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000056") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000056").v_Value1,
+                               Txt11Codo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000057") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000057").v_Value1,
+                               Txt11Mano = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000058") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-CSN00000058").v_Value1,
+                         
+                           }).ToList();
 
                 return sql;
 
