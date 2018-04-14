@@ -207,7 +207,8 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                 Constants.PSICOLOGIA_ID,
                 Constants.GINECOLOGIA_ID,
                 Constants.C_N_ID,
-                "N009-ME000000094"
+                "N009-ME000000094",
+                "N009-ME000000095"
                 //Constants.TEST_VERTIGO_ID,
             };
 
@@ -369,7 +370,8 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                 Constants.TEST_SOMNOLENCIA_ID,
                 Constants.TEST_CHOFERES_ID,
                 Constants.TEST_SINTOMATICO_RESP_ID,
-                "N009-ME000000094"
+                "N009-ME000000094",
+                "N009-ME000000095"
             };
 
             #endregion
@@ -1439,6 +1441,27 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     objDiskOpt = new DiskFileDestinationOptions
                     {
                         DiskFileName = Application.StartupPath + @"\TempMerge\" + "N009-ME000000094" + ".pdf"
+                    };
+                    _filesNameToMerge.Add(objDiskOpt.DiskFileName);
+                    rp.ExportOptions.DestinationOptions = objDiskOpt;
+                    rp.Export();
+
+                    break;
+
+                case "N009-ME000000095":
+                    var cuestionarioNordico = new ServiceBL().ReporteCuestionarioNordico(_serviceId, "N002-ME000000022");
+                    dsGetRepo = new DataSet();
+                    DataTable dtCuestionarioNordicoUserControl = BLL.Utils.ConvertToDatatable(cuestionarioNordico);
+                    dtCuestionarioNordicoUserControl.TableName = "dtCuestionarioNordicoUserControl";
+                    dsGetRepo.Tables.Add(dtCuestionarioNordicoUserControl);
+                    rp = new crCuestionarioNordicoUserControl();
+                    rp.SetDataSource(dsGetRepo);
+
+                    rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
+                    rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
+                    objDiskOpt = new DiskFileDestinationOptions
+                    {
+                        DiskFileName = Application.StartupPath + @"\TempMerge\" + "N009-ME000000095" + ".pdf"
                     };
                     _filesNameToMerge.Add(objDiskOpt.DiskFileName);
                     rp.ExportOptions.DestinationOptions = objDiskOpt;
