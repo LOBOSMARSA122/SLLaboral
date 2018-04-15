@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Sigesoft.Common;
 using Sigesoft.Node.WinClient.BE;
+using Sigesoft.Node.WinClient.BLL;
 
 namespace Sigesoft.Node.WinClient.UI.UserControls
 {
@@ -96,232 +97,232 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
 
         private void ucOsteoMuscular_Load(object sender, EventArgs e)
         {
-            txtAnamnesis.Name = "N009-OTM00000001";//System.Windows.Forms.TextBox();
-            cboCondiAmbEspacio.Name = "N009-OTM00000002";//System.Windows.Forms.ComboBox();
-            cboCondiAmbTemperatura.Name = "N009-OTM00000003";//System.Windows.Forms.ComboBox();
-            cboCondiAmbVibraciones.Name = "N009-OTM00000004";//System.Windows.Forms.ComboBox();
-            cboCondiAmbSueloInestable.Name = "N009-OTM00000005";//System.Windows.Forms.ComboBox();
-            cboCondiAmbDesniveles.Name = "N009-OTM00000006";//System.Windows.Forms.ComboBox();
-            cboCondiAmbAltura.Name = "N009-OTM00000007";//System.Windows.Forms.ComboBox();
-            cboCondiAmbPostura.Name = "N009-OTM00000008";//System.Windows.Forms.ComboBox();
-            cboCondiAmbSuelo.Name = "N009-OTM00000009";//System.Windows.Forms.ComboBox();
-            cboExigRitmo.Name = "N009-OTM00000010";//System.Windows.Forms.ComboBox();
-            cboExigDistancias.Name = "N009-OTM00000011";//System.Windows.Forms.ComboBox();
-            cboExigPeriodo.Name = "N009-OTM00000012";//System.Windows.Forms.ComboBox();
-            cboExigEsfuerzo.Name = "N009-OTM00000013";//System.Windows.Forms.ComboBox();
-            cboEsfFisAlzar.Name = "N009-OTM00000014";//System.Windows.Forms.ComboBox();
-            cboEsfFisExiste.Name = "N009-OTM00000015";//System.Windows.Forms.ComboBox();
-            cboEsfFisCuerpo.Name = "N009-OTM00000016";//System.Windows.Forms.ComboBox();
-            cboEsfFisExige.Name = "N009-OTM00000017";//System.Windows.Forms.ComboBox();
-            cboCarCargaPeso.Name = "N009-OTM00000018";//System.Windows.Forms.ComboBox();
-            cboCarCargaManipulacion.Name = "N009-OTM00000019";//System.Windows.Forms.ComboBox();
-            cboCarCargaEquilibrio.Name = "N009-OTM00000020";//System.Windows.Forms.ComboBox();
-            cboCarCargaVolumen.Name = "N009-OTM00000021";//System.Windows.Forms.ComboBox();
-            cboExpToxCadmio.Name = "N009-OTM00000022";//System.Windows.Forms.ComboBox();
-            cboExpToxMercurio.Name = "N009-OTM00000023";//System.Windows.Forms.ComboBox();
-            cboExpToxMagneso.Name = "N009-OTM00000024";//System.Windows.Forms.ComboBox();
-            txt2Exposicion.Name = "N009-OTM00000025";//System.Windows.Forms.TextBox();
-            txt2DiasSemana.Name = "N009-OTM00000026";//System.Windows.Forms.TextBox();
-            txt2HorasSentado.Name = "N009-OTM00000027";//System.Windows.Forms.TextBox();
-            txt2Repetitivo.Name = "N009-OTM00000028";//System.Windows.Forms.TextBox();
-            txt2Anios.Name = "N009-OTM00000029";//System.Windows.Forms.TextBox();
-            txt2Horas.Name = "N009-OTM00000030";//System.Windows.Forms.TextBox();
-            cbo2RiesgoLevanta.Name = "N009-OTM00000031";//System.Windows.Forms.ComboBox();
-            cbo2RiesgoDesplaza.Name = "N009-OTM00000032";//System.Windows.Forms.ComboBox();
-            cbo2RiesgoSentado.Name = "N009-OTM00000033";//System.Windows.Forms.ComboBox();
-            cbo2RiesgoPie.Name = "N009-OTM00000034";//System.Windows.Forms.ComboBox();
-            cbo2RiesgoTracciona.Name = "N009-OTM00000035";//System.Windows.Forms.ComboBox();
-            cbo2RiesgoEmpuja.Name = "N009-OTM00000036";//System.Windows.Forms.ComboBox();
-            cbo2RiesgoColoca.Name = "N009-OTM00000037";//System.Windows.Forms.ComboBox();
-            cboEjeLordosisCervical.Name = "N009-OTM00000038";//System.Windows.Forms.ComboBox();
-            cboEjeCifosisDorsal.Name = "N009-OTM00000039";//System.Windows.Forms.ComboBox();
-            cboEjeLordosisLumbar.Name = "N009-OTM00000040";//System.Windows.Forms.ComboBox();
-            cboRotacionExt.Name = "N009-OTM00000041";//System.Windows.Forms.ComboBox();
-            cboRotacionInt.Name = "N009-OTM00000042";//System.Windows.Forms.ComboBox();
-            cboInversion.Name = "N009-OTM00000043";//System.Windows.Forms.ComboBox();
-            cboPlantiflexion.Name = "N009-OTM00000044";//System.Windows.Forms.ComboBox();
-            cboEversion.Name = "N009-OTM00000045";//System.Windows.Forms.ComboBox();
-            cboDorsoflexion.Name = "N009-OTM00000046";//System.Windows.Forms.ComboBox();
-            cboMmiiFlexion.Name = "N009-OTM00000047";//System.Windows.Forms.ComboBox();
-            cboMmiiExtension.Name = "N009-OTM00000048";//System.Windows.Forms.ComboBox();
-            cboMmiiContraResistencia.Name = "N009-OTM00000049";//System.Windows.Forms.ComboBox();
-            cboCircunduccion.Name = "N009-OTM00000050";//System.Windows.Forms.ComboBox();
-            cboDesviacionRadial.Name = "N009-OTM00000051";//System.Windows.Forms.ComboBox();
-            cboExtension.Name = "N009-OTM00000052";//System.Windows.Forms.ComboBox();
-            cboDesviacionCubital.Name = "N009-OTM00000053";//System.Windows.Forms.ComboBox();
-            cboFlexion.Name = "N009-OTM00000054";//System.Windows.Forms.ComboBox();
-            cboGenuvaro.Name = "N009-OTM00000055";//System.Windows.Forms.ComboBox();
-            cboGenuvalgo.Name = "N009-OTM00000056";//System.Windows.Forms.ComboBox();
-            cboPieCavo.Name = "N009-OTM00000057";//System.Windows.Forms.ComboBox();
-            cboPiePlano.Name = "N009-OTM00000058";//System.Windows.Forms.ComboBox();
-            cboEvaPropicepcion.Name = "N009-OTM00000059";//System.Windows.Forms.ComboBox();
-            cboPruebaMancuerda.Name = "N009-OTM00000060";//System.Windows.Forms.ComboBox();
-            cboRotulianoIzq.Name = "N009-OTM00000061";//System.Windows.Forms.ComboBox();
-            cboRotulianoDer.Name = "N009-OTM00000062";//System.Windows.Forms.ComboBox();
-            cboLasegueIzq.Name = "N009-OTM00000063";//System.Windows.Forms.ComboBox();
-            cboSchoverIzq.Name = "N009-OTM00000064";//System.Windows.Forms.ComboBox();
-            cboSchoverDer.Name = "N009-OTM00000065";//System.Windows.Forms.ComboBox();
-            cboLasegueDer.Name = "N009-OTM00000066";//System.Windows.Forms.ComboBox();
-            cboPhalenIzq.Name = "N009-OTM00000067";//System.Windows.Forms.ComboBox();
-            cboTinelIzq.Name = "N009-OTM00000068";//System.Windows.Forms.ComboBox();
-            cboTinelDer.Name = "N009-OTM00000069";//System.Windows.Forms.ComboBox();
-            cboPhalenDer.Name = "N009-OTM00000070";//System.Windows.Forms.ComboBox();
-            cboPalpacionDolor.Name = "N009-OTM00000071";//System.Windows.Forms.ComboBox();
-            cboPalpacionContractura.Name = "N009-OTM00000072";//System.Windows.Forms.ComboBox();
-            cboPalpacionApofisis.Name = "N009-OTM00000073";//System.Windows.Forms.ComboBox();
-            txtPalpacionDolor.Name = "N009-OTM00000074";//System.Windows.Forms.TextBox();
-            txtPalpacionContractura.Name = "N009-OTM00000075";//System.Windows.Forms.TextBox();
-            txtPalpacionApofisis.Name = "N009-OTM00000076";//System.Windows.Forms.TextBox();
-            cboLumbatExtension.Name = "N009-OTM00000077";//System.Windows.Forms.ComboBox();
-            cboLumbatFlexion.Name = "N009-OTM00000078";//System.Windows.Forms.ComboBox();
-            cboCervicalExtension.Name = "N009-OTM00000079";//System.Windows.Forms.ComboBox();
-            cboCervicalFlexion.Name = "N009-OTM00000080";//System.Windows.Forms.ComboBox();
-            cboLumbatLateIzquierda.Name = "N009-OTM00000081";//System.Windows.Forms.ComboBox();
-            cboLumbatLateDerecha.Name = "N009-OTM00000082";//System.Windows.Forms.ComboBox();
-            cboLumbatRotacionIzquierda.Name = "N009-OTM00000083";//System.Windows.Forms.ComboBox();
-            cboLumbatRotacionDerecha.Name = "N009-OTM00000084";//System.Windows.Forms.ComboBox();
-            cboCervicalLateIzquierda.Name = "N009-OTM00000085";//System.Windows.Forms.ComboBox();
-            cboCervicalLateDerecha.Name = "N009-OTM00000086";//System.Windows.Forms.ComboBox();
-            cboCervicalRotaIzquierda.Name = "N009-OTM00000087";//System.Windows.Forms.ComboBox();
-            cboCervicalRotaDerecha.Name = "N009-OTM00000088";//System.Windows.Forms.ComboBox();
-            cboLumbatIrradiacion.Name = "N009-OTM00000089";//System.Windows.Forms.ComboBox();
-            cboCervicalIrradiacion.Name = "N009-OTM00000090";//System.Windows.Forms.ComboBox();
-            cboAsimetriaEscoliosis.Name = "N009-OTM00000091";//System.Windows.Forms.ComboBox();
-            cboAsimetriaHombros.Name = "N009-OTM00000092";//System.Windows.Forms.ComboBox();
-            cboAsimetriaLumbar.Name = "N009-OTM00000093";//System.Windows.Forms.ComboBox();
-            cboAsimetriaCaderas.Name = "N009-OTM00000094";//System.Windows.Forms.ComboBox();
-            cboAsimetriaHipercifocis.Name = "N009-OTM00000095";//System.Windows.Forms.ComboBox();
-            cboAsimetriaRodillas.Name = "N009-OTM00000096";//System.Windows.Forms.ComboBox();
-            cboEquilibrioLateralIzquierdo.Name = "N009-OTM00000097";//System.Windows.Forms.ComboBox();
-            cboEquilibrioLateralDerecho.Name = "N009-OTM00000098";//System.Windows.Forms.ComboBox();
-            cboEquilibrioPosterior.Name = "N009-OTM00000099";//System.Windows.Forms.ComboBox();
-            cboEquilibrioAnterior.Name = "N009-OTM00000100";//System.Windows.Forms.ComboBox();
-            cboMarchaClaudicacion.Name = "N009-OTM00000101";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqRotInt.Name = "N009-OTM00000102";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqRotInt.Name = "N009-OTM00000103";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqRotInt.Name = "N009-OTM00000104";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqRotInt.Name = "N009-OTM00000105";//System.Windows.Forms.ComboBox();
-            cboCodoIzqRotInt.Name = "N009-OTM00000106";//System.Windows.Forms.ComboBox();
-            cboHombroIzqRotInt.Name = "N009-OTM00000107";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqExtension.Name = "N009-OTM00000108";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqExtension.Name = "N009-OTM00000109";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqExtension.Name = "N009-OTM00000110";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqExtension.Name = "N009-OTM00000111";//System.Windows.Forms.ComboBox();
-            cboCodoIzqExtension.Name = "N009-OTM00000112";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqFlexion.Name = "N009-OTM00000113";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqFlexion.Name = "N009-OTM00000114";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqFlexion.Name = "N009-OTM00000115";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqFlexion.Name = "N009-OTM00000116";//System.Windows.Forms.ComboBox();
-            cboHombroIzqExtension.Name = "N009-OTM00000117";//System.Windows.Forms.ComboBox();
-            cboCodoIzqFlexion.Name = "N009-OTM00000118";//System.Windows.Forms.ComboBox();
-            cboTobilloDerRotInt.Name = "N009-OTM00000119";//System.Windows.Forms.ComboBox();
-            cboRodillaDerRotInt.Name = "N009-OTM00000120";//System.Windows.Forms.ComboBox();
-            cboCaderaDerRotInt.Name = "N009-OTM00000121";//System.Windows.Forms.ComboBox();
-            cboMunecaDerRotInt.Name = "N009-OTM00000122";//System.Windows.Forms.ComboBox();
-            cboHombroIzqFlexion.Name = "N009-OTM00000123";//System.Windows.Forms.ComboBox();
-            cboCodoDerRotInt.Name = "N009-OTM00000124";//System.Windows.Forms.ComboBox();
-            cboTobilloDerExtension.Name = "N009-OTM00000125";//System.Windows.Forms.ComboBox();
-            cboRodillaDerExtension.Name = "N009-OTM00000126";//System.Windows.Forms.ComboBox();
-            cboCaderaDerExtension.Name = "N009-OTM00000127";//System.Windows.Forms.ComboBox();
-            cboMunecaDerExtension.Name = "N009-OTM00000128";//System.Windows.Forms.ComboBox();
-            cboHombroDerRotInt.Name = "N009-OTM00000129";//System.Windows.Forms.ComboBox();
-            cboCodoDerExtension.Name = "N009-OTM00000130";//System.Windows.Forms.ComboBox();
-            cboTobilloDerFlexion.Name = "N009-OTM00000131";//System.Windows.Forms.ComboBox();
-            cboRodillaDerFlexion.Name = "N009-OTM00000132";//System.Windows.Forms.ComboBox();
-            cboCaderaDerFlexion.Name = "N009-OTM00000133";//System.Windows.Forms.ComboBox();
-            cboMunecaDerFlexion.Name = "N009-OTM00000134";//System.Windows.Forms.ComboBox();
-            cboHombroDerExtension.Name = "N009-OTM00000135";//System.Windows.Forms.ComboBox();
-            cboCodoDerFlexion.Name = "N009-OTM00000136";//System.Windows.Forms.ComboBox();
-            cboHombroDerFlexion.Name = "N009-OTM00000137";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqTono.Name = "N009-OTM00000138";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqTono.Name = "N009-OTM00000139";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqTono.Name = "N009-OTM00000140";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqFuerza.Name = "N009-OTM00000141";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqTono.Name = "N009-OTM00000142";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqFuerza.Name = "N009-OTM00000143";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqFuerza.Name = "N009-OTM00000144";//System.Windows.Forms.ComboBox();
-            cboCodoIzqTono.Name = "N009-OTM00000145";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqAbduccion.Name = "N009-OTM00000146";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqFuerza.Name = "N009-OTM00000147";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqAbduccion.Name = "N009-OTM00000148";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqAbduccion.Name = "N009-OTM00000149";//System.Windows.Forms.ComboBox();
-            cboCodoIzqFuerza.Name = "N009-OTM00000150";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqAduccion.Name = "N009-OTM00000151";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqAbduccion.Name = "N009-OTM00000152";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqAduccion.Name = "N009-OTM00000153";//System.Windows.Forms.ComboBox();
-            cboHombroIzqTono.Name = "N009-OTM00000154";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqAduccion.Name = "N009-OTM00000155";//System.Windows.Forms.ComboBox();
-            cboCodoIzqAbduccion.Name = "N009-OTM00000156";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqRotExt.Name = "N009-OTM00000157";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqAduccion.Name = "N009-OTM00000158";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqRotExt.Name = "N009-OTM00000159";//System.Windows.Forms.ComboBox();
-            cboHombroIzqFuerza.Name = "N009-OTM00000160";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqRotExt.Name = "N009-OTM00000161";//System.Windows.Forms.ComboBox();
-            cboCodoIzqAduccion.Name = "N009-OTM00000162";//System.Windows.Forms.ComboBox();
-            cboTobilloDerTono.Name = "N009-OTM00000163";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqRotExt.Name = "N009-OTM00000164";//System.Windows.Forms.ComboBox();
-            cboRodillaDerTono.Name = "N009-OTM00000165";//System.Windows.Forms.ComboBox();
-            cboHombroIzqAbduccion.Name = "N009-OTM00000166";//System.Windows.Forms.ComboBox();
-            cboCaderaDerTono.Name = "N009-OTM00000167";//System.Windows.Forms.ComboBox();
-            cboCodoIzqRotExt.Name = "N009-OTM00000168";//System.Windows.Forms.ComboBox();
-            cboTobilloDerFuerza.Name = "N009-OTM00000169";//System.Windows.Forms.ComboBox();
-            cboMunecaDerTono.Name = "N009-OTM00000170";//System.Windows.Forms.ComboBox();
-            cboRodillaDerFuerza.Name = "N009-OTM00000171";//System.Windows.Forms.ComboBox();
-            cboHombroIzqAduccion.Name = "N009-OTM00000172";//System.Windows.Forms.ComboBox();
-            cboCaderaDerFuerza.Name = "N009-OTM00000173";//System.Windows.Forms.ComboBox();
-            cboCodoDerTono.Name = "N009-OTM00000174";//System.Windows.Forms.ComboBox();
-            cboTobilloDerAbduccion.Name = "N009-OTM00000175";//System.Windows.Forms.ComboBox();
-            cboMunecaDerFuerza.Name = "N009-OTM00000176";//System.Windows.Forms.ComboBox();
-            cboRodillaDerAbduccion.Name = "N009-OTM00000177";//System.Windows.Forms.ComboBox();
-            cboHombroIzqRotExt.Name = "N009-OTM00000178";//System.Windows.Forms.ComboBox();
-            cboCaderaDerAbduccion.Name = "N009-OTM00000179";//System.Windows.Forms.ComboBox();
-            cboCodoDerFuerza.Name = "N009-OTM00000180";//System.Windows.Forms.ComboBox();
-            cboTobilloDerAduccion.Name = "N009-OTM00000181";//System.Windows.Forms.ComboBox();
-            cboMunecaDerAbduccion.Name = "N009-OTM00000182";//System.Windows.Forms.ComboBox();
-            cboRodillaDerAduccion.Name = "N009-OTM00000183";//System.Windows.Forms.ComboBox();
-            cboHombroDerTono.Name = "N009-OTM00000184";//System.Windows.Forms.ComboBox();
-            cboCaderaDerAduccion.Name = "N009-OTM00000185";//System.Windows.Forms.ComboBox();
-            cboCodoDerAbduccion.Name = "N009-OTM00000186";//System.Windows.Forms.ComboBox();
-            cboTobilloDerRotExt.Name = "N009-OTM00000187";//System.Windows.Forms.ComboBox();
-            cboMunecaDerAduccion.Name = "N009-OTM00000189";//System.Windows.Forms.ComboBox();
-            cboRodillaDerRotExt.Name = "N009-OTM00000190";//System.Windows.Forms.ComboBox();
-            cboHombroDerFuerza.Name = "N009-OTM00000191";//System.Windows.Forms.ComboBox();
-            cboCaderaDerRotExt.Name = "N009-OTM00000192";//System.Windows.Forms.ComboBox();
-            cboCodoDerAduccion.Name = "N009-OTM00000193";//System.Windows.Forms.ComboBox();
-            cboTobilloIzqDolor.Name = "N009-OTM00000194";//System.Windows.Forms.ComboBox();
-            cboMunecaDerRotExt.Name = "N009-OTM00000195";//System.Windows.Forms.ComboBox();
-            cboRodillaIzqDolor.Name = "N009-OTM00000196";//System.Windows.Forms.ComboBox();
-            cboHombroDerAbduccion.Name = "N009-OTM00000197";//System.Windows.Forms.ComboBox();
-            cboCaderaIzqDolor.Name = "N009-OTM00000198";//System.Windows.Forms.ComboBox();
-            cboCodoDerRotExt.Name = "N009-OTM00000199";//System.Windows.Forms.ComboBox();
-            cboTobilloDerDolor.Name = "N009-OTM00000200";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqDolor.Name = "N009-OTM00000201";//System.Windows.Forms.ComboBox();
-            cboRodillaDerDolor.Name = "N009-OTM00000202";//System.Windows.Forms.ComboBox();
-            cboHombroDerAduccion.Name = "N009-OTM00000203";//System.Windows.Forms.ComboBox();
-            cboCaderaDerDolor.Name = "N009-OTM00000204";//System.Windows.Forms.ComboBox();
-            cboCodoIzqDolor.Name = "N009-OTM00000205";//System.Windows.Forms.ComboBox();
-            cboMunecaDerDolor.Name = "N009-OTM00000206";//System.Windows.Forms.ComboBox();
-            cboHombroDerRotExt.Name = "N009-OTM00000207";//System.Windows.Forms.ComboBox();
-            cboCodoDerDolor.Name = "N009-OTM00000208";//System.Windows.Forms.ComboBox();
-            cboHombroIzqDolor.Name = "N009-OTM00000209";//System.Windows.Forms.ComboBox();
-            cboHombroDerDolor.Name = "N009-OTM00000210";//System.Windows.Forms.ComboBox();
-            cboCodoIzqSupinacion.Name = "N009-OTM00000211";//System.Windows.Forms.ComboBox();
-            cboCodoIzqPronacion.Name = "N009-OTM00000212";//System.Windows.Forms.ComboBox();
-            cboCodoDerSupinacion.Name = "N009-OTM00000213";//System.Windows.Forms.ComboBox();
-            cboCodoDerPronacion.Name = "N009-OTM00000214";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqRadial.Name = "N009-OTM00000215";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqCubital.Name = "N009-OTM00000216";//System.Windows.Forms.ComboBox();
-            cboMunecaDerRadial.Name = "N009-OTM00000217";//System.Windows.Forms.ComboBox();
-            cboMunecaDerCubital.Name = "N009-OTM00000218";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqInversion.Name = "N009-OTM00000219";//System.Windows.Forms.ComboBox();
-            cboMunecaIzqEversion.Name = "N009-OTM00000220";//System.Windows.Forms.ComboBox();
-            cboMunecaDerInversion.Name = "N009-OTM00000221";//System.Windows.Forms.ComboBox();
-            cboMunecaDerEversion.Name = "N009-OTM00000222";//System.Windows.Forms.ComboBox();
-            txtDescripcionHallazgos.Name = "N009-OTM00000223";//System.Windows.Forms.TextBox();
-            cboConclusiones.Name = "N009-OTM00000224";//System.Windows.Forms.ComboBox();
+            txtAnamnesis.Name = "N009-OTM00000001"; 
+            cboCondiAmbEspacio.Name = "N009-OTM00000002"; 
+            cboCondiAmbTemperatura.Name = "N009-OTM00000003"; 
+            cboCondiAmbVibraciones.Name = "N009-OTM00000004"; 
+            cboCondiAmbSueloInestable.Name = "N009-OTM00000005"; 
+            cboCondiAmbDesniveles.Name = "N009-OTM00000006"; 
+            cboCondiAmbAltura.Name = "N009-OTM00000007"; 
+            cboCondiAmbPostura.Name = "N009-OTM00000008"; 
+            cboCondiAmbSuelo.Name = "N009-OTM00000009"; 
+            cboExigRitmo.Name = "N009-OTM00000010"; 
+            cboExigDistancias.Name = "N009-OTM00000011"; 
+            cboExigPeriodo.Name = "N009-OTM00000012"; 
+            cboExigEsfuerzo.Name = "N009-OTM00000013"; 
+            cboEsfFisAlzar.Name = "N009-OTM00000014"; 
+            cboEsfFisExiste.Name = "N009-OTM00000015"; 
+            cboEsfFisCuerpo.Name = "N009-OTM00000016"; 
+            cboEsfFisExige.Name = "N009-OTM00000017"; 
+            cboCarCargaPeso.Name = "N009-OTM00000018"; 
+            cboCarCargaManipulacion.Name = "N009-OTM00000019"; 
+            cboCarCargaEquilibrio.Name = "N009-OTM00000020"; 
+            cboCarCargaVolumen.Name = "N009-OTM00000021"; 
+            cboExpToxCadmio.Name = "N009-OTM00000022"; 
+            cboExpToxMercurio.Name = "N009-OTM00000023"; 
+            cboExpToxMagneso.Name = "N009-OTM00000024"; 
+            txt2Exposicion.Name = "N009-OTM00000025"; 
+            txt2DiasSemana.Name = "N009-OTM00000026"; 
+            txt2HorasSentado.Name = "N009-OTM00000027"; 
+            txt2Repetitivo.Name = "N009-OTM00000028"; 
+            txt2Anios.Name = "N009-OTM00000029"; 
+            txt2Horas.Name = "N009-OTM00000030"; 
+            cbo2RiesgoLevanta.Name = "N009-OTM00000031"; 
+            cbo2RiesgoDesplaza.Name = "N009-OTM00000032"; 
+            cbo2RiesgoSentado.Name = "N009-OTM00000033"; 
+            cbo2RiesgoPie.Name = "N009-OTM00000034"; 
+            cbo2RiesgoTracciona.Name = "N009-OTM00000035"; 
+            cbo2RiesgoEmpuja.Name = "N009-OTM00000036"; 
+            cbo2RiesgoColoca.Name = "N009-OTM00000037"; 
+            cboEjeLordosisCervical.Name = "N009-OTM00000038"; 
+            cboEjeCifosisDorsal.Name = "N009-OTM00000039"; 
+            cboEjeLordosisLumbar.Name = "N009-OTM00000040"; 
+            cboRotacionExt.Name = "N009-OTM00000041"; 
+            cboRotacionInt.Name = "N009-OTM00000042"; 
+            cboInversion.Name = "N009-OTM00000043"; 
+            cboPlantiflexion.Name = "N009-OTM00000044"; 
+            cboEversion.Name = "N009-OTM00000045"; 
+            cboDorsoflexion.Name = "N009-OTM00000046"; 
+            cboMmiiFlexion.Name = "N009-OTM00000047"; 
+            cboMmiiExtension.Name = "N009-OTM00000048"; 
+            cboMmiiContraResistencia.Name = "N009-OTM00000049"; 
+            cboCircunduccion.Name = "N009-OTM00000050"; 
+            cboDesviacionRadial.Name = "N009-OTM00000051"; 
+            cboExtension.Name = "N009-OTM00000052"; 
+            cboDesviacionCubital.Name = "N009-OTM00000053"; 
+            cboFlexion.Name = "N009-OTM00000054"; 
+            cboGenuvaro.Name = "N009-OTM00000055"; 
+            cboGenuvalgo.Name = "N009-OTM00000056"; 
+            cboPieCavo.Name = "N009-OTM00000057"; 
+            cboPiePlano.Name = "N009-OTM00000058"; 
+            cboEvaPropicepcion.Name = "N009-OTM00000059"; 
+            cboPruebaMancuerda.Name = "N009-OTM00000060"; 
+            cboRotulianoIzq.Name = "N009-OTM00000061"; 
+            cboRotulianoDer.Name = "N009-OTM00000062"; 
+            cboLasegueIzq.Name = "N009-OTM00000063"; 
+            cboSchoverIzq.Name = "N009-OTM00000064"; 
+            cboSchoverDer.Name = "N009-OTM00000065"; 
+            cboLasegueDer.Name = "N009-OTM00000066"; 
+            cboPhalenIzq.Name = "N009-OTM00000067"; 
+            cboTinelIzq.Name = "N009-OTM00000068"; 
+            cboTinelDer.Name = "N009-OTM00000069"; 
+            cboPhalenDer.Name = "N009-OTM00000070"; 
+            cboPalpacionDolor.Name = "N009-OTM00000071"; 
+            cboPalpacionContractura.Name = "N009-OTM00000072"; 
+            cboPalpacionApofisis.Name = "N009-OTM00000073"; 
+            txtPalpacionDolor.Name = "N009-OTM00000074"; 
+            txtPalpacionContractura.Name = "N009-OTM00000075"; 
+            txtPalpacionApofisis.Name = "N009-OTM00000076"; 
+            cboLumbatExtension.Name = "N009-OTM00000077"; 
+            cboLumbatFlexion.Name = "N009-OTM00000078"; 
+            cboCervicalExtension.Name = "N009-OTM00000079"; 
+            cboCervicalFlexion.Name = "N009-OTM00000080"; 
+            cboLumbatLateIzquierda.Name = "N009-OTM00000081"; 
+            cboLumbatLateDerecha.Name = "N009-OTM00000082"; 
+            cboLumbatRotacionIzquierda.Name = "N009-OTM00000083"; 
+            cboLumbatRotacionDerecha.Name = "N009-OTM00000084"; 
+            cboCervicalLateIzquierda.Name = "N009-OTM00000085"; 
+            cboCervicalLateDerecha.Name = "N009-OTM00000086"; 
+            cboCervicalRotaIzquierda.Name = "N009-OTM00000087"; 
+            cboCervicalRotaDerecha.Name = "N009-OTM00000088"; 
+            cboLumbatIrradiacion.Name = "N009-OTM00000089"; 
+            cboCervicalIrradiacion.Name = "N009-OTM00000090"; 
+            cboAsimetriaEscoliosis.Name = "N009-OTM00000091"; 
+            cboAsimetriaHombros.Name = "N009-OTM00000092"; 
+            cboAsimetriaLumbar.Name = "N009-OTM00000093"; 
+            cboAsimetriaCaderas.Name = "N009-OTM00000094"; 
+            cboAsimetriaHipercifocis.Name = "N009-OTM00000095"; 
+            cboAsimetriaRodillas.Name = "N009-OTM00000096"; 
+            cboEquilibrioLateralIzquierdo.Name = "N009-OTM00000097"; 
+            cboEquilibrioLateralDerecho.Name = "N009-OTM00000098"; 
+            cboEquilibrioPosterior.Name = "N009-OTM00000099"; 
+            cboEquilibrioAnterior.Name = "N009-OTM00000100"; 
+            cboMarchaClaudicacion.Name = "N009-OTM00000101"; 
+            cboTobilloIzqRotInt.Name = "N009-OTM00000102"; 
+            cboRodillaIzqRotInt.Name = "N009-OTM00000103"; 
+            cboCaderaIzqRotInt.Name = "N009-OTM00000104"; 
+            cboMunecaIzqRotInt.Name = "N009-OTM00000105"; 
+            cboCodoIzqRotInt.Name = "N009-OTM00000106"; 
+            cboHombroIzqRotInt.Name = "N009-OTM00000107"; 
+            cboTobilloIzqExtension.Name = "N009-OTM00000108"; 
+            cboRodillaIzqExtension.Name = "N009-OTM00000109"; 
+            cboCaderaIzqExtension.Name = "N009-OTM00000110"; 
+            cboMunecaIzqExtension.Name = "N009-OTM00000111"; 
+            cboCodoIzqExtension.Name = "N009-OTM00000112"; 
+            cboTobilloIzqFlexion.Name = "N009-OTM00000113"; 
+            cboRodillaIzqFlexion.Name = "N009-OTM00000114"; 
+            cboCaderaIzqFlexion.Name = "N009-OTM00000115"; 
+            cboMunecaIzqFlexion.Name = "N009-OTM00000116"; 
+            cboHombroIzqExtension.Name = "N009-OTM00000117"; 
+            cboCodoIzqFlexion.Name = "N009-OTM00000118"; 
+            cboTobilloDerRotInt.Name = "N009-OTM00000119"; 
+            cboRodillaDerRotInt.Name = "N009-OTM00000120"; 
+            cboCaderaDerRotInt.Name = "N009-OTM00000121"; 
+            cboMunecaDerRotInt.Name = "N009-OTM00000122"; 
+            cboHombroIzqFlexion.Name = "N009-OTM00000123"; 
+            cboCodoDerRotInt.Name = "N009-OTM00000124"; 
+            cboTobilloDerExtension.Name = "N009-OTM00000125"; 
+            cboRodillaDerExtension.Name = "N009-OTM00000126"; 
+            cboCaderaDerExtension.Name = "N009-OTM00000127"; 
+            cboMunecaDerExtension.Name = "N009-OTM00000128"; 
+            cboHombroDerRotInt.Name = "N009-OTM00000129"; 
+            cboCodoDerExtension.Name = "N009-OTM00000130"; 
+            cboTobilloDerFlexion.Name = "N009-OTM00000131"; 
+            cboRodillaDerFlexion.Name = "N009-OTM00000132"; 
+            cboCaderaDerFlexion.Name = "N009-OTM00000133"; 
+            cboMunecaDerFlexion.Name = "N009-OTM00000134"; 
+            cboHombroDerExtension.Name = "N009-OTM00000135"; 
+            cboCodoDerFlexion.Name = "N009-OTM00000136"; 
+             cboHombroDerFlexion.Name = "N009-OTM00000137"; 
+            cboTobilloIzqTono.Name = "N009-OTM00000138"; 
+            cboRodillaIzqTono.Name = "N009-OTM00000139"; 
+            cboCaderaIzqTono.Name = "N009-OTM00000140"; 
+            cboTobilloIzqFuerza.Name = "N009-OTM00000141"; 
+            cboMunecaIzqTono.Name = "N009-OTM00000142"; 
+            cboRodillaIzqFuerza.Name = "N009-OTM00000143"; 
+            cboCaderaIzqFuerza.Name = "N009-OTM00000144"; 
+            cboCodoIzqTono.Name = "N009-OTM00000145"; 
+            cboTobilloIzqAbduccion.Name = "N009-OTM00000146"; 
+            cboMunecaIzqFuerza.Name = "N009-OTM00000147"; 
+            cboRodillaIzqAbduccion.Name = "N009-OTM00000148"; 
+            cboCaderaIzqAbduccion.Name = "N009-OTM00000149"; 
+            cboCodoIzqFuerza.Name = "N009-OTM00000150"; 
+            cboTobilloIzqAduccion.Name = "N009-OTM00000151"; 
+            cboMunecaIzqAbduccion.Name = "N009-OTM00000152"; 
+            cboRodillaIzqAduccion.Name = "N009-OTM00000153"; 
+            cboHombroIzqTono.Name = "N009-OTM00000154"; 
+            cboCaderaIzqAduccion.Name = "N009-OTM00000155"; 
+            cboCodoIzqAbduccion.Name = "N009-OTM00000156"; 
+            cboTobilloIzqRotExt.Name = "N009-OTM00000157"; 
+            cboMunecaIzqAduccion.Name = "N009-OTM00000158"; 
+            cboRodillaIzqRotExt.Name = "N009-OTM00000159"; 
+            cboHombroIzqFuerza.Name = "N009-OTM00000160"; 
+            cboCaderaIzqRotExt.Name = "N009-OTM00000161"; 
+            cboCodoIzqAduccion.Name = "N009-OTM00000162"; 
+            cboTobilloDerTono.Name = "N009-OTM00000163"; 
+            cboMunecaIzqRotExt.Name = "N009-OTM00000164"; 
+            cboRodillaDerTono.Name = "N009-OTM00000165"; 
+            cboHombroIzqAbduccion.Name = "N009-OTM00000166"; 
+            cboCaderaDerTono.Name = "N009-OTM00000167"; 
+            cboCodoIzqRotExt.Name = "N009-OTM00000168"; 
+            cboTobilloDerFuerza.Name = "N009-OTM00000169"; 
+            cboMunecaDerTono.Name = "N009-OTM00000170"; 
+            cboRodillaDerFuerza.Name = "N009-OTM00000171"; 
+            cboHombroIzqAduccion.Name = "N009-OTM00000172"; 
+            cboCaderaDerFuerza.Name = "N009-OTM00000173"; 
+            cboCodoDerTono.Name = "N009-OTM00000174"; 
+            cboTobilloDerAbduccion.Name = "N009-OTM00000175"; 
+            cboMunecaDerFuerza.Name = "N009-OTM00000176"; 
+            cboRodillaDerAbduccion.Name = "N009-OTM00000177"; 
+            cboHombroIzqRotExt.Name = "N009-OTM00000178"; 
+            cboCaderaDerAbduccion.Name = "N009-OTM00000179"; 
+            cboCodoDerFuerza.Name = "N009-OTM00000180"; 
+            cboTobilloDerAduccion.Name = "N009-OTM00000181"; 
+            cboMunecaDerAbduccion.Name = "N009-OTM00000182"; 
+            cboRodillaDerAduccion.Name = "N009-OTM00000183"; 
+            cboHombroDerTono.Name = "N009-OTM00000184"; 
+            cboCaderaDerAduccion.Name = "N009-OTM00000185"; 
+            cboCodoDerAbduccion.Name = "N009-OTM00000186"; 
+            cboTobilloDerRotExt.Name = "N009-OTM00000187"; 
+            cboMunecaDerAduccion.Name = "N009-OTM00000189"; 
+            cboRodillaDerRotExt.Name = "N009-OTM00000190"; 
+            cboHombroDerFuerza.Name = "N009-OTM00000191"; 
+            cboCaderaDerRotExt.Name = "N009-OTM00000192"; 
+            cboCodoDerAduccion.Name = "N009-OTM00000193"; 
+            cboTobilloIzqDolor.Name = "N009-OTM00000194"; 
+            cboMunecaDerRotExt.Name = "N009-OTM00000195"; 
+            cboRodillaIzqDolor.Name = "N009-OTM00000196"; 
+            cboHombroDerAbduccion.Name = "N009-OTM00000197"; 
+            cboCaderaIzqDolor.Name = "N009-OTM00000198"; 
+            cboCodoDerRotExt.Name = "N009-OTM00000199"; 
+            cboTobilloDerDolor.Name = "N009-OTM00000200"; 
+            cboMunecaIzqDolor.Name = "N009-OTM00000201"; 
+            cboRodillaDerDolor.Name = "N009-OTM00000202"; 
+            cboHombroDerAduccion.Name = "N009-OTM00000203"; 
+            cboCaderaDerDolor.Name = "N009-OTM00000204"; 
+            cboCodoIzqDolor.Name = "N009-OTM00000205"; 
+            cboMunecaDerDolor.Name = "N009-OTM00000206"; 
+            cboHombroDerRotExt.Name = "N009-OTM00000207"; 
+            cboCodoDerDolor.Name = "N009-OTM00000208"; 
+            cboHombroIzqDolor.Name = "N009-OTM00000209"; 
+            cboHombroDerDolor.Name = "N009-OTM00000210"; 
+            cboCodoIzqSupinacion.Name = "N009-OTM00000211"; 
+            cboCodoIzqPronacion.Name = "N009-OTM00000212"; 
+            cboCodoDerSupinacion.Name = "N009-OTM00000213"; 
+            cboCodoDerPronacion.Name = "N009-OTM00000214"; 
+            cboMunecaIzqRadial.Name = "N009-OTM00000215"; 
+            cboMunecaIzqCubital.Name = "N009-OTM00000216"; 
+            cboMunecaDerRadial.Name = "N009-OTM00000217"; 
+            cboMunecaDerCubital.Name = "N009-OTM00000218"; 
+            cboMunecaIzqInversion.Name = "N009-OTM00000219"; 
+            cboMunecaIzqEversion.Name = "N009-OTM00000220"; 
+            cboMunecaDerInversion.Name = "N009-OTM00000221"; 
+            cboMunecaDerEversion.Name = "N009-OTM00000222"; 
+            txtDescripcionHallazgos.Name = "N009-OTM00000223"; 
+            cboConclusiones.Name = "N009-OTM00000224"; 
 
 
-            rbAbdomenExcelente.Name = "N009-OTM00000225";
+            rbAbdomenExcelente.Name = "N009-OTM00000274";
             rbAbdomenPromedio.Name = "N009-OTM00000225";
             rbAbdomenRegular.Name = "N009-OTM00000226";
             rbAbdomenPobre.Name = "N009-OTM00000227";
@@ -381,6 +382,227 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
 
             txtTotalRangos.Name = "N009-OTM00000273";
 
+            #region BindCombos
+            OperationResult objOperationResult = new OperationResult();
+            SystemParameterBL objSystemParameterBl = new SystemParameterBL();
+
+            Utils.LoadDropDownList(cboCondiAmbEspacio, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000002"; 
+            Utils.LoadDropDownList(cboCondiAmbTemperatura, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000003"; 
+            Utils.LoadDropDownList(cboCondiAmbVibraciones, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000004"; 
+            Utils.LoadDropDownList(cboCondiAmbSueloInestable, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000005"; 
+            Utils.LoadDropDownList(cboCondiAmbDesniveles, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000006"; 
+            Utils.LoadDropDownList(cboCondiAmbAltura, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000007"; 
+            Utils.LoadDropDownList(cboCondiAmbPostura, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000008"; 
+            Utils.LoadDropDownList(cboCondiAmbSuelo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000009"; 
+            Utils.LoadDropDownList(cboExigRitmo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000010"; 
+            Utils.LoadDropDownList(cboExigDistancias, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000011"; 
+            Utils.LoadDropDownList(cboExigPeriodo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000012"; 
+            Utils.LoadDropDownList(cboExigEsfuerzo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000013"; 
+            Utils.LoadDropDownList(cboEsfFisAlzar, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000014"; 
+            Utils.LoadDropDownList(cboEsfFisExiste, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000015"; 
+            Utils.LoadDropDownList(cboEsfFisCuerpo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000016"; 
+            Utils.LoadDropDownList(cboEsfFisExige, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000017"; 
+            Utils.LoadDropDownList(cboCarCargaPeso, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000018"; 
+            Utils.LoadDropDownList(cboCarCargaManipulacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000019"; 
+            Utils.LoadDropDownList(cboCarCargaEquilibrio, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000020"; 
+            Utils.LoadDropDownList(cboCarCargaVolumen, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000021"; 
+            Utils.LoadDropDownList(cboExpToxCadmio, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000022"; 
+            Utils.LoadDropDownList(cboExpToxMercurio, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000023"; 
+            Utils.LoadDropDownList(cboExpToxMagneso, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000024"; 
+            Utils.LoadDropDownList(cbo2RiesgoLevanta, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000031"; 
+            Utils.LoadDropDownList(cbo2RiesgoDesplaza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000032"; 
+            Utils.LoadDropDownList(cbo2RiesgoSentado, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000033"; 
+            Utils.LoadDropDownList(cbo2RiesgoPie, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000034"; 
+            Utils.LoadDropDownList(cbo2RiesgoTracciona, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000035"; 
+            Utils.LoadDropDownList(cbo2RiesgoEmpuja, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000036"; 
+            Utils.LoadDropDownList(cbo2RiesgoColoca, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000037"; 
+            Utils.LoadDropDownList(cboEjeLordosisCervical, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000038"; 
+            Utils.LoadDropDownList(cboEjeCifosisDorsal, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000039"; 
+            Utils.LoadDropDownList(cboEjeLordosisLumbar, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000040"; 
+            Utils.LoadDropDownList(cboRotacionExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000041"; 
+            Utils.LoadDropDownList(cboRotacionInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000042"; 
+            Utils.LoadDropDownList(cboInversion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000043"; 
+            Utils.LoadDropDownList(cboPlantiflexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000044"; 
+            Utils.LoadDropDownList(cboEversion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000045"; 
+            Utils.LoadDropDownList(cboDorsoflexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000046"; 
+            Utils.LoadDropDownList(cboMmiiFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000047"; 
+            Utils.LoadDropDownList(cboMmiiExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000048"; 
+            Utils.LoadDropDownList(cboMmiiContraResistencia, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000049"; 
+            Utils.LoadDropDownList(cboCircunduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000050"; 
+            Utils.LoadDropDownList(cboDesviacionRadial, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000051"; 
+            Utils.LoadDropDownList(cboExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000052"; 
+            Utils.LoadDropDownList(cboDesviacionCubital, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000053"; 
+            Utils.LoadDropDownList(cboFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000054"; 
+            Utils.LoadDropDownList(cboGenuvaro, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000055"; 
+            Utils.LoadDropDownList(cboGenuvalgo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000056"; 
+            Utils.LoadDropDownList(cboPieCavo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000057"; 
+            Utils.LoadDropDownList(cboPiePlano, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000058"; 
+            Utils.LoadDropDownList(cboEvaPropicepcion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000059"; 
+            Utils.LoadDropDownList(cboPruebaMancuerda, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000060"; 
+            Utils.LoadDropDownList(cboRotulianoIzq, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000061"; 
+            Utils.LoadDropDownList(cboRotulianoDer, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000062"; 
+            Utils.LoadDropDownList(cboLasegueIzq, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000063"; 
+            Utils.LoadDropDownList(cboSchoverIzq, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000064"; 
+            Utils.LoadDropDownList(cboSchoverDer, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000065"; 
+            Utils.LoadDropDownList(cboLasegueDer, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000066"; 
+            Utils.LoadDropDownList(cboPhalenIzq, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000067"; 
+            Utils.LoadDropDownList(cboTinelIzq, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000068"; 
+            Utils.LoadDropDownList(cboTinelDer, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000069"; 
+            Utils.LoadDropDownList(cboPhalenDer, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000070"; 
+            Utils.LoadDropDownList(cboPalpacionDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000071"; 
+            Utils.LoadDropDownList(cboPalpacionContractura, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000072"; 
+            Utils.LoadDropDownList(cboPalpacionApofisis, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000073"; 
+            Utils.LoadDropDownList(cboLumbatExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000077"; 
+            Utils.LoadDropDownList(cboLumbatFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000078"; 
+            Utils.LoadDropDownList(cboCervicalExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000079"; 
+            Utils.LoadDropDownList(cboCervicalFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000080"; 
+            Utils.LoadDropDownList(cboLumbatLateIzquierda, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000081"; 
+            Utils.LoadDropDownList(cboLumbatLateDerecha, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000082"; 
+            Utils.LoadDropDownList(cboLumbatRotacionIzquierda, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000083"; 
+            Utils.LoadDropDownList(cboLumbatRotacionDerecha, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000084"; 
+            Utils.LoadDropDownList(cboCervicalLateIzquierda, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000085"; 
+            Utils.LoadDropDownList(cboCervicalLateDerecha, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000086"; 
+            Utils.LoadDropDownList(cboCervicalRotaIzquierda, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000087"; 
+            Utils.LoadDropDownList(cboCervicalRotaDerecha, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000088"; 
+            Utils.LoadDropDownList(cboLumbatIrradiacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000089"; 
+            Utils.LoadDropDownList(cboCervicalIrradiacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000090"; 
+            Utils.LoadDropDownList(cboAsimetriaEscoliosis, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000091"; 
+            Utils.LoadDropDownList(cboAsimetriaHombros, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000092"; 
+            Utils.LoadDropDownList(cboAsimetriaLumbar, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000093"; 
+            Utils.LoadDropDownList(cboAsimetriaCaderas, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000094"; 
+            Utils.LoadDropDownList(cboAsimetriaHipercifocis, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000095"; 
+            Utils.LoadDropDownList(cboAsimetriaRodillas, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000096"; 
+            Utils.LoadDropDownList(cboEquilibrioLateralIzquierdo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000097"; 
+            Utils.LoadDropDownList(cboEquilibrioLateralDerecho, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000098"; 
+            Utils.LoadDropDownList(cboEquilibrioPosterior, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000099"; 
+            Utils.LoadDropDownList(cboEquilibrioAnterior, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000100"; 
+            Utils.LoadDropDownList(cboMarchaClaudicacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000101"; 
+            Utils.LoadDropDownList(cboTobilloIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000102"; 
+            Utils.LoadDropDownList(cboRodillaIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000103"; 
+            Utils.LoadDropDownList(cboCaderaIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000104"; 
+            Utils.LoadDropDownList(cboMunecaIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000105"; 
+            Utils.LoadDropDownList(cboCodoIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000106"; 
+            Utils.LoadDropDownList(cboHombroIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000107"; 
+            Utils.LoadDropDownList(cboTobilloIzqExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000108"; 
+            Utils.LoadDropDownList(cboRodillaIzqExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000109"; 
+            Utils.LoadDropDownList(cboCaderaIzqExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000110"; 
+            Utils.LoadDropDownList(cboMunecaIzqExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000111"; 
+            Utils.LoadDropDownList(cboCodoIzqExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000112"; 
+            Utils.LoadDropDownList(cboTobilloIzqFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000113"; 
+            Utils.LoadDropDownList(cboRodillaIzqFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000114"; 
+            Utils.LoadDropDownList(cboCaderaIzqFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000115"; 
+            Utils.LoadDropDownList(cboMunecaIzqFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000116"; 
+            Utils.LoadDropDownList(cboHombroIzqExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000117"; 
+            Utils.LoadDropDownList(cboCodoIzqFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000118"; 
+            Utils.LoadDropDownList(cboTobilloDerRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000119"; 
+            Utils.LoadDropDownList(cboRodillaDerRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000120"; 
+            Utils.LoadDropDownList(cboCaderaDerRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000121"; 
+            Utils.LoadDropDownList(cboMunecaDerRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000122"; 
+            Utils.LoadDropDownList(cboHombroIzqFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000123"; 
+            Utils.LoadDropDownList(cboCodoDerRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000124"; 
+            Utils.LoadDropDownList(cboTobilloDerExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000125"; 
+            Utils.LoadDropDownList(cboRodillaDerExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000126"; 
+            Utils.LoadDropDownList(cboCaderaDerExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000127"; 
+            Utils.LoadDropDownList(cboMunecaDerExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000128"; 
+            Utils.LoadDropDownList(cboHombroDerRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000129"; 
+            Utils.LoadDropDownList(cboCodoDerExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000130"; 
+            Utils.LoadDropDownList(cboTobilloDerFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000131"; 
+            Utils.LoadDropDownList(cboRodillaDerFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000132"; 
+            Utils.LoadDropDownList(cboCaderaDerFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000133"; 
+            Utils.LoadDropDownList(cboMunecaDerFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000134"; 
+            Utils.LoadDropDownList(cboHombroDerExtension, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000135"; 
+            Utils.LoadDropDownList(cboCodoDerFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000136"; 
+            
+            Utils.LoadDropDownList(cboHombroDerFlexion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000137"; 
+            Utils.LoadDropDownList(cboTobilloIzqTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000138"; 
+            Utils.LoadDropDownList(cboRodillaIzqTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000139"; 
+            Utils.LoadDropDownList(cboCaderaIzqTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000140"; 
+            Utils.LoadDropDownList(cboTobilloIzqFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000141"; 
+            Utils.LoadDropDownList(cboMunecaIzqTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000142"; 
+            Utils.LoadDropDownList(cboRodillaIzqFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000143"; 
+            Utils.LoadDropDownList(cboCaderaIzqFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000144"; 
+            Utils.LoadDropDownList(cboCodoIzqTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000145"; 
+            Utils.LoadDropDownList(cboTobilloIzqAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000146"; 
+            Utils.LoadDropDownList(cboMunecaIzqFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000147"; 
+            Utils.LoadDropDownList(cboRodillaIzqAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000148"; 
+            Utils.LoadDropDownList(cboCaderaIzqAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000149"; 
+            Utils.LoadDropDownList(cboCodoIzqFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000150"; 
+            Utils.LoadDropDownList(cboTobilloIzqAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000151"; 
+            Utils.LoadDropDownList(cboMunecaIzqAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000152"; 
+            Utils.LoadDropDownList(cboRodillaIzqAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000153"; 
+            Utils.LoadDropDownList(cboHombroIzqTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000154"; 
+            Utils.LoadDropDownList(cboCaderaIzqAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000155"; 
+            Utils.LoadDropDownList(cboCodoIzqAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000156"; 
+            Utils.LoadDropDownList(cboTobilloIzqRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000157"; 
+            Utils.LoadDropDownList(cboMunecaIzqAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000158"; 
+            Utils.LoadDropDownList(cboRodillaIzqRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000159"; 
+            Utils.LoadDropDownList(cboHombroIzqFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000160"; 
+            Utils.LoadDropDownList(cboCaderaIzqRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000161"; 
+            Utils.LoadDropDownList(cboCodoIzqAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000162"; 
+            Utils.LoadDropDownList(cboTobilloDerTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000163"; 
+            Utils.LoadDropDownList(cboMunecaIzqRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000164"; 
+            Utils.LoadDropDownList(cboRodillaDerTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000165"; 
+            Utils.LoadDropDownList(cboHombroIzqAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000166"; 
+            Utils.LoadDropDownList(cboCaderaDerTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000167"; 
+            Utils.LoadDropDownList(cboCodoIzqRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000168"; 
+            Utils.LoadDropDownList(cboTobilloDerFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000169"; 
+            Utils.LoadDropDownList(cboMunecaDerTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000170"; 
+            Utils.LoadDropDownList(cboRodillaDerFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000171"; 
+            Utils.LoadDropDownList(cboHombroIzqAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000172"; 
+            Utils.LoadDropDownList(cboCaderaDerFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000173"; 
+            Utils.LoadDropDownList(cboCodoDerTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000174"; 
+            Utils.LoadDropDownList(cboTobilloDerAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000175"; 
+            Utils.LoadDropDownList(cboMunecaDerFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000176"; 
+            Utils.LoadDropDownList(cboRodillaDerAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000177"; 
+            Utils.LoadDropDownList(cboHombroIzqRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000178"; 
+            Utils.LoadDropDownList(cboCaderaDerAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000179"; 
+            Utils.LoadDropDownList(cboCodoDerFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000180"; 
+            Utils.LoadDropDownList(cboTobilloDerAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000181"; 
+            Utils.LoadDropDownList(cboMunecaDerAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000182"; 
+            Utils.LoadDropDownList(cboRodillaDerAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000183"; 
+            Utils.LoadDropDownList(cboHombroDerTono, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000184"; 
+            Utils.LoadDropDownList(cboCaderaDerAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000185"; 
+            Utils.LoadDropDownList(cboCodoDerAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000186"; 
+            Utils.LoadDropDownList(cboTobilloDerRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000187"; 
+            Utils.LoadDropDownList(cboMunecaDerAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000189"; 
+            Utils.LoadDropDownList(cboRodillaDerRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000190"; 
+            Utils.LoadDropDownList(cboHombroDerFuerza, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000191"; 
+            Utils.LoadDropDownList(cboCaderaDerRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000192"; 
+            Utils.LoadDropDownList(cboCodoDerAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000193"; 
+            Utils.LoadDropDownList(cboTobilloIzqDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000194"; 
+
+            Utils.LoadDropDownList(cboMunecaDerRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000195"; 
+            Utils.LoadDropDownList(cboRodillaIzqDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000196"; 
+            Utils.LoadDropDownList(cboHombroDerAbduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000197"; 
+            Utils.LoadDropDownList(cboCaderaIzqDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000198"; 
+            Utils.LoadDropDownList(cboCodoDerRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000199"; 
+            Utils.LoadDropDownList(cboTobilloDerDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000200"; 
+            Utils.LoadDropDownList(cboMunecaIzqDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000201"; 
+            Utils.LoadDropDownList(cboRodillaDerDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000202"; 
+            Utils.LoadDropDownList(cboHombroDerAduccion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000203"; 
+            Utils.LoadDropDownList(cboCaderaDerDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000204"; 
+            Utils.LoadDropDownList(cboCodoIzqDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000205"; 
+            Utils.LoadDropDownList(cboMunecaDerDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000206"; 
+            Utils.LoadDropDownList(cboHombroDerRotExt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000207"; 
+            Utils.LoadDropDownList(cboCodoDerDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000208"; 
+            Utils.LoadDropDownList(cboHombroIzqDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000209"; 
+            Utils.LoadDropDownList(cboHombroDerDolor, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 199), DropDownListAction.Select);// = "N009-OTM00000210"; 
+            Utils.LoadDropDownList(cboCodoIzqSupinacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000211"; 
+            Utils.LoadDropDownList(cboCodoIzqPronacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000212"; 
+            Utils.LoadDropDownList(cboCodoDerSupinacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000213"; 
+            Utils.LoadDropDownList(cboCodoDerPronacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000214"; 
+            Utils.LoadDropDownList(cboMunecaIzqRadial, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000215"; 
+            Utils.LoadDropDownList(cboMunecaIzqCubital, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000216"; 
+            Utils.LoadDropDownList(cboMunecaDerRadial, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000217"; 
+            Utils.LoadDropDownList(cboMunecaDerCubital, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000218"; 
+            Utils.LoadDropDownList(cboMunecaIzqInversion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000219"; 
+            Utils.LoadDropDownList(cboMunecaIzqEversion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000220"; 
+            Utils.LoadDropDownList(cboMunecaDerInversion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000221"; 
+            Utils.LoadDropDownList(cboMunecaDerEversion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000222"; 
+            Utils.LoadDropDownList(cboConclusiones, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000224"; 
+
+            #endregion
+
             SearchControlAndSetEvents(this);
         }
 
@@ -411,18 +633,18 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
         private void ucd_TextChanged(object sender, EventArgs e)
         {
             ComboBox senderCtrl = (ComboBox)sender;
-            SaveValueControlForInterfacingEso(senderCtrl.Name, senderCtrl.SelectedValue.ToString());
+            SaveValueControlForInterfacingESO(senderCtrl.Name, senderCtrl.SelectedValue.ToString());
             _isChangueValueControl = true;
         }
 
         private void lbl_Leave(object sender, EventArgs e)
         {
             TextBox senderCtrl = (TextBox)sender;
-            SaveValueControlForInterfacingEso(senderCtrl.Name, senderCtrl.Text);
+            SaveValueControlForInterfacingESO(senderCtrl.Name, senderCtrl.Text);
             _isChangueValueControl = true;
         }
 
-        private void SaveValueControlForInterfacingEso(string name, string value)
+        private void SaveValueControlForInterfacingESO(string name, string value)
         {
             #region Capturar Valor del campo
 
@@ -439,6 +661,347 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
             DataSource = _listOfAtencionAdulto1;
 
             #endregion
+        }
+
+        private void calcularTotal1()
+        {
+            int p1 = txtAbdomenPuntos.Text == "" ? 0 : int.Parse(txtAbdomenPuntos.Text.ToString());
+            int p2 = txtCaderaPuntos.Text == "" ? 0 : int.Parse(txtCaderaPuntos.Text.ToString());
+            int p3 = txtMusloPuntos.Text == "" ? 0 : int.Parse(txtMusloPuntos.Text.ToString());
+            int p4 = txtAbdomenLateralPuntos.Text == "" ? 0 : int.Parse(txtAbdomenLateralPuntos.Text.ToString());
+            txtTotalAptitudEspalda.Text = (p1 + p2 + p3 + p4).ToString();
+
+        }
+
+        private void calcularTotal2()
+        {
+            int p1 = txtAbduccion180Puntos.Text == "" ? 0 : int.Parse(txtAbduccion180Puntos.Text.ToString());
+            int p2 = txtAbduccion60Puntos.Text == "" ? 0 : int.Parse(txtAbduccion60Puntos.Text.ToString());
+            int p3 = txtRotacion090Puntos.Text == "" ? 0 : int.Parse(txtRotacion090Puntos.Text.ToString());
+            int p4 = txtRotacionExtIntPuntos.Text == "" ? 0 : int.Parse(txtRotacionExtIntPuntos.Text.ToString());
+            txtTotalRangos.Text = (p1 + p2 + p3 + p4).ToString();
+
+        }
+
+        private void rbAbdomenExcelente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenExcelente.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000274", "1");
+                txtAbdomenPuntos.Text = "1";
+                calcularTotal1();
+            }
+        }
+        private void rbAbdomenPromedio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenPromedio.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000225", "2");
+                txtAbdomenPuntos.Text = "2";
+                calcularTotal1();
+            }
+        }
+        private void rbAbdomenRegular_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenRegular.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000226", "3");
+                txtAbdomenPuntos.Text = "3";
+                calcularTotal1();
+            }
+        }
+        private void rbAbdomenPobre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenPobre.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000227", "4");
+                txtAbdomenPuntos.Text = "4";
+                calcularTotal1();
+            }
+        }
+
+        private void rbCaderaExcelente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCaderaExcelente.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000230", "1");
+                txtCaderaPuntos.Text = "1";
+                calcularTotal1();
+            }
+        }
+        private void rbCaderaPromedio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCaderaPromedio.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000231", "2");
+                txtCaderaPuntos.Text = "2";
+                calcularTotal1();
+            }
+        }
+        private void rbCaderaRegular_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCaderaRegular.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000232", "3");
+                txtCaderaPuntos.Text = "3";
+                calcularTotal1();
+            }
+        }
+        private void rbCaderaPobre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCaderaPobre.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000233", "4");
+                txtCaderaPuntos.Text = "4";
+                calcularTotal1();
+            }
+        }
+
+        private void rbMusloExcelente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbMusloExcelente.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000236", "1");
+                txtMusloPuntos.Text = "1";
+                calcularTotal1();
+            }
+        }
+        private void rbMusloPromedio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbMusloPromedio.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000237", "2");
+                txtMusloPuntos.Text = "2";
+                calcularTotal1();
+            }
+        }
+        private void rbMusloRegular_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbMusloRegular.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000238", "3");
+                txtMusloPuntos.Text = "3";
+                calcularTotal1();
+            }
+        }
+        private void rbMusloPobre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbMusloPobre.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000239", "4");
+                txtMusloPuntos.Text = "4";
+                calcularTotal1();
+            }
+        }
+
+        private void rbAbdomenLateralExcelente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenLateralExcelente.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000242", "1");
+                txtAbdomenLateralPuntos.Text = "1";
+                calcularTotal1();
+            }
+        }
+        private void rbAbdomenLateralPromedio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenLateralPromedio.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000243", "2");
+                txtAbdomenLateralPuntos.Text = "2";
+                calcularTotal1();
+            }
+        }
+        private void rbAbdomenLateralRegular_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenLateralRegular.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000244", "3");
+                txtAbdomenLateralPuntos.Text = "3";
+                calcularTotal1();
+            }
+        }
+        private void rbAbdomenLateralPobre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbdomenLateralPobre.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000245", "4");
+                txtAbdomenLateralPuntos.Text = "4";
+                calcularTotal1();
+            }
+        }
+
+        private void rbAbduccion180Optimo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion180Optimo.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000248", "1");
+                txtAbduccion180Puntos.Text = "1";
+                calcularTotal2();
+            }
+        }
+        private void rbAbduccion180Limitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion180Limitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000249", "2");
+                txtAbduccion180Puntos.Text = "2";
+                calcularTotal2();
+            }
+        }
+        private void rbAbduccion180MuyLimitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion180MuyLimitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000250", "3");
+                txtAbduccion180Puntos.Text = "3";
+                calcularTotal2();
+            }
+        }
+
+        private void rbAbduccion60Optimo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion60Optimo.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000254", "1");
+                txtAbduccion60Puntos.Text = "1";
+                calcularTotal2();
+            }
+        }
+        private void rbAbduccion60Limitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion60Limitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000255", "2");
+                txtAbduccion60Puntos.Text = "2";
+                calcularTotal2();
+            }
+        }
+        private void rbAbduccion60MuyLimitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion60MuyLimitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000256", "3");
+                txtAbduccion60Puntos.Text = "3";
+                calcularTotal2();
+            }
+        }
+
+        private void rbRotacion090Optimo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacion090Optimo.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000260", "1");
+                txtRotacion090Puntos.Text = "1";
+                calcularTotal2();
+            }
+        }
+        private void rbRotacion090Limitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacion090Limitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000261", "2");
+                txtRotacion090Puntos.Text = "2";
+                calcularTotal2();
+            }
+        }
+        private void rbRotacion090MuyLimitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacion090MuyLimitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000262", "3");
+                txtRotacion090Puntos.Text = "3";
+                calcularTotal2();
+            }
+        }
+
+        private void rbRotacionExtIntOptimo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacionExtIntOptimo.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000266", "1");
+                txtRotacionExtIntPuntos.Text = "1";
+                calcularTotal2();
+            }
+        }
+        private void rbRotacionExtIntLimitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacionExtIntLimitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000267", "2");
+                txtRotacionExtIntPuntos.Text = "2";
+                calcularTotal2();
+            }
+        }
+        private void rbRotacionExtIntMuyLimitado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacionExtIntMuyLimitado.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000268", "3");
+                txtRotacionExtIntPuntos.Text = "3";
+                calcularTotal2();
+            }
+        }
+
+        private void rbAbduccion180DolorSI_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion180DolorSI.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000252", "1");
+            }
+        }
+        private void rbAbduccion180DolorNO_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion180DolorNO.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000253", "2");
+
+            }
+        }
+
+        private void rbAbduccion60DolorSI_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion60DolorSI.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000258", "1");
+            }
+        }
+        private void rbAbduccion60DolorNO_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAbduccion60DolorNO.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000259", "2");
+            }
+        }
+
+        private void rbRotacion090DolorSI_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacion090DolorSI.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000264", "1");
+            }
+        }
+        private void rbRotacion090DolorNO_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacion090DolorNO.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000265", "2");
+            }
+        }
+
+        private void rbRotacionExtIntDolorSI_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacionExtIntDolorSI.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000270", "1");
+            }
+        }
+        private void rbRotacionExtIntDolorNO_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbRotacionExtIntDolorNO.Checked)
+            {
+                SaveValueControlForInterfacingESO("N009-OTM00000271", "2");
+            }
         }
 
     }

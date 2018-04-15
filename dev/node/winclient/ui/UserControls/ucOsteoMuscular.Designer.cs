@@ -5038,6 +5038,7 @@
             this.rbAbduccion180DolorNO.TabStop = true;
             this.rbAbduccion180DolorNO.Text = "NO";
             this.rbAbduccion180DolorNO.UseVisualStyleBackColor = true;
+            this.rbAbduccion180DolorNO.CheckedChanged += new System.EventHandler(this.rbAbduccion180DolorNO_CheckedChanged);
             // 
             // rbAbduccion180DolorSI
             // 
@@ -5049,6 +5050,7 @@
             this.rbAbduccion180DolorSI.TabIndex = 35;
             this.rbAbduccion180DolorSI.Text = "SI";
             this.rbAbduccion180DolorSI.UseVisualStyleBackColor = true;
+            this.rbAbduccion180DolorSI.CheckedChanged += new System.EventHandler(this.rbAbduccion180DolorSI_CheckedChanged);
             // 
             // label52
             // 
@@ -5093,6 +5095,7 @@
             this.rbRotacionExtIntDolorNO.TabStop = true;
             this.rbRotacionExtIntDolorNO.Text = "NO";
             this.rbRotacionExtIntDolorNO.UseVisualStyleBackColor = true;
+            this.rbRotacionExtIntDolorNO.CheckedChanged += new System.EventHandler(this.rbRotacionExtIntDolorNO_CheckedChanged);
             // 
             // rbRotacionExtIntDolorSI
             // 
@@ -5104,6 +5107,7 @@
             this.rbRotacionExtIntDolorSI.TabIndex = 35;
             this.rbRotacionExtIntDolorSI.Text = "SI";
             this.rbRotacionExtIntDolorSI.UseVisualStyleBackColor = true;
+            this.rbRotacionExtIntDolorSI.CheckedChanged += new System.EventHandler(this.rbRotacionExtIntDolorSI_CheckedChanged);
             // 
             // label53
             // 
@@ -5179,6 +5183,7 @@
             this.rbRotacion090DolorNO.TabStop = true;
             this.rbRotacion090DolorNO.Text = "NO";
             this.rbRotacion090DolorNO.UseVisualStyleBackColor = true;
+            this.rbRotacion090DolorNO.CheckedChanged += new System.EventHandler(this.rbRotacion090DolorNO_CheckedChanged);
             // 
             // rbRotacion090DolorSI
             // 
@@ -5190,6 +5195,7 @@
             this.rbRotacion090DolorSI.TabIndex = 35;
             this.rbRotacion090DolorSI.Text = "SI";
             this.rbRotacion090DolorSI.UseVisualStyleBackColor = true;
+            this.rbRotacion090DolorSI.CheckedChanged += new System.EventHandler(this.rbRotacion090DolorSI_CheckedChanged);
             // 
             // label54
             // 
@@ -5265,6 +5271,7 @@
             this.rbAbduccion60DolorNO.TabStop = true;
             this.rbAbduccion60DolorNO.Text = "NO";
             this.rbAbduccion60DolorNO.UseVisualStyleBackColor = true;
+            this.rbAbduccion60DolorNO.CheckedChanged += new System.EventHandler(this.rbAbduccion60DolorNO_CheckedChanged);
             // 
             // rbAbduccion60DolorSI
             // 
@@ -5276,6 +5283,7 @@
             this.rbAbduccion60DolorSI.TabIndex = 35;
             this.rbAbduccion60DolorSI.Text = "SI";
             this.rbAbduccion60DolorSI.UseVisualStyleBackColor = true;
+            this.rbAbduccion60DolorSI.CheckedChanged += new System.EventHandler(this.rbAbduccion60DolorSI_CheckedChanged);
             // 
             // label55
             // 
@@ -5615,6 +5623,7 @@
             this.rbAbduccion180MuyLimitado.Size = new System.Drawing.Size(14, 13);
             this.rbAbduccion180MuyLimitado.TabIndex = 37;
             this.rbAbduccion180MuyLimitado.UseVisualStyleBackColor = true;
+            this.rbAbduccion180MuyLimitado.CheckedChanged += new System.EventHandler(this.rbAbduccion180MuyLimitado_CheckedChanged);
             // 
             // rbAbduccion180Limitado
             // 
@@ -5624,6 +5633,7 @@
             this.rbAbduccion180Limitado.Size = new System.Drawing.Size(14, 13);
             this.rbAbduccion180Limitado.TabIndex = 37;
             this.rbAbduccion180Limitado.UseVisualStyleBackColor = true;
+            this.rbAbduccion180Limitado.CheckedChanged += new System.EventHandler(this.rbAbduccion180Limitado_CheckedChanged);
             // 
             // rbAbduccion180Optimo
             // 
@@ -5635,6 +5645,7 @@
             this.rbAbduccion180Optimo.TabIndex = 36;
             this.rbAbduccion180Optimo.TabStop = true;
             this.rbAbduccion180Optimo.UseVisualStyleBackColor = true;
+            this.rbAbduccion180Optimo.CheckedChanged += new System.EventHandler(this.rbAbduccion180Optimo_CheckedChanged);
             // 
             // panel8
             // 
@@ -5654,6 +5665,7 @@
             this.rbAbduccion60MuyLimitado.Size = new System.Drawing.Size(14, 13);
             this.rbAbduccion60MuyLimitado.TabIndex = 37;
             this.rbAbduccion60MuyLimitado.UseVisualStyleBackColor = true;
+            this.rbAbduccion60MuyLimitado.CheckedChanged += new System.EventHandler(this.rbAbduccion60MuyLimitado_CheckedChanged);
             // 
             // rbAbduccion60Limitado
             // 
@@ -5663,6 +5675,7 @@
             this.rbAbduccion60Limitado.Size = new System.Drawing.Size(14, 13);
             this.rbAbduccion60Limitado.TabIndex = 37;
             this.rbAbduccion60Limitado.UseVisualStyleBackColor = true;
+            this.rbAbduccion60Limitado.CheckedChanged += new System.EventHandler(this.rbAbduccion60Limitado_CheckedChanged);
             // 
             // rbAbduccion60Optimo
             // 
@@ -5674,6 +5687,7 @@
             this.rbAbduccion60Optimo.TabIndex = 36;
             this.rbAbduccion60Optimo.TabStop = true;
             this.rbAbduccion60Optimo.UseVisualStyleBackColor = true;
+            this.rbAbduccion60Optimo.CheckedChanged += new System.EventHandler(this.rbAbduccion60Optimo_CheckedChanged);
             // 
             // panel10
             // 
@@ -5693,6 +5707,7 @@
             this.rbRotacion090MuyLimitado.Size = new System.Drawing.Size(14, 13);
             this.rbRotacion090MuyLimitado.TabIndex = 37;
             this.rbRotacion090MuyLimitado.UseVisualStyleBackColor = true;
+            this.rbRotacion090MuyLimitado.CheckedChanged += new System.EventHandler(this.rbRotacion090MuyLimitado_CheckedChanged);
             // 
             // rbRotacion090Limitado
             // 
@@ -5702,6 +5717,7 @@
             this.rbRotacion090Limitado.Size = new System.Drawing.Size(14, 13);
             this.rbRotacion090Limitado.TabIndex = 37;
             this.rbRotacion090Limitado.UseVisualStyleBackColor = true;
+            this.rbRotacion090Limitado.CheckedChanged += new System.EventHandler(this.rbRotacion090Limitado_CheckedChanged);
             // 
             // rbRotacion090Optimo
             // 
@@ -5713,6 +5729,7 @@
             this.rbRotacion090Optimo.TabIndex = 36;
             this.rbRotacion090Optimo.TabStop = true;
             this.rbRotacion090Optimo.UseVisualStyleBackColor = true;
+            this.rbRotacion090Optimo.CheckedChanged += new System.EventHandler(this.rbRotacion090Optimo_CheckedChanged);
             // 
             // panel12
             // 
@@ -5732,6 +5749,7 @@
             this.rbRotacionExtIntMuyLimitado.Size = new System.Drawing.Size(14, 13);
             this.rbRotacionExtIntMuyLimitado.TabIndex = 37;
             this.rbRotacionExtIntMuyLimitado.UseVisualStyleBackColor = true;
+            this.rbRotacionExtIntMuyLimitado.CheckedChanged += new System.EventHandler(this.rbRotacionExtIntMuyLimitado_CheckedChanged);
             // 
             // rbRotacionExtIntLimitado
             // 
@@ -5741,6 +5759,7 @@
             this.rbRotacionExtIntLimitado.Size = new System.Drawing.Size(14, 13);
             this.rbRotacionExtIntLimitado.TabIndex = 37;
             this.rbRotacionExtIntLimitado.UseVisualStyleBackColor = true;
+            this.rbRotacionExtIntLimitado.CheckedChanged += new System.EventHandler(this.rbRotacionExtIntLimitado_CheckedChanged);
             // 
             // rbRotacionExtIntOptimo
             // 
@@ -5752,6 +5771,7 @@
             this.rbRotacionExtIntOptimo.TabIndex = 36;
             this.rbRotacionExtIntOptimo.TabStop = true;
             this.rbRotacionExtIntOptimo.UseVisualStyleBackColor = true;
+            this.rbRotacionExtIntOptimo.CheckedChanged += new System.EventHandler(this.rbRotacionExtIntOptimo_CheckedChanged);
             // 
             // label65
             // 
@@ -6294,6 +6314,7 @@
             this.rbAbdomenPobre.Size = new System.Drawing.Size(14, 13);
             this.rbAbdomenPobre.TabIndex = 37;
             this.rbAbdomenPobre.UseVisualStyleBackColor = true;
+            this.rbAbdomenPobre.CheckedChanged += new System.EventHandler(this.rbAbdomenPobre_CheckedChanged);
             // 
             // rbAbdomenRegular
             // 
@@ -6303,6 +6324,7 @@
             this.rbAbdomenRegular.Size = new System.Drawing.Size(14, 13);
             this.rbAbdomenRegular.TabIndex = 37;
             this.rbAbdomenRegular.UseVisualStyleBackColor = true;
+            this.rbAbdomenRegular.CheckedChanged += new System.EventHandler(this.rbAbdomenRegular_CheckedChanged);
             // 
             // rbAbdomenPromedio
             // 
@@ -6312,6 +6334,7 @@
             this.rbAbdomenPromedio.Size = new System.Drawing.Size(14, 13);
             this.rbAbdomenPromedio.TabIndex = 37;
             this.rbAbdomenPromedio.UseVisualStyleBackColor = true;
+            this.rbAbdomenPromedio.CheckedChanged += new System.EventHandler(this.rbAbdomenPromedio_CheckedChanged);
             // 
             // rbAbdomenExcelente
             // 
@@ -6323,6 +6346,7 @@
             this.rbAbdomenExcelente.TabIndex = 36;
             this.rbAbdomenExcelente.TabStop = true;
             this.rbAbdomenExcelente.UseVisualStyleBackColor = true;
+            this.rbAbdomenExcelente.CheckedChanged += new System.EventHandler(this.rbAbdomenExcelente_CheckedChanged);
             // 
             // panel1
             // 
@@ -6343,6 +6367,7 @@
             this.rbCaderaPobre.Size = new System.Drawing.Size(14, 13);
             this.rbCaderaPobre.TabIndex = 37;
             this.rbCaderaPobre.UseVisualStyleBackColor = true;
+            this.rbCaderaPobre.CheckedChanged += new System.EventHandler(this.rbCaderaPobre_CheckedChanged);
             // 
             // rbCaderaRegular
             // 
@@ -6352,6 +6377,7 @@
             this.rbCaderaRegular.Size = new System.Drawing.Size(14, 13);
             this.rbCaderaRegular.TabIndex = 37;
             this.rbCaderaRegular.UseVisualStyleBackColor = true;
+            this.rbCaderaRegular.CheckedChanged += new System.EventHandler(this.rbCaderaRegular_CheckedChanged);
             // 
             // rbCaderaPromedio
             // 
@@ -6361,6 +6387,7 @@
             this.rbCaderaPromedio.Size = new System.Drawing.Size(14, 13);
             this.rbCaderaPromedio.TabIndex = 37;
             this.rbCaderaPromedio.UseVisualStyleBackColor = true;
+            this.rbCaderaPromedio.CheckedChanged += new System.EventHandler(this.rbCaderaPromedio_CheckedChanged);
             // 
             // rbCaderaExcelente
             // 
@@ -6372,6 +6399,7 @@
             this.rbCaderaExcelente.TabIndex = 36;
             this.rbCaderaExcelente.TabStop = true;
             this.rbCaderaExcelente.UseVisualStyleBackColor = true;
+            this.rbCaderaExcelente.CheckedChanged += new System.EventHandler(this.rbCaderaExcelente_CheckedChanged);
             // 
             // panel2
             // 
@@ -6392,6 +6420,7 @@
             this.rbMusloPobre.Size = new System.Drawing.Size(14, 13);
             this.rbMusloPobre.TabIndex = 37;
             this.rbMusloPobre.UseVisualStyleBackColor = true;
+            this.rbMusloPobre.CheckedChanged += new System.EventHandler(this.rbMusloPobre_CheckedChanged);
             // 
             // rbMusloRegular
             // 
@@ -6401,6 +6430,7 @@
             this.rbMusloRegular.Size = new System.Drawing.Size(14, 13);
             this.rbMusloRegular.TabIndex = 37;
             this.rbMusloRegular.UseVisualStyleBackColor = true;
+            this.rbMusloRegular.CheckedChanged += new System.EventHandler(this.rbMusloRegular_CheckedChanged);
             // 
             // rbMusloPromedio
             // 
@@ -6410,6 +6440,7 @@
             this.rbMusloPromedio.Size = new System.Drawing.Size(14, 13);
             this.rbMusloPromedio.TabIndex = 37;
             this.rbMusloPromedio.UseVisualStyleBackColor = true;
+            this.rbMusloPromedio.CheckedChanged += new System.EventHandler(this.rbMusloPromedio_CheckedChanged);
             // 
             // rbMusloExcelente
             // 
@@ -6421,6 +6452,7 @@
             this.rbMusloExcelente.TabIndex = 36;
             this.rbMusloExcelente.TabStop = true;
             this.rbMusloExcelente.UseVisualStyleBackColor = true;
+            this.rbMusloExcelente.CheckedChanged += new System.EventHandler(this.rbMusloExcelente_CheckedChanged);
             // 
             // panel3
             // 
@@ -6441,6 +6473,7 @@
             this.rbAbdomenLateralPobre.Size = new System.Drawing.Size(14, 13);
             this.rbAbdomenLateralPobre.TabIndex = 37;
             this.rbAbdomenLateralPobre.UseVisualStyleBackColor = true;
+            this.rbAbdomenLateralPobre.CheckedChanged += new System.EventHandler(this.rbAbdomenLateralPobre_CheckedChanged);
             // 
             // rbAbdomenLateralRegular
             // 
@@ -6450,6 +6483,7 @@
             this.rbAbdomenLateralRegular.Size = new System.Drawing.Size(14, 13);
             this.rbAbdomenLateralRegular.TabIndex = 37;
             this.rbAbdomenLateralRegular.UseVisualStyleBackColor = true;
+            this.rbAbdomenLateralRegular.CheckedChanged += new System.EventHandler(this.rbAbdomenLateralRegular_CheckedChanged);
             // 
             // rbAbdomenLateralPromedio
             // 
@@ -6459,6 +6493,7 @@
             this.rbAbdomenLateralPromedio.Size = new System.Drawing.Size(14, 13);
             this.rbAbdomenLateralPromedio.TabIndex = 37;
             this.rbAbdomenLateralPromedio.UseVisualStyleBackColor = true;
+            this.rbAbdomenLateralPromedio.CheckedChanged += new System.EventHandler(this.rbAbdomenLateralPromedio_CheckedChanged);
             // 
             // rbAbdomenLateralExcelente
             // 
@@ -6470,6 +6505,7 @@
             this.rbAbdomenLateralExcelente.TabIndex = 36;
             this.rbAbdomenLateralExcelente.TabStop = true;
             this.rbAbdomenLateralExcelente.UseVisualStyleBackColor = true;
+            this.rbAbdomenLateralExcelente.CheckedChanged += new System.EventHandler(this.rbAbdomenLateralExcelente_CheckedChanged);
             // 
             // UcOsteoMuscular
             // 

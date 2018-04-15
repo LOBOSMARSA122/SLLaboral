@@ -16,14 +16,14 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crMuscoloEsqueletico : ReportClass {
+    public class crUcOsteoMuscular : ReportClass {
         
-        public crMuscoloEsqueletico() {
+        public crUcOsteoMuscular() {
         }
         
         public override string ResourceName {
             get {
-                return "crMuscoloEsqueletico.rpt";
+                return "crUcOsteoMuscular.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
         
         public override string FullResourceName {
             get {
-                return "Sigesoft.Node.WinClient.UI.Reports.crMuscoloEsqueletico.rpt";
+                return "Sigesoft.Node.WinClient.UI.Reports.crUcOsteoMuscular.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrMuscoloEsqueletico : Component, ICachedReport {
+    public class CachedcrUcOsteoMuscular : Component, ICachedReport {
         
-        public CachedcrMuscoloEsqueletico() {
+        public CachedcrUcOsteoMuscular() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crMuscoloEsqueletico rpt = new crMuscoloEsqueletico();
+            crUcOsteoMuscular rpt = new crUcOsteoMuscular();
             rpt.Site = this.Site;
             return rpt;
         }

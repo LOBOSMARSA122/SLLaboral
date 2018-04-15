@@ -1142,6 +1142,12 @@
       <DependentUpon>crTiemposTrabajadores.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\crUcOsteoMuscular.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crUcOsteoMuscular.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reports\frmAtencionMedicaDetallado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2322,6 +2328,10 @@
     <EmbeddedResource Include="Reports\crTiemposTrabajadores.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crTiemposTrabajadores.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crUcOsteoMuscular.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUcOsteoMuscular.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmAtencionMedicaDetallado.resx">
       <DependentUpon>frmAtencionMedicaDetallado.cs</DependentUpon>
