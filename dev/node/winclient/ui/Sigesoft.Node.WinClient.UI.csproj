@@ -575,6 +575,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsTiempoTrabajador.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\dsUcOsteoMuscular.cs">
+      <DependentUpon>dsUcOsteoMuscular.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dataset\dsUcOsteoMuscular.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUcOsteoMuscular.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormPrecioComponente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1137,6 +1146,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>crTiemposTrabajadores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crUcOsteoMuscular.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crUcOsteoMuscular.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\frmAtencionMedicaDetallado.cs">
@@ -1973,11 +1988,11 @@
     <Compile Include="UserControls\ucOdontograma.Designer.cs">
       <DependentUpon>ucOdontograma.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucOsteoMuscular.cs">
+    <Compile Include="UserControls\UcOsteoMuscular.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ucOsteoMuscular.Designer.cs">
-      <DependentUpon>ucOsteoMuscular.cs</DependentUpon>
+    <Compile Include="UserControls\UcOsteoMuscular.Designer.cs">
+      <DependentUpon>UcOsteoMuscular.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\Utils.cs" />
     <EmbeddedResource Include="Configuration\frmExternalUserEdit.resx">
@@ -2323,6 +2338,10 @@
     <EmbeddedResource Include="Reports\crTiemposTrabajadores.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crTiemposTrabajadores.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crUcOsteoMuscular.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUcOsteoMuscular.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmAtencionMedicaDetallado.resx">
       <DependentUpon>frmAtencionMedicaDetallado.cs</DependentUpon>
@@ -2782,8 +2801,8 @@
       <DependentUpon>ucOdontograma.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucOsteoMuscular.resx">
-      <DependentUpon>ucOsteoMuscular.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\UcOsteoMuscular.resx">
+      <DependentUpon>UcOsteoMuscular.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
@@ -3371,6 +3390,17 @@
     </None>
     <None Include="Dataset\dsTiempoTrabajador.xss">
       <DependentUpon>dsTiempoTrabajador.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsUcOsteoMuscular.xsc">
+      <DependentUpon>dsUcOsteoMuscular.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsUcOsteoMuscular.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUcOsteoMuscular.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsUcOsteoMuscular.xss">
+      <DependentUpon>dsUcOsteoMuscular.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

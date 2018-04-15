@@ -1469,6 +1469,28 @@ namespace Sigesoft.Node.WinClient.UI.Reports
 
                     break;
 
+
+                case "N009-ME000000096":
+                    var ucOsteoMuscular = new ServiceBL().ReporteCuestionarioNordico(_serviceId, "N002-ME000000022");
+                    dsGetRepo = new DataSet();
+                    DataTable dtUcOsteoMuscular = BLL.Utils.ConvertToDatatable(ucOsteoMuscular);
+                    dtUcOsteoMuscular.TableName = "dtUcOsteoMuscular";
+                    dsGetRepo.Tables.Add(dtUcOsteoMuscular);
+                    rp = new crUcOsteoMuscular();
+                    rp.SetDataSource(dsGetRepo);
+
+                    rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
+                    rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
+                    objDiskOpt = new DiskFileDestinationOptions
+                    {
+                        DiskFileName = Application.StartupPath + @"\TempMerge\" + "N009-ME000000096" + ".pdf"
+                    };
+                    _filesNameToMerge.Add(objDiskOpt.DiskFileName);
+                    rp.ExportOptions.DestinationOptions = objDiskOpt;
+                    rp.Export();
+
+                    break;
+
                 case Constants.TEST_SINTOMATICO_RESP_ID:
                     var TEST_SINTOMATICO_RESP_ID = new ServiceBL().GetReportTestSintomaticoResp(_serviceId, Constants.TEST_SINTOMATICO_RESP_ID);
                     dsGetRepo = new DataSet();

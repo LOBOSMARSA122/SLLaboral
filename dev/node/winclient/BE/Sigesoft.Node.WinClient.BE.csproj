@@ -124,6 +124,7 @@
     <Compile Include="Custom\ReporteAtencionMedicaDetallado.cs" />
     <Compile Include="Custom\ReporteCuestionarioNordico.cs" />
     <Compile Include="Custom\ReportEsfuerzoFisico.cs" />
+    <Compile Include="Custom\ReporteUcOsteoMuscular.cs" />
     <Compile Include="Custom\ReportEvaCardiologica.cs" />
     <Compile Include="Custom\ReportEvaGinecologico.cs" />
     <Compile Include="Custom\ReportEvaluacionPsicolaboralPersonal.cs" />
