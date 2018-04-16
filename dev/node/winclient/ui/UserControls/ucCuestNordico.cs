@@ -227,6 +227,18 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
             Utils.LoadDropDownList(cbo10Codo, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 245), DropDownListAction.Select);
             Utils.LoadDropDownList(cbo10Mano, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 245), DropDownListAction.Select);
 
+
+            cbo1Cuello.SelectedValue = "0";
+            cbo1Hombro.SelectedValue = "0";
+            cbo1Dorsal.SelectedValue = "0";
+            cbo1Codo.SelectedValue = "0";
+            cbo1Mano.SelectedValue = "0";
+
+            cbo1HombroDir.SelectedValue = "3"; ;
+            cbo1CodoDir.SelectedValue = "3";
+            cbo1ManoDir.SelectedValue = "3";
+
+
             SearchControlAndSetEvents(this);
 
             #endregion

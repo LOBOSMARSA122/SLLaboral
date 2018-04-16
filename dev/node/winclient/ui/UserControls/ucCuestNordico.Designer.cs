@@ -1378,6 +1378,7 @@
             this.txt2Mano.Name = "txt2Mano";
             this.txt2Mano.Size = new System.Drawing.Size(126, 20);
             this.txt2Mano.TabIndex = 419;
+            this.txt2Mano.Text = "---";
             // 
             // txt2Codo
             // 
@@ -1385,6 +1386,7 @@
             this.txt2Codo.Name = "txt2Codo";
             this.txt2Codo.Size = new System.Drawing.Size(126, 20);
             this.txt2Codo.TabIndex = 419;
+            this.txt2Codo.Text = "---";
             // 
             // txt2Dorsal
             // 
@@ -1392,6 +1394,7 @@
             this.txt2Dorsal.Name = "txt2Dorsal";
             this.txt2Dorsal.Size = new System.Drawing.Size(126, 20);
             this.txt2Dorsal.TabIndex = 419;
+            this.txt2Dorsal.Text = "---";
             // 
             // txt2Hombro
             // 
@@ -1399,6 +1402,7 @@
             this.txt2Hombro.Name = "txt2Hombro";
             this.txt2Hombro.Size = new System.Drawing.Size(126, 20);
             this.txt2Hombro.TabIndex = 419;
+            this.txt2Hombro.Text = "---";
             // 
             // txt2Cuello
             // 
@@ -1406,6 +1410,7 @@
             this.txt2Cuello.Name = "txt2Cuello";
             this.txt2Cuello.Size = new System.Drawing.Size(126, 20);
             this.txt2Cuello.TabIndex = 419;
+            this.txt2Cuello.Text = "---";
             // 
             // label67
             // 
