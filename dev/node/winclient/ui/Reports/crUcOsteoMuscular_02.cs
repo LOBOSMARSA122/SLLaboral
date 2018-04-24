@@ -16,14 +16,14 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class crCuestionarioNordicoUserControl : ReportClass {
+    public class crUcOsteoMuscular_02 : ReportClass {
         
-        public crCuestionarioNordicoUserControl() {
+        public crUcOsteoMuscular_02() {
         }
         
         public override string ResourceName {
             get {
-                return "crCuestionarioNordicoUserControl.rpt";
+                return "crUcOsteoMuscular_02.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
         
         public override string FullResourceName {
             get {
-                return "Sigesoft.Node.WinClient.UI.Reports.crCuestionarioNordicoUserControl.rpt";
+                return "Sigesoft.Node.WinClient.UI.Reports.crUcOsteoMuscular_02.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedcrCuestionarioNordicoUserControl : Component, ICachedReport {
+    public class CachedcrUcOsteoMuscular_02 : Component, ICachedReport {
         
-        public CachedcrCuestionarioNordicoUserControl() {
+        public CachedcrUcOsteoMuscular_02() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace Sigesoft.Node.WinClient.UI.Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            crCuestionarioNordicoUserControl rpt = new crCuestionarioNordicoUserControl();
+            crUcOsteoMuscular_02 rpt = new crUcOsteoMuscular_02();
             rpt.Site = this.Site;
             return rpt;
         }

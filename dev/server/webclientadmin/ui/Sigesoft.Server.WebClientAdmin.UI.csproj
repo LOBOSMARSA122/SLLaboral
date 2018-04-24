@@ -66,8 +66,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\SLSanLorenzo\ExternalLibraries\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="PdfViewer">
-      <HintPath>..\..\..\..\externallibraries\Web\PdfViewer.dll</HintPath>
+    <Reference Include="PdfViewer, Version=1.0.5485.17827, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SLSanjoaquin\ExternalLibraries\PdfViewer.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData">
       <Private>True</Private>
