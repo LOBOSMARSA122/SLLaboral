@@ -1355,12 +1355,8 @@ namespace Sigesoft.Node.WinClient.BLL
                                 Conclusiones = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_CONCLUSIONES_ID) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_CONCLUSIONES_ID).v_Value1,
                                 Restriccion = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_RECOMENDACIONES_ESPECIFICAS) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_RECOMENDACIONES_ESPECIFICAS).v_Value1,
                                 AreaPersonal = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.AreaPersonal) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.AreaPersonal).v_Value1,
-
-
-
-
-
-                                AreaCognitiva = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_COGNITIVA_ID) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_COGNITIVA_ID).v_Value1,
+                                
+                                AreaCognitiva = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_COGNITIVA_ID) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_COGNITIVA_ID).v_Value1.Trim(),
                                 AreaEmocional = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_EMOCIONAL_ID) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.PSICOLOGIA_AREA_EMOCIONAL_ID).v_Value1,
                                 Recomendacion = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.Recomendacion) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.Recomendacion).v_Value1,
                                 Presentacion = Psico.Count == 0 || Psico.Find(p => p.v_ComponentFieldId == Constants.Presentacion) == null ? string.Empty : Psico.Find(p => p.v_ComponentFieldId == Constants.Presentacion).v_Value1,

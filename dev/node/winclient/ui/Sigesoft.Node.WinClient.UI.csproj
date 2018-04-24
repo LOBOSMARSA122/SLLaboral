@@ -862,8 +862,13 @@
     <Compile Include="Operations\Popups\frmSelectSignature.Designer.cs">
       <DependentUpon>frmSelectSignature.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Reports\crUcOsteoMuscular_02.cs">
       <DependentUpon>crUcOsteoMuscular_02.rpt</DependentUpon>
+=======
+    <Compile Include="Reports\crCuestionarioNordicoUserControl_02.cs">
+      <DependentUpon>crCuestionarioNordicoUserControl_02.rpt</DependentUpon>
+>>>>>>> origin/master
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
@@ -2149,9 +2154,15 @@
     <EmbeddedResource Include="Operations\Popups\frmSelectSignature.resx">
       <DependentUpon>frmSelectSignature.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Reports\crUcOsteoMuscular_02.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crUcOsteoMuscular_02.cs</LastGenOutput>
+=======
+    <EmbeddedResource Include="Reports\crCuestionarioNordicoUserControl_02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crCuestionarioNordicoUserControl_02.cs</LastGenOutput>
+>>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\crApnea.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
