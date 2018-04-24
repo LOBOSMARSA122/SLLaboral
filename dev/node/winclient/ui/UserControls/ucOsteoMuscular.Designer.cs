@@ -468,8 +468,6 @@
             this.rbAbdomenRegular = new System.Windows.Forms.RadioButton();
             this.rbAbdomenPromedio = new System.Windows.Forms.RadioButton();
             this.rbAbdomenExcelente = new System.Windows.Forms.RadioButton();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label191 = new System.Windows.Forms.Label();
             this.label190 = new System.Windows.Forms.Label();
             this.label189 = new System.Windows.Forms.Label();
@@ -481,32 +479,35 @@
             this.label68 = new System.Windows.Forms.Label();
             this.txtAbdomenObservaciones = new System.Windows.Forms.TextBox();
             this.txtAbdomenPuntos = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtCaderaPuntos = new System.Windows.Forms.TextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.txtCaderaOnservaciones = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txtMusloPuntos = new System.Windows.Forms.TextBox();
             this.txtMusloObservaciones = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.txtAbdomenLateralPuntos = new System.Windows.Forms.TextBox();
             this.txtAbdomenLateralObservaciones = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.txtTotalAptitudEspalda = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.rbRotacionExtIntOptimo = new System.Windows.Forms.RadioButton();
             this.rbRotacionExtIntLimitado = new System.Windows.Forms.RadioButton();
@@ -601,23 +602,23 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -669,8 +670,7 @@
             this.txtAnamnesis.Size = new System.Drawing.Size(854, 35);
             this.txtAnamnesis.TabIndex = 419;
             this.txtAnamnesis.Text = "PACIENTE QUE INGRESA AL SERVICIO REALIZA MARCHA ADECUADA, CON POSTURA SIMETRICA. " +
-    "PACIENTE REFIERE DOLOR 2/10 EN AMBAS MUÑECAS, REFIERE HABER ESTADO LEVANTANDO PE" +
-    "SO.";
+    "PACIENTE  NO REFIERE DOLOR.";
             // 
             // groupBox2
             // 
@@ -1289,6 +1289,7 @@
             this.groupBox3.Controls.Add(this.txt2Anios);
             this.groupBox3.Controls.Add(this.txt2Horas);
             this.groupBox3.Controls.Add(this.cbo2RiesgoLevanta);
+            this.groupBox3.Controls.Add(this.label51);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label6);
@@ -1320,11 +1321,12 @@
             // 
             // txt2Exposicion
             // 
-            this.txt2Exposicion.Location = new System.Drawing.Point(351, 136);
+            this.txt2Exposicion.Location = new System.Drawing.Point(354, 136);
             this.txt2Exposicion.Multiline = true;
             this.txt2Exposicion.Name = "txt2Exposicion";
             this.txt2Exposicion.Size = new System.Drawing.Size(81, 21);
             this.txt2Exposicion.TabIndex = 419;
+            this.txt2Exposicion.Text = "- - -";
             // 
             // txt2DiasSemana
             // 
@@ -1333,6 +1335,7 @@
             this.txt2DiasSemana.Name = "txt2DiasSemana";
             this.txt2DiasSemana.Size = new System.Drawing.Size(81, 21);
             this.txt2DiasSemana.TabIndex = 419;
+            this.txt2DiasSemana.Text = "- - -";
             // 
             // txt2HorasSentado
             // 
@@ -1341,6 +1344,7 @@
             this.txt2HorasSentado.Name = "txt2HorasSentado";
             this.txt2HorasSentado.Size = new System.Drawing.Size(81, 21);
             this.txt2HorasSentado.TabIndex = 419;
+            this.txt2HorasSentado.Text = "- - -";
             // 
             // txt2Repetitivo
             // 
@@ -1349,6 +1353,7 @@
             this.txt2Repetitivo.Name = "txt2Repetitivo";
             this.txt2Repetitivo.Size = new System.Drawing.Size(257, 21);
             this.txt2Repetitivo.TabIndex = 419;
+            this.txt2Repetitivo.Text = "- - -";
             // 
             // label7
             // 
@@ -1366,6 +1371,7 @@
             this.txt2Anios.Name = "txt2Anios";
             this.txt2Anios.Size = new System.Drawing.Size(81, 21);
             this.txt2Anios.TabIndex = 419;
+            this.txt2Anios.Text = "- - -";
             // 
             // txt2Horas
             // 
@@ -1374,6 +1380,7 @@
             this.txt2Horas.Name = "txt2Horas";
             this.txt2Horas.Size = new System.Drawing.Size(81, 21);
             this.txt2Horas.TabIndex = 419;
+            this.txt2Horas.Text = "- - -";
             // 
             // cbo2RiesgoLevanta
             // 
@@ -1655,7 +1662,7 @@
             this.groupBox13.Controls.Add(this.groupBox14);
             this.groupBox13.Controls.Add(this.groupBox10);
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(15, 1987);
+            this.groupBox13.Location = new System.Drawing.Point(23, 1920);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(857, 1004);
             this.groupBox13.TabIndex = 419;
@@ -2597,6 +2604,7 @@
             this.txtPalpacionDolor.Name = "txtPalpacionDolor";
             this.txtPalpacionDolor.Size = new System.Drawing.Size(110, 21);
             this.txtPalpacionDolor.TabIndex = 419;
+            this.txtPalpacionDolor.Text = "- - -";
             // 
             // txtPalpacionContractura
             // 
@@ -2605,6 +2613,7 @@
             this.txtPalpacionContractura.Name = "txtPalpacionContractura";
             this.txtPalpacionContractura.Size = new System.Drawing.Size(110, 21);
             this.txtPalpacionContractura.TabIndex = 419;
+            this.txtPalpacionContractura.Text = "- - -";
             // 
             // label90
             // 
@@ -2622,6 +2631,7 @@
             this.txtPalpacionApofisis.Name = "txtPalpacionApofisis";
             this.txtPalpacionApofisis.Size = new System.Drawing.Size(110, 21);
             this.txtPalpacionApofisis.TabIndex = 419;
+            this.txtPalpacionApofisis.Text = "- - -";
             // 
             // label89
             // 
@@ -2679,37 +2689,41 @@
             // cboLumbatExtension
             // 
             this.cboLumbatExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLumbatExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLumbatExtension.FormattingEnabled = true;
             this.cboLumbatExtension.Location = new System.Drawing.Point(238, 81);
             this.cboLumbatExtension.Name = "cboLumbatExtension";
-            this.cboLumbatExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboLumbatExtension.Size = new System.Drawing.Size(61, 21);
             this.cboLumbatExtension.TabIndex = 24;
             // 
             // cboLumbatFlexion
             // 
             this.cboLumbatFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLumbatFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLumbatFlexion.FormattingEnabled = true;
             this.cboLumbatFlexion.Location = new System.Drawing.Point(132, 81);
             this.cboLumbatFlexion.Name = "cboLumbatFlexion";
-            this.cboLumbatFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboLumbatFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboLumbatFlexion.TabIndex = 24;
             // 
             // cboCervicalExtension
             // 
             this.cboCervicalExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCervicalExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCervicalExtension.FormattingEnabled = true;
             this.cboCervicalExtension.Location = new System.Drawing.Point(238, 50);
             this.cboCervicalExtension.Name = "cboCervicalExtension";
-            this.cboCervicalExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboCervicalExtension.Size = new System.Drawing.Size(61, 21);
             this.cboCervicalExtension.TabIndex = 24;
             // 
             // cboCervicalFlexion
             // 
             this.cboCervicalFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCervicalFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCervicalFlexion.FormattingEnabled = true;
             this.cboCervicalFlexion.Location = new System.Drawing.Point(132, 50);
             this.cboCervicalFlexion.Name = "cboCervicalFlexion";
-            this.cboCervicalFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboCervicalFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboCervicalFlexion.TabIndex = 24;
             // 
             // label78
@@ -2814,91 +2828,101 @@
             // cboLumbatLateIzquierda
             // 
             this.cboLumbatLateIzquierda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLumbatLateIzquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLumbatLateIzquierda.FormattingEnabled = true;
             this.cboLumbatLateIzquierda.Location = new System.Drawing.Point(662, 81);
             this.cboLumbatLateIzquierda.Name = "cboLumbatLateIzquierda";
-            this.cboLumbatLateIzquierda.Size = new System.Drawing.Size(61, 23);
+            this.cboLumbatLateIzquierda.Size = new System.Drawing.Size(61, 21);
             this.cboLumbatLateIzquierda.TabIndex = 24;
             // 
             // cboLumbatLateDerecha
             // 
             this.cboLumbatLateDerecha.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLumbatLateDerecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLumbatLateDerecha.FormattingEnabled = true;
             this.cboLumbatLateDerecha.Location = new System.Drawing.Point(556, 81);
             this.cboLumbatLateDerecha.Name = "cboLumbatLateDerecha";
-            this.cboLumbatLateDerecha.Size = new System.Drawing.Size(61, 23);
+            this.cboLumbatLateDerecha.Size = new System.Drawing.Size(61, 21);
             this.cboLumbatLateDerecha.TabIndex = 24;
             // 
             // cboLumbatRotacionIzquierda
             // 
             this.cboLumbatRotacionIzquierda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLumbatRotacionIzquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLumbatRotacionIzquierda.FormattingEnabled = true;
             this.cboLumbatRotacionIzquierda.Location = new System.Drawing.Point(450, 81);
             this.cboLumbatRotacionIzquierda.Name = "cboLumbatRotacionIzquierda";
-            this.cboLumbatRotacionIzquierda.Size = new System.Drawing.Size(61, 23);
+            this.cboLumbatRotacionIzquierda.Size = new System.Drawing.Size(61, 21);
             this.cboLumbatRotacionIzquierda.TabIndex = 24;
             // 
             // cboLumbatRotacionDerecha
             // 
             this.cboLumbatRotacionDerecha.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLumbatRotacionDerecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLumbatRotacionDerecha.FormattingEnabled = true;
             this.cboLumbatRotacionDerecha.Location = new System.Drawing.Point(344, 81);
             this.cboLumbatRotacionDerecha.Name = "cboLumbatRotacionDerecha";
-            this.cboLumbatRotacionDerecha.Size = new System.Drawing.Size(61, 23);
+            this.cboLumbatRotacionDerecha.Size = new System.Drawing.Size(61, 21);
             this.cboLumbatRotacionDerecha.TabIndex = 24;
             // 
             // cboCervicalLateIzquierda
             // 
             this.cboCervicalLateIzquierda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCervicalLateIzquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCervicalLateIzquierda.FormattingEnabled = true;
             this.cboCervicalLateIzquierda.Location = new System.Drawing.Point(662, 50);
             this.cboCervicalLateIzquierda.Name = "cboCervicalLateIzquierda";
-            this.cboCervicalLateIzquierda.Size = new System.Drawing.Size(61, 23);
+            this.cboCervicalLateIzquierda.Size = new System.Drawing.Size(61, 21);
             this.cboCervicalLateIzquierda.TabIndex = 24;
             // 
             // cboCervicalLateDerecha
             // 
             this.cboCervicalLateDerecha.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCervicalLateDerecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCervicalLateDerecha.FormattingEnabled = true;
             this.cboCervicalLateDerecha.Location = new System.Drawing.Point(556, 50);
             this.cboCervicalLateDerecha.Name = "cboCervicalLateDerecha";
-            this.cboCervicalLateDerecha.Size = new System.Drawing.Size(61, 23);
+            this.cboCervicalLateDerecha.Size = new System.Drawing.Size(61, 21);
             this.cboCervicalLateDerecha.TabIndex = 24;
             // 
             // cboCervicalRotaIzquierda
             // 
             this.cboCervicalRotaIzquierda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCervicalRotaIzquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCervicalRotaIzquierda.FormattingEnabled = true;
             this.cboCervicalRotaIzquierda.Location = new System.Drawing.Point(450, 50);
             this.cboCervicalRotaIzquierda.Name = "cboCervicalRotaIzquierda";
-            this.cboCervicalRotaIzquierda.Size = new System.Drawing.Size(61, 23);
+            this.cboCervicalRotaIzquierda.Size = new System.Drawing.Size(61, 21);
             this.cboCervicalRotaIzquierda.TabIndex = 24;
             // 
             // cboCervicalRotaDerecha
             // 
             this.cboCervicalRotaDerecha.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCervicalRotaDerecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCervicalRotaDerecha.FormattingEnabled = true;
             this.cboCervicalRotaDerecha.Location = new System.Drawing.Point(344, 50);
             this.cboCervicalRotaDerecha.Name = "cboCervicalRotaDerecha";
-            this.cboCervicalRotaDerecha.Size = new System.Drawing.Size(61, 23);
+            this.cboCervicalRotaDerecha.Size = new System.Drawing.Size(61, 21);
             this.cboCervicalRotaDerecha.TabIndex = 24;
             // 
             // cboLumbatIrradiacion
             // 
             this.cboLumbatIrradiacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLumbatIrradiacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLumbatIrradiacion.FormattingEnabled = true;
             this.cboLumbatIrradiacion.Location = new System.Drawing.Point(768, 81);
             this.cboLumbatIrradiacion.Name = "cboLumbatIrradiacion";
-            this.cboLumbatIrradiacion.Size = new System.Drawing.Size(61, 23);
+            this.cboLumbatIrradiacion.Size = new System.Drawing.Size(61, 21);
             this.cboLumbatIrradiacion.TabIndex = 24;
             // 
             // cboCervicalIrradiacion
             // 
             this.cboCervicalIrradiacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCervicalIrradiacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCervicalIrradiacion.FormattingEnabled = true;
             this.cboCervicalIrradiacion.Location = new System.Drawing.Point(768, 50);
             this.cboCervicalIrradiacion.Name = "cboCervicalIrradiacion";
-            this.cboCervicalIrradiacion.Size = new System.Drawing.Size(61, 23);
+            this.cboCervicalIrradiacion.Size = new System.Drawing.Size(61, 21);
             this.cboCervicalIrradiacion.TabIndex = 24;
             // 
             // groupBox14
@@ -3042,7 +3066,7 @@
             this.groupBox27.Controls.Add(this.label140);
             this.groupBox27.Controls.Add(this.label141);
             this.groupBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox27.Location = new System.Drawing.Point(15, 2997);
+            this.groupBox27.Location = new System.Drawing.Point(23, 2930);
             this.groupBox27.Name = "groupBox27";
             this.groupBox27.Size = new System.Drawing.Size(857, 56);
             this.groupBox27.TabIndex = 429;
@@ -3126,7 +3150,7 @@
             this.groupBox28.Controls.Add(this.cboMarchaClaudicacion);
             this.groupBox28.Controls.Add(this.label146);
             this.groupBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox28.Location = new System.Drawing.Point(15, 3059);
+            this.groupBox28.Location = new System.Drawing.Point(23, 2992);
             this.groupBox28.Name = "groupBox28";
             this.groupBox28.Size = new System.Drawing.Size(857, 56);
             this.groupBox28.TabIndex = 429;
@@ -3289,7 +3313,7 @@
             this.groupBox29.Controls.Add(this.cboHombroIzqDolor);
             this.groupBox29.Controls.Add(this.cboHombroDerDolor);
             this.groupBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox29.Location = new System.Drawing.Point(12, 3121);
+            this.groupBox29.Location = new System.Drawing.Point(20, 3054);
             this.groupBox29.Name = "groupBox29";
             this.groupBox29.Size = new System.Drawing.Size(860, 409);
             this.groupBox29.TabIndex = 430;
@@ -3299,316 +3323,351 @@
             // cboTobilloIzqRotInt
             // 
             this.cboTobilloIzqRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqRotInt.FormattingEnabled = true;
             this.cboTobilloIzqRotInt.Location = new System.Drawing.Point(290, 378);
             this.cboTobilloIzqRotInt.Name = "cboTobilloIzqRotInt";
-            this.cboTobilloIzqRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqRotInt.TabIndex = 24;
             // 
             // cboRodillaIzqRotInt
             // 
             this.cboRodillaIzqRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqRotInt.FormattingEnabled = true;
             this.cboRodillaIzqRotInt.Location = new System.Drawing.Point(290, 317);
             this.cboRodillaIzqRotInt.Name = "cboRodillaIzqRotInt";
-            this.cboRodillaIzqRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqRotInt.TabIndex = 24;
             // 
             // cboCaderaIzqRotInt
             // 
             this.cboCaderaIzqRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqRotInt.FormattingEnabled = true;
             this.cboCaderaIzqRotInt.Location = new System.Drawing.Point(290, 256);
             this.cboCaderaIzqRotInt.Name = "cboCaderaIzqRotInt";
-            this.cboCaderaIzqRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqRotInt.TabIndex = 24;
             // 
             // cboMunecaIzqRotInt
             // 
             this.cboMunecaIzqRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqRotInt.FormattingEnabled = true;
             this.cboMunecaIzqRotInt.Location = new System.Drawing.Point(290, 195);
             this.cboMunecaIzqRotInt.Name = "cboMunecaIzqRotInt";
-            this.cboMunecaIzqRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqRotInt.TabIndex = 24;
             // 
             // cboCodoIzqRotInt
             // 
             this.cboCodoIzqRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqRotInt.FormattingEnabled = true;
             this.cboCodoIzqRotInt.Location = new System.Drawing.Point(290, 135);
             this.cboCodoIzqRotInt.Name = "cboCodoIzqRotInt";
-            this.cboCodoIzqRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqRotInt.TabIndex = 24;
             // 
             // cboHombroIzqRotInt
             // 
             this.cboHombroIzqRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqRotInt.FormattingEnabled = true;
             this.cboHombroIzqRotInt.Location = new System.Drawing.Point(290, 71);
             this.cboHombroIzqRotInt.Name = "cboHombroIzqRotInt";
-            this.cboHombroIzqRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqRotInt.TabIndex = 24;
             // 
             // cboTobilloIzqExtension
             // 
             this.cboTobilloIzqExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqExtension.FormattingEnabled = true;
             this.cboTobilloIzqExtension.Location = new System.Drawing.Point(211, 378);
             this.cboTobilloIzqExtension.Name = "cboTobilloIzqExtension";
-            this.cboTobilloIzqExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqExtension.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqExtension.TabIndex = 24;
             // 
             // cboRodillaIzqExtension
             // 
             this.cboRodillaIzqExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqExtension.FormattingEnabled = true;
             this.cboRodillaIzqExtension.Location = new System.Drawing.Point(211, 317);
             this.cboRodillaIzqExtension.Name = "cboRodillaIzqExtension";
-            this.cboRodillaIzqExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqExtension.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqExtension.TabIndex = 24;
             // 
             // cboCaderaIzqExtension
             // 
             this.cboCaderaIzqExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqExtension.FormattingEnabled = true;
             this.cboCaderaIzqExtension.Location = new System.Drawing.Point(211, 256);
             this.cboCaderaIzqExtension.Name = "cboCaderaIzqExtension";
-            this.cboCaderaIzqExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqExtension.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqExtension.TabIndex = 24;
             // 
             // cboMunecaIzqExtension
             // 
             this.cboMunecaIzqExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqExtension.FormattingEnabled = true;
             this.cboMunecaIzqExtension.Location = new System.Drawing.Point(211, 195);
             this.cboMunecaIzqExtension.Name = "cboMunecaIzqExtension";
-            this.cboMunecaIzqExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqExtension.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqExtension.TabIndex = 24;
             // 
             // cboCodoIzqExtension
             // 
             this.cboCodoIzqExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqExtension.FormattingEnabled = true;
             this.cboCodoIzqExtension.Location = new System.Drawing.Point(211, 135);
             this.cboCodoIzqExtension.Name = "cboCodoIzqExtension";
-            this.cboCodoIzqExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqExtension.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqExtension.TabIndex = 24;
             // 
             // cboTobilloIzqFlexion
             // 
             this.cboTobilloIzqFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqFlexion.FormattingEnabled = true;
             this.cboTobilloIzqFlexion.Location = new System.Drawing.Point(132, 378);
             this.cboTobilloIzqFlexion.Name = "cboTobilloIzqFlexion";
-            this.cboTobilloIzqFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqFlexion.TabIndex = 24;
             // 
             // cboRodillaIzqFlexion
             // 
             this.cboRodillaIzqFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqFlexion.FormattingEnabled = true;
             this.cboRodillaIzqFlexion.Location = new System.Drawing.Point(132, 317);
             this.cboRodillaIzqFlexion.Name = "cboRodillaIzqFlexion";
-            this.cboRodillaIzqFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqFlexion.TabIndex = 24;
             // 
             // cboCaderaIzqFlexion
             // 
             this.cboCaderaIzqFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqFlexion.FormattingEnabled = true;
             this.cboCaderaIzqFlexion.Location = new System.Drawing.Point(132, 256);
             this.cboCaderaIzqFlexion.Name = "cboCaderaIzqFlexion";
-            this.cboCaderaIzqFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqFlexion.TabIndex = 24;
             // 
             // cboMunecaIzqFlexion
             // 
             this.cboMunecaIzqFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqFlexion.FormattingEnabled = true;
             this.cboMunecaIzqFlexion.Location = new System.Drawing.Point(132, 195);
             this.cboMunecaIzqFlexion.Name = "cboMunecaIzqFlexion";
-            this.cboMunecaIzqFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqFlexion.TabIndex = 24;
             // 
             // cboHombroIzqExtension
             // 
             this.cboHombroIzqExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqExtension.FormattingEnabled = true;
             this.cboHombroIzqExtension.Location = new System.Drawing.Point(211, 71);
             this.cboHombroIzqExtension.Name = "cboHombroIzqExtension";
-            this.cboHombroIzqExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqExtension.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqExtension.TabIndex = 24;
             // 
             // cboCodoIzqFlexion
             // 
             this.cboCodoIzqFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqFlexion.FormattingEnabled = true;
             this.cboCodoIzqFlexion.Location = new System.Drawing.Point(132, 135);
             this.cboCodoIzqFlexion.Name = "cboCodoIzqFlexion";
-            this.cboCodoIzqFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqFlexion.TabIndex = 24;
             // 
             // cboTobilloDerRotInt
             // 
             this.cboTobilloDerRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerRotInt.FormattingEnabled = true;
             this.cboTobilloDerRotInt.Location = new System.Drawing.Point(290, 347);
             this.cboTobilloDerRotInt.Name = "cboTobilloDerRotInt";
-            this.cboTobilloDerRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerRotInt.TabIndex = 24;
             // 
             // cboRodillaDerRotInt
             // 
             this.cboRodillaDerRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerRotInt.FormattingEnabled = true;
             this.cboRodillaDerRotInt.Location = new System.Drawing.Point(290, 286);
             this.cboRodillaDerRotInt.Name = "cboRodillaDerRotInt";
-            this.cboRodillaDerRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerRotInt.TabIndex = 24;
             // 
             // cboCaderaDerRotInt
             // 
             this.cboCaderaDerRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerRotInt.FormattingEnabled = true;
             this.cboCaderaDerRotInt.Location = new System.Drawing.Point(290, 225);
             this.cboCaderaDerRotInt.Name = "cboCaderaDerRotInt";
-            this.cboCaderaDerRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerRotInt.TabIndex = 24;
             // 
             // cboMunecaDerRotInt
             // 
             this.cboMunecaDerRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerRotInt.FormattingEnabled = true;
             this.cboMunecaDerRotInt.Location = new System.Drawing.Point(290, 164);
             this.cboMunecaDerRotInt.Name = "cboMunecaDerRotInt";
-            this.cboMunecaDerRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerRotInt.TabIndex = 24;
             // 
             // cboHombroIzqFlexion
             // 
             this.cboHombroIzqFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqFlexion.FormattingEnabled = true;
             this.cboHombroIzqFlexion.Location = new System.Drawing.Point(132, 71);
             this.cboHombroIzqFlexion.Name = "cboHombroIzqFlexion";
-            this.cboHombroIzqFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqFlexion.TabIndex = 24;
             // 
             // cboCodoDerRotInt
             // 
             this.cboCodoDerRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerRotInt.FormattingEnabled = true;
             this.cboCodoDerRotInt.Location = new System.Drawing.Point(290, 104);
             this.cboCodoDerRotInt.Name = "cboCodoDerRotInt";
-            this.cboCodoDerRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerRotInt.TabIndex = 24;
             // 
             // cboTobilloDerExtension
             // 
             this.cboTobilloDerExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerExtension.FormattingEnabled = true;
             this.cboTobilloDerExtension.Location = new System.Drawing.Point(211, 347);
             this.cboTobilloDerExtension.Name = "cboTobilloDerExtension";
-            this.cboTobilloDerExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerExtension.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerExtension.TabIndex = 24;
             // 
             // cboRodillaDerExtension
             // 
             this.cboRodillaDerExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerExtension.FormattingEnabled = true;
             this.cboRodillaDerExtension.Location = new System.Drawing.Point(211, 286);
             this.cboRodillaDerExtension.Name = "cboRodillaDerExtension";
-            this.cboRodillaDerExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerExtension.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerExtension.TabIndex = 24;
             // 
             // cboCaderaDerExtension
             // 
             this.cboCaderaDerExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerExtension.FormattingEnabled = true;
             this.cboCaderaDerExtension.Location = new System.Drawing.Point(211, 225);
             this.cboCaderaDerExtension.Name = "cboCaderaDerExtension";
-            this.cboCaderaDerExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerExtension.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerExtension.TabIndex = 24;
             // 
             // cboMunecaDerExtension
             // 
             this.cboMunecaDerExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerExtension.FormattingEnabled = true;
             this.cboMunecaDerExtension.Location = new System.Drawing.Point(211, 164);
             this.cboMunecaDerExtension.Name = "cboMunecaDerExtension";
-            this.cboMunecaDerExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerExtension.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerExtension.TabIndex = 24;
             // 
             // cboHombroDerRotInt
             // 
             this.cboHombroDerRotInt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerRotInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerRotInt.FormattingEnabled = true;
             this.cboHombroDerRotInt.Location = new System.Drawing.Point(290, 40);
             this.cboHombroDerRotInt.Name = "cboHombroDerRotInt";
-            this.cboHombroDerRotInt.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerRotInt.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerRotInt.TabIndex = 24;
             // 
             // cboCodoDerExtension
             // 
             this.cboCodoDerExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerExtension.FormattingEnabled = true;
             this.cboCodoDerExtension.Location = new System.Drawing.Point(211, 104);
             this.cboCodoDerExtension.Name = "cboCodoDerExtension";
-            this.cboCodoDerExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerExtension.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerExtension.TabIndex = 24;
             // 
             // cboTobilloDerFlexion
             // 
             this.cboTobilloDerFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerFlexion.FormattingEnabled = true;
             this.cboTobilloDerFlexion.Location = new System.Drawing.Point(132, 347);
             this.cboTobilloDerFlexion.Name = "cboTobilloDerFlexion";
-            this.cboTobilloDerFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerFlexion.TabIndex = 24;
             // 
             // cboRodillaDerFlexion
             // 
             this.cboRodillaDerFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerFlexion.FormattingEnabled = true;
             this.cboRodillaDerFlexion.Location = new System.Drawing.Point(132, 286);
             this.cboRodillaDerFlexion.Name = "cboRodillaDerFlexion";
-            this.cboRodillaDerFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerFlexion.TabIndex = 24;
             // 
             // cboCaderaDerFlexion
             // 
             this.cboCaderaDerFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerFlexion.FormattingEnabled = true;
             this.cboCaderaDerFlexion.Location = new System.Drawing.Point(132, 225);
             this.cboCaderaDerFlexion.Name = "cboCaderaDerFlexion";
-            this.cboCaderaDerFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerFlexion.TabIndex = 24;
             // 
             // cboMunecaDerFlexion
             // 
             this.cboMunecaDerFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerFlexion.FormattingEnabled = true;
             this.cboMunecaDerFlexion.Location = new System.Drawing.Point(132, 164);
             this.cboMunecaDerFlexion.Name = "cboMunecaDerFlexion";
-            this.cboMunecaDerFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerFlexion.TabIndex = 24;
             // 
             // cboHombroDerExtension
             // 
             this.cboHombroDerExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerExtension.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerExtension.FormattingEnabled = true;
             this.cboHombroDerExtension.Location = new System.Drawing.Point(211, 40);
             this.cboHombroDerExtension.Name = "cboHombroDerExtension";
-            this.cboHombroDerExtension.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerExtension.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerExtension.TabIndex = 24;
             // 
             // cboCodoDerFlexion
             // 
             this.cboCodoDerFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerFlexion.FormattingEnabled = true;
             this.cboCodoDerFlexion.Location = new System.Drawing.Point(132, 104);
             this.cboCodoDerFlexion.Name = "cboCodoDerFlexion";
-            this.cboCodoDerFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerFlexion.TabIndex = 24;
             // 
             // label170
@@ -3650,10 +3709,11 @@
             // cboHombroDerFlexion
             // 
             this.cboHombroDerFlexion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerFlexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerFlexion.FormattingEnabled = true;
             this.cboHombroDerFlexion.Location = new System.Drawing.Point(132, 40);
             this.cboHombroDerFlexion.Name = "cboHombroDerFlexion";
-            this.cboHombroDerFlexion.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerFlexion.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerFlexion.TabIndex = 24;
             // 
             // label158
@@ -3821,10 +3881,11 @@
             // cboTobilloIzqTono
             // 
             this.cboTobilloIzqTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqTono.FormattingEnabled = true;
             this.cboTobilloIzqTono.Location = new System.Drawing.Point(685, 378);
             this.cboTobilloIzqTono.Name = "cboTobilloIzqTono";
-            this.cboTobilloIzqTono.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqTono.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqTono.TabIndex = 24;
             // 
             // label159
@@ -3839,10 +3900,11 @@
             // cboRodillaIzqTono
             // 
             this.cboRodillaIzqTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqTono.FormattingEnabled = true;
             this.cboRodillaIzqTono.Location = new System.Drawing.Point(685, 317);
             this.cboRodillaIzqTono.Name = "cboRodillaIzqTono";
-            this.cboRodillaIzqTono.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqTono.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqTono.TabIndex = 24;
             // 
             // label157
@@ -3857,10 +3919,11 @@
             // cboCaderaIzqTono
             // 
             this.cboCaderaIzqTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqTono.FormattingEnabled = true;
             this.cboCaderaIzqTono.Location = new System.Drawing.Point(685, 256);
             this.cboCaderaIzqTono.Name = "cboCaderaIzqTono";
-            this.cboCaderaIzqTono.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqTono.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqTono.TabIndex = 24;
             // 
             // label156
@@ -3875,28 +3938,31 @@
             // cboTobilloIzqFuerza
             // 
             this.cboTobilloIzqFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqFuerza.FormattingEnabled = true;
             this.cboTobilloIzqFuerza.Location = new System.Drawing.Point(606, 378);
             this.cboTobilloIzqFuerza.Name = "cboTobilloIzqFuerza";
-            this.cboTobilloIzqFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqFuerza.TabIndex = 24;
             // 
             // cboMunecaIzqTono
             // 
             this.cboMunecaIzqTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqTono.FormattingEnabled = true;
             this.cboMunecaIzqTono.Location = new System.Drawing.Point(685, 195);
             this.cboMunecaIzqTono.Name = "cboMunecaIzqTono";
-            this.cboMunecaIzqTono.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqTono.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqTono.TabIndex = 24;
             // 
             // cboRodillaIzqFuerza
             // 
             this.cboRodillaIzqFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqFuerza.FormattingEnabled = true;
             this.cboRodillaIzqFuerza.Location = new System.Drawing.Point(606, 317);
             this.cboRodillaIzqFuerza.Name = "cboRodillaIzqFuerza";
-            this.cboRodillaIzqFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqFuerza.TabIndex = 24;
             // 
             // label155
@@ -3911,46 +3977,51 @@
             // cboCaderaIzqFuerza
             // 
             this.cboCaderaIzqFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqFuerza.FormattingEnabled = true;
             this.cboCaderaIzqFuerza.Location = new System.Drawing.Point(606, 256);
             this.cboCaderaIzqFuerza.Name = "cboCaderaIzqFuerza";
-            this.cboCaderaIzqFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqFuerza.TabIndex = 24;
             // 
             // cboCodoIzqTono
             // 
             this.cboCodoIzqTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqTono.FormattingEnabled = true;
             this.cboCodoIzqTono.Location = new System.Drawing.Point(685, 135);
             this.cboCodoIzqTono.Name = "cboCodoIzqTono";
-            this.cboCodoIzqTono.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqTono.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqTono.TabIndex = 24;
             // 
             // cboTobilloIzqAbduccion
             // 
             this.cboTobilloIzqAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqAbduccion.FormattingEnabled = true;
             this.cboTobilloIzqAbduccion.Location = new System.Drawing.Point(527, 378);
             this.cboTobilloIzqAbduccion.Name = "cboTobilloIzqAbduccion";
-            this.cboTobilloIzqAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqAbduccion.TabIndex = 24;
             // 
             // cboMunecaIzqFuerza
             // 
             this.cboMunecaIzqFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqFuerza.FormattingEnabled = true;
             this.cboMunecaIzqFuerza.Location = new System.Drawing.Point(606, 195);
             this.cboMunecaIzqFuerza.Name = "cboMunecaIzqFuerza";
-            this.cboMunecaIzqFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqFuerza.TabIndex = 24;
             // 
             // cboRodillaIzqAbduccion
             // 
             this.cboRodillaIzqAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqAbduccion.FormattingEnabled = true;
             this.cboRodillaIzqAbduccion.Location = new System.Drawing.Point(527, 317);
             this.cboRodillaIzqAbduccion.Name = "cboRodillaIzqAbduccion";
-            this.cboRodillaIzqAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqAbduccion.TabIndex = 24;
             // 
             // label154
@@ -3965,550 +4036,611 @@
             // cboCaderaIzqAbduccion
             // 
             this.cboCaderaIzqAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqAbduccion.FormattingEnabled = true;
             this.cboCaderaIzqAbduccion.Location = new System.Drawing.Point(527, 256);
             this.cboCaderaIzqAbduccion.Name = "cboCaderaIzqAbduccion";
-            this.cboCaderaIzqAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqAbduccion.TabIndex = 24;
             // 
             // cboCodoIzqFuerza
             // 
             this.cboCodoIzqFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqFuerza.FormattingEnabled = true;
             this.cboCodoIzqFuerza.Location = new System.Drawing.Point(606, 135);
             this.cboCodoIzqFuerza.Name = "cboCodoIzqFuerza";
-            this.cboCodoIzqFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqFuerza.TabIndex = 24;
             // 
             // cboTobilloIzqAduccion
             // 
             this.cboTobilloIzqAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqAduccion.FormattingEnabled = true;
             this.cboTobilloIzqAduccion.Location = new System.Drawing.Point(448, 378);
             this.cboTobilloIzqAduccion.Name = "cboTobilloIzqAduccion";
-            this.cboTobilloIzqAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqAduccion.TabIndex = 24;
             // 
             // cboMunecaIzqAbduccion
             // 
             this.cboMunecaIzqAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqAbduccion.FormattingEnabled = true;
             this.cboMunecaIzqAbduccion.Location = new System.Drawing.Point(527, 195);
             this.cboMunecaIzqAbduccion.Name = "cboMunecaIzqAbduccion";
-            this.cboMunecaIzqAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqAbduccion.TabIndex = 24;
             // 
             // cboRodillaIzqAduccion
             // 
             this.cboRodillaIzqAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqAduccion.FormattingEnabled = true;
             this.cboRodillaIzqAduccion.Location = new System.Drawing.Point(448, 317);
             this.cboRodillaIzqAduccion.Name = "cboRodillaIzqAduccion";
-            this.cboRodillaIzqAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqAduccion.TabIndex = 24;
             // 
             // cboHombroIzqTono
             // 
             this.cboHombroIzqTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqTono.FormattingEnabled = true;
             this.cboHombroIzqTono.Location = new System.Drawing.Point(685, 71);
             this.cboHombroIzqTono.Name = "cboHombroIzqTono";
-            this.cboHombroIzqTono.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqTono.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqTono.TabIndex = 24;
             // 
             // cboCaderaIzqAduccion
             // 
             this.cboCaderaIzqAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqAduccion.FormattingEnabled = true;
             this.cboCaderaIzqAduccion.Location = new System.Drawing.Point(448, 256);
             this.cboCaderaIzqAduccion.Name = "cboCaderaIzqAduccion";
-            this.cboCaderaIzqAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqAduccion.TabIndex = 24;
             // 
             // cboCodoIzqAbduccion
             // 
             this.cboCodoIzqAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqAbduccion.FormattingEnabled = true;
             this.cboCodoIzqAbduccion.Location = new System.Drawing.Point(527, 135);
             this.cboCodoIzqAbduccion.Name = "cboCodoIzqAbduccion";
-            this.cboCodoIzqAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqAbduccion.TabIndex = 24;
             // 
             // cboTobilloIzqRotExt
             // 
             this.cboTobilloIzqRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqRotExt.FormattingEnabled = true;
             this.cboTobilloIzqRotExt.Location = new System.Drawing.Point(369, 378);
             this.cboTobilloIzqRotExt.Name = "cboTobilloIzqRotExt";
-            this.cboTobilloIzqRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqRotExt.TabIndex = 24;
             // 
             // cboMunecaIzqAduccion
             // 
             this.cboMunecaIzqAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqAduccion.FormattingEnabled = true;
             this.cboMunecaIzqAduccion.Location = new System.Drawing.Point(448, 195);
             this.cboMunecaIzqAduccion.Name = "cboMunecaIzqAduccion";
-            this.cboMunecaIzqAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqAduccion.TabIndex = 24;
             // 
             // cboRodillaIzqRotExt
             // 
             this.cboRodillaIzqRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqRotExt.FormattingEnabled = true;
             this.cboRodillaIzqRotExt.Location = new System.Drawing.Point(369, 317);
             this.cboRodillaIzqRotExt.Name = "cboRodillaIzqRotExt";
-            this.cboRodillaIzqRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqRotExt.TabIndex = 24;
             // 
             // cboHombroIzqFuerza
             // 
             this.cboHombroIzqFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqFuerza.FormattingEnabled = true;
             this.cboHombroIzqFuerza.Location = new System.Drawing.Point(606, 71);
             this.cboHombroIzqFuerza.Name = "cboHombroIzqFuerza";
-            this.cboHombroIzqFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqFuerza.TabIndex = 24;
             // 
             // cboCaderaIzqRotExt
             // 
             this.cboCaderaIzqRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqRotExt.FormattingEnabled = true;
             this.cboCaderaIzqRotExt.Location = new System.Drawing.Point(369, 256);
             this.cboCaderaIzqRotExt.Name = "cboCaderaIzqRotExt";
-            this.cboCaderaIzqRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqRotExt.TabIndex = 24;
             // 
             // cboCodoIzqAduccion
             // 
             this.cboCodoIzqAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqAduccion.FormattingEnabled = true;
             this.cboCodoIzqAduccion.Location = new System.Drawing.Point(448, 135);
             this.cboCodoIzqAduccion.Name = "cboCodoIzqAduccion";
-            this.cboCodoIzqAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqAduccion.TabIndex = 24;
             // 
             // cboTobilloDerTono
             // 
             this.cboTobilloDerTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerTono.FormattingEnabled = true;
             this.cboTobilloDerTono.Location = new System.Drawing.Point(685, 347);
             this.cboTobilloDerTono.Name = "cboTobilloDerTono";
-            this.cboTobilloDerTono.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerTono.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerTono.TabIndex = 24;
             // 
             // cboMunecaIzqRotExt
             // 
             this.cboMunecaIzqRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqRotExt.FormattingEnabled = true;
             this.cboMunecaIzqRotExt.Location = new System.Drawing.Point(369, 195);
             this.cboMunecaIzqRotExt.Name = "cboMunecaIzqRotExt";
-            this.cboMunecaIzqRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqRotExt.TabIndex = 24;
             // 
             // cboRodillaDerTono
             // 
             this.cboRodillaDerTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerTono.FormattingEnabled = true;
             this.cboRodillaDerTono.Location = new System.Drawing.Point(685, 286);
             this.cboRodillaDerTono.Name = "cboRodillaDerTono";
-            this.cboRodillaDerTono.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerTono.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerTono.TabIndex = 24;
             // 
             // cboHombroIzqAbduccion
             // 
             this.cboHombroIzqAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqAbduccion.FormattingEnabled = true;
             this.cboHombroIzqAbduccion.Location = new System.Drawing.Point(527, 71);
             this.cboHombroIzqAbduccion.Name = "cboHombroIzqAbduccion";
-            this.cboHombroIzqAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqAbduccion.TabIndex = 24;
             // 
             // cboCaderaDerTono
             // 
             this.cboCaderaDerTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerTono.FormattingEnabled = true;
             this.cboCaderaDerTono.Location = new System.Drawing.Point(685, 225);
             this.cboCaderaDerTono.Name = "cboCaderaDerTono";
-            this.cboCaderaDerTono.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerTono.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerTono.TabIndex = 24;
             // 
             // cboCodoIzqRotExt
             // 
             this.cboCodoIzqRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqRotExt.FormattingEnabled = true;
             this.cboCodoIzqRotExt.Location = new System.Drawing.Point(369, 135);
             this.cboCodoIzqRotExt.Name = "cboCodoIzqRotExt";
-            this.cboCodoIzqRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqRotExt.TabIndex = 24;
             // 
             // cboTobilloDerFuerza
             // 
             this.cboTobilloDerFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerFuerza.FormattingEnabled = true;
             this.cboTobilloDerFuerza.Location = new System.Drawing.Point(606, 347);
             this.cboTobilloDerFuerza.Name = "cboTobilloDerFuerza";
-            this.cboTobilloDerFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerFuerza.TabIndex = 24;
             // 
             // cboMunecaDerTono
             // 
             this.cboMunecaDerTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerTono.FormattingEnabled = true;
             this.cboMunecaDerTono.Location = new System.Drawing.Point(685, 164);
             this.cboMunecaDerTono.Name = "cboMunecaDerTono";
-            this.cboMunecaDerTono.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerTono.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerTono.TabIndex = 24;
             // 
             // cboRodillaDerFuerza
             // 
             this.cboRodillaDerFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerFuerza.FormattingEnabled = true;
             this.cboRodillaDerFuerza.Location = new System.Drawing.Point(606, 286);
             this.cboRodillaDerFuerza.Name = "cboRodillaDerFuerza";
-            this.cboRodillaDerFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerFuerza.TabIndex = 24;
             // 
             // cboHombroIzqAduccion
             // 
             this.cboHombroIzqAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqAduccion.FormattingEnabled = true;
             this.cboHombroIzqAduccion.Location = new System.Drawing.Point(448, 71);
             this.cboHombroIzqAduccion.Name = "cboHombroIzqAduccion";
-            this.cboHombroIzqAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqAduccion.TabIndex = 24;
             // 
             // cboCaderaDerFuerza
             // 
             this.cboCaderaDerFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerFuerza.FormattingEnabled = true;
             this.cboCaderaDerFuerza.Location = new System.Drawing.Point(606, 225);
             this.cboCaderaDerFuerza.Name = "cboCaderaDerFuerza";
-            this.cboCaderaDerFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerFuerza.TabIndex = 24;
             // 
             // cboCodoDerTono
             // 
             this.cboCodoDerTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerTono.FormattingEnabled = true;
             this.cboCodoDerTono.Location = new System.Drawing.Point(685, 104);
             this.cboCodoDerTono.Name = "cboCodoDerTono";
-            this.cboCodoDerTono.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerTono.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerTono.TabIndex = 24;
             // 
             // cboTobilloDerAbduccion
             // 
             this.cboTobilloDerAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerAbduccion.FormattingEnabled = true;
             this.cboTobilloDerAbduccion.Location = new System.Drawing.Point(527, 347);
             this.cboTobilloDerAbduccion.Name = "cboTobilloDerAbduccion";
-            this.cboTobilloDerAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerAbduccion.TabIndex = 24;
             // 
             // cboMunecaDerFuerza
             // 
             this.cboMunecaDerFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerFuerza.FormattingEnabled = true;
             this.cboMunecaDerFuerza.Location = new System.Drawing.Point(606, 164);
             this.cboMunecaDerFuerza.Name = "cboMunecaDerFuerza";
-            this.cboMunecaDerFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerFuerza.TabIndex = 24;
             // 
             // cboRodillaDerAbduccion
             // 
             this.cboRodillaDerAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerAbduccion.FormattingEnabled = true;
             this.cboRodillaDerAbduccion.Location = new System.Drawing.Point(527, 286);
             this.cboRodillaDerAbduccion.Name = "cboRodillaDerAbduccion";
-            this.cboRodillaDerAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerAbduccion.TabIndex = 24;
             // 
             // cboHombroIzqRotExt
             // 
             this.cboHombroIzqRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqRotExt.FormattingEnabled = true;
             this.cboHombroIzqRotExt.Location = new System.Drawing.Point(369, 71);
             this.cboHombroIzqRotExt.Name = "cboHombroIzqRotExt";
-            this.cboHombroIzqRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqRotExt.TabIndex = 24;
             // 
             // cboCaderaDerAbduccion
             // 
             this.cboCaderaDerAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerAbduccion.FormattingEnabled = true;
             this.cboCaderaDerAbduccion.Location = new System.Drawing.Point(527, 225);
             this.cboCaderaDerAbduccion.Name = "cboCaderaDerAbduccion";
-            this.cboCaderaDerAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerAbduccion.TabIndex = 24;
             // 
             // cboCodoDerFuerza
             // 
             this.cboCodoDerFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerFuerza.FormattingEnabled = true;
             this.cboCodoDerFuerza.Location = new System.Drawing.Point(606, 104);
             this.cboCodoDerFuerza.Name = "cboCodoDerFuerza";
-            this.cboCodoDerFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerFuerza.TabIndex = 24;
             // 
             // cboTobilloDerAduccion
             // 
             this.cboTobilloDerAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerAduccion.FormattingEnabled = true;
             this.cboTobilloDerAduccion.Location = new System.Drawing.Point(448, 347);
             this.cboTobilloDerAduccion.Name = "cboTobilloDerAduccion";
-            this.cboTobilloDerAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerAduccion.TabIndex = 24;
             // 
             // cboMunecaDerAbduccion
             // 
             this.cboMunecaDerAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerAbduccion.FormattingEnabled = true;
             this.cboMunecaDerAbduccion.Location = new System.Drawing.Point(527, 164);
             this.cboMunecaDerAbduccion.Name = "cboMunecaDerAbduccion";
-            this.cboMunecaDerAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerAbduccion.TabIndex = 24;
             // 
             // cboRodillaDerAduccion
             // 
             this.cboRodillaDerAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerAduccion.FormattingEnabled = true;
             this.cboRodillaDerAduccion.Location = new System.Drawing.Point(448, 286);
             this.cboRodillaDerAduccion.Name = "cboRodillaDerAduccion";
-            this.cboRodillaDerAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerAduccion.TabIndex = 24;
             // 
             // cboHombroDerTono
             // 
             this.cboHombroDerTono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerTono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerTono.FormattingEnabled = true;
             this.cboHombroDerTono.Location = new System.Drawing.Point(685, 40);
             this.cboHombroDerTono.Name = "cboHombroDerTono";
-            this.cboHombroDerTono.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerTono.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerTono.TabIndex = 24;
             // 
             // cboCaderaDerAduccion
             // 
             this.cboCaderaDerAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerAduccion.FormattingEnabled = true;
             this.cboCaderaDerAduccion.Location = new System.Drawing.Point(448, 225);
             this.cboCaderaDerAduccion.Name = "cboCaderaDerAduccion";
-            this.cboCaderaDerAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerAduccion.TabIndex = 24;
             // 
             // cboCodoDerAbduccion
             // 
             this.cboCodoDerAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerAbduccion.FormattingEnabled = true;
             this.cboCodoDerAbduccion.Location = new System.Drawing.Point(527, 104);
             this.cboCodoDerAbduccion.Name = "cboCodoDerAbduccion";
-            this.cboCodoDerAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerAbduccion.TabIndex = 24;
             // 
             // cboTobilloDerRotExt
             // 
             this.cboTobilloDerRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerRotExt.FormattingEnabled = true;
             this.cboTobilloDerRotExt.Location = new System.Drawing.Point(369, 347);
             this.cboTobilloDerRotExt.Name = "cboTobilloDerRotExt";
-            this.cboTobilloDerRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerRotExt.TabIndex = 24;
             // 
             // cboMunecaDerAduccion
             // 
             this.cboMunecaDerAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerAduccion.FormattingEnabled = true;
             this.cboMunecaDerAduccion.Location = new System.Drawing.Point(448, 164);
             this.cboMunecaDerAduccion.Name = "cboMunecaDerAduccion";
-            this.cboMunecaDerAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerAduccion.TabIndex = 24;
             // 
             // cboRodillaDerRotExt
             // 
             this.cboRodillaDerRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerRotExt.FormattingEnabled = true;
             this.cboRodillaDerRotExt.Location = new System.Drawing.Point(369, 286);
             this.cboRodillaDerRotExt.Name = "cboRodillaDerRotExt";
-            this.cboRodillaDerRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerRotExt.TabIndex = 24;
             // 
             // cboHombroDerFuerza
             // 
             this.cboHombroDerFuerza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerFuerza.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerFuerza.FormattingEnabled = true;
             this.cboHombroDerFuerza.Location = new System.Drawing.Point(606, 40);
             this.cboHombroDerFuerza.Name = "cboHombroDerFuerza";
-            this.cboHombroDerFuerza.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerFuerza.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerFuerza.TabIndex = 24;
             // 
             // cboCaderaDerRotExt
             // 
             this.cboCaderaDerRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerRotExt.FormattingEnabled = true;
             this.cboCaderaDerRotExt.Location = new System.Drawing.Point(369, 225);
             this.cboCaderaDerRotExt.Name = "cboCaderaDerRotExt";
-            this.cboCaderaDerRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerRotExt.TabIndex = 24;
             // 
             // cboCodoDerAduccion
             // 
             this.cboCodoDerAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerAduccion.FormattingEnabled = true;
             this.cboCodoDerAduccion.Location = new System.Drawing.Point(448, 104);
             this.cboCodoDerAduccion.Name = "cboCodoDerAduccion";
-            this.cboCodoDerAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerAduccion.TabIndex = 24;
             // 
             // cboTobilloIzqDolor
             // 
             this.cboTobilloIzqDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloIzqDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloIzqDolor.FormattingEnabled = true;
             this.cboTobilloIzqDolor.Location = new System.Drawing.Point(764, 378);
             this.cboTobilloIzqDolor.Name = "cboTobilloIzqDolor";
-            this.cboTobilloIzqDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloIzqDolor.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloIzqDolor.TabIndex = 24;
             // 
             // cboMunecaDerRotExt
             // 
             this.cboMunecaDerRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerRotExt.FormattingEnabled = true;
             this.cboMunecaDerRotExt.Location = new System.Drawing.Point(369, 164);
             this.cboMunecaDerRotExt.Name = "cboMunecaDerRotExt";
-            this.cboMunecaDerRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerRotExt.TabIndex = 24;
             // 
             // cboRodillaIzqDolor
             // 
             this.cboRodillaIzqDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaIzqDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaIzqDolor.FormattingEnabled = true;
             this.cboRodillaIzqDolor.Location = new System.Drawing.Point(764, 317);
             this.cboRodillaIzqDolor.Name = "cboRodillaIzqDolor";
-            this.cboRodillaIzqDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaIzqDolor.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaIzqDolor.TabIndex = 24;
             // 
             // cboHombroDerAbduccion
             // 
             this.cboHombroDerAbduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerAbduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerAbduccion.FormattingEnabled = true;
             this.cboHombroDerAbduccion.Location = new System.Drawing.Point(527, 40);
             this.cboHombroDerAbduccion.Name = "cboHombroDerAbduccion";
-            this.cboHombroDerAbduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerAbduccion.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerAbduccion.TabIndex = 24;
             // 
             // cboCaderaIzqDolor
             // 
             this.cboCaderaIzqDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaIzqDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaIzqDolor.FormattingEnabled = true;
             this.cboCaderaIzqDolor.Location = new System.Drawing.Point(764, 256);
             this.cboCaderaIzqDolor.Name = "cboCaderaIzqDolor";
-            this.cboCaderaIzqDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaIzqDolor.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaIzqDolor.TabIndex = 24;
             // 
             // cboCodoDerRotExt
             // 
             this.cboCodoDerRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerRotExt.FormattingEnabled = true;
             this.cboCodoDerRotExt.Location = new System.Drawing.Point(369, 104);
             this.cboCodoDerRotExt.Name = "cboCodoDerRotExt";
-            this.cboCodoDerRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerRotExt.TabIndex = 24;
             // 
             // cboTobilloDerDolor
             // 
             this.cboTobilloDerDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTobilloDerDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTobilloDerDolor.FormattingEnabled = true;
             this.cboTobilloDerDolor.Location = new System.Drawing.Point(764, 347);
             this.cboTobilloDerDolor.Name = "cboTobilloDerDolor";
-            this.cboTobilloDerDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboTobilloDerDolor.Size = new System.Drawing.Size(61, 21);
             this.cboTobilloDerDolor.TabIndex = 24;
             // 
             // cboMunecaIzqDolor
             // 
             this.cboMunecaIzqDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqDolor.FormattingEnabled = true;
             this.cboMunecaIzqDolor.Location = new System.Drawing.Point(764, 195);
             this.cboMunecaIzqDolor.Name = "cboMunecaIzqDolor";
-            this.cboMunecaIzqDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqDolor.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqDolor.TabIndex = 24;
             // 
             // cboRodillaDerDolor
             // 
             this.cboRodillaDerDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRodillaDerDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboRodillaDerDolor.FormattingEnabled = true;
             this.cboRodillaDerDolor.Location = new System.Drawing.Point(764, 286);
             this.cboRodillaDerDolor.Name = "cboRodillaDerDolor";
-            this.cboRodillaDerDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboRodillaDerDolor.Size = new System.Drawing.Size(61, 21);
             this.cboRodillaDerDolor.TabIndex = 24;
             // 
             // cboHombroDerAduccion
             // 
             this.cboHombroDerAduccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerAduccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerAduccion.FormattingEnabled = true;
             this.cboHombroDerAduccion.Location = new System.Drawing.Point(448, 40);
             this.cboHombroDerAduccion.Name = "cboHombroDerAduccion";
-            this.cboHombroDerAduccion.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerAduccion.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerAduccion.TabIndex = 24;
             // 
             // cboCaderaDerDolor
             // 
             this.cboCaderaDerDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCaderaDerDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaderaDerDolor.FormattingEnabled = true;
             this.cboCaderaDerDolor.Location = new System.Drawing.Point(764, 225);
             this.cboCaderaDerDolor.Name = "cboCaderaDerDolor";
-            this.cboCaderaDerDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboCaderaDerDolor.Size = new System.Drawing.Size(61, 21);
             this.cboCaderaDerDolor.TabIndex = 24;
             // 
             // cboCodoIzqDolor
             // 
             this.cboCodoIzqDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqDolor.FormattingEnabled = true;
             this.cboCodoIzqDolor.Location = new System.Drawing.Point(764, 135);
             this.cboCodoIzqDolor.Name = "cboCodoIzqDolor";
-            this.cboCodoIzqDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqDolor.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqDolor.TabIndex = 24;
             // 
             // cboMunecaDerDolor
             // 
             this.cboMunecaDerDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerDolor.FormattingEnabled = true;
             this.cboMunecaDerDolor.Location = new System.Drawing.Point(764, 164);
             this.cboMunecaDerDolor.Name = "cboMunecaDerDolor";
-            this.cboMunecaDerDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerDolor.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerDolor.TabIndex = 24;
             // 
             // cboHombroDerRotExt
             // 
             this.cboHombroDerRotExt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerRotExt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerRotExt.FormattingEnabled = true;
             this.cboHombroDerRotExt.Location = new System.Drawing.Point(369, 40);
             this.cboHombroDerRotExt.Name = "cboHombroDerRotExt";
-            this.cboHombroDerRotExt.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerRotExt.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerRotExt.TabIndex = 24;
             // 
             // cboCodoDerDolor
             // 
             this.cboCodoDerDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerDolor.FormattingEnabled = true;
             this.cboCodoDerDolor.Location = new System.Drawing.Point(764, 104);
             this.cboCodoDerDolor.Name = "cboCodoDerDolor";
-            this.cboCodoDerDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerDolor.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerDolor.TabIndex = 24;
             // 
             // cboHombroIzqDolor
             // 
             this.cboHombroIzqDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroIzqDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroIzqDolor.FormattingEnabled = true;
             this.cboHombroIzqDolor.Location = new System.Drawing.Point(764, 71);
             this.cboHombroIzqDolor.Name = "cboHombroIzqDolor";
-            this.cboHombroIzqDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroIzqDolor.Size = new System.Drawing.Size(61, 21);
             this.cboHombroIzqDolor.TabIndex = 24;
             // 
             // cboHombroDerDolor
             // 
             this.cboHombroDerDolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboHombroDerDolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHombroDerDolor.FormattingEnabled = true;
             this.cboHombroDerDolor.Location = new System.Drawing.Point(764, 40);
             this.cboHombroDerDolor.Name = "cboHombroDerDolor";
-            this.cboHombroDerDolor.Size = new System.Drawing.Size(61, 23);
+            this.cboHombroDerDolor.Size = new System.Drawing.Size(61, 21);
             this.cboHombroDerDolor.TabIndex = 24;
             // 
             // groupBox30
@@ -4523,7 +4655,7 @@
             this.groupBox30.Controls.Add(this.label174);
             this.groupBox30.Controls.Add(this.label175);
             this.groupBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox30.Location = new System.Drawing.Point(16, 3536);
+            this.groupBox30.Location = new System.Drawing.Point(24, 3469);
             this.groupBox30.Name = "groupBox30";
             this.groupBox30.Size = new System.Drawing.Size(282, 95);
             this.groupBox30.TabIndex = 422;
@@ -4532,37 +4664,41 @@
             // cboCodoIzqSupinacion
             // 
             this.cboCodoIzqSupinacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqSupinacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqSupinacion.FormattingEnabled = true;
             this.cboCodoIzqSupinacion.Location = new System.Drawing.Point(211, 64);
             this.cboCodoIzqSupinacion.Name = "cboCodoIzqSupinacion";
-            this.cboCodoIzqSupinacion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqSupinacion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqSupinacion.TabIndex = 414;
             // 
             // cboCodoIzqPronacion
             // 
             this.cboCodoIzqPronacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoIzqPronacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoIzqPronacion.FormattingEnabled = true;
             this.cboCodoIzqPronacion.Location = new System.Drawing.Point(132, 64);
             this.cboCodoIzqPronacion.Name = "cboCodoIzqPronacion";
-            this.cboCodoIzqPronacion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoIzqPronacion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoIzqPronacion.TabIndex = 415;
             // 
             // cboCodoDerSupinacion
             // 
             this.cboCodoDerSupinacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerSupinacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerSupinacion.FormattingEnabled = true;
             this.cboCodoDerSupinacion.Location = new System.Drawing.Point(211, 33);
             this.cboCodoDerSupinacion.Name = "cboCodoDerSupinacion";
-            this.cboCodoDerSupinacion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerSupinacion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerSupinacion.TabIndex = 416;
             // 
             // cboCodoDerPronacion
             // 
             this.cboCodoDerPronacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCodoDerPronacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCodoDerPronacion.FormattingEnabled = true;
             this.cboCodoDerPronacion.Location = new System.Drawing.Point(132, 33);
             this.cboCodoDerPronacion.Name = "cboCodoDerPronacion";
-            this.cboCodoDerPronacion.Size = new System.Drawing.Size(61, 23);
+            this.cboCodoDerPronacion.Size = new System.Drawing.Size(61, 21);
             this.cboCodoDerPronacion.TabIndex = 417;
             // 
             // label171
@@ -4622,7 +4758,7 @@
             this.groupBox31.Controls.Add(this.label179);
             this.groupBox31.Controls.Add(this.label180);
             this.groupBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox31.Location = new System.Drawing.Point(302, 3536);
+            this.groupBox31.Location = new System.Drawing.Point(310, 3469);
             this.groupBox31.Name = "groupBox31";
             this.groupBox31.Size = new System.Drawing.Size(282, 95);
             this.groupBox31.TabIndex = 422;
@@ -4631,37 +4767,41 @@
             // cboMunecaIzqRadial
             // 
             this.cboMunecaIzqRadial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqRadial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqRadial.FormattingEnabled = true;
             this.cboMunecaIzqRadial.Location = new System.Drawing.Point(211, 64);
             this.cboMunecaIzqRadial.Name = "cboMunecaIzqRadial";
-            this.cboMunecaIzqRadial.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqRadial.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqRadial.TabIndex = 414;
             // 
             // cboMunecaIzqCubital
             // 
             this.cboMunecaIzqCubital.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqCubital.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqCubital.FormattingEnabled = true;
             this.cboMunecaIzqCubital.Location = new System.Drawing.Point(132, 64);
             this.cboMunecaIzqCubital.Name = "cboMunecaIzqCubital";
-            this.cboMunecaIzqCubital.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqCubital.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqCubital.TabIndex = 415;
             // 
             // cboMunecaDerRadial
             // 
             this.cboMunecaDerRadial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerRadial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerRadial.FormattingEnabled = true;
             this.cboMunecaDerRadial.Location = new System.Drawing.Point(211, 33);
             this.cboMunecaDerRadial.Name = "cboMunecaDerRadial";
-            this.cboMunecaDerRadial.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerRadial.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerRadial.TabIndex = 416;
             // 
             // cboMunecaDerCubital
             // 
             this.cboMunecaDerCubital.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerCubital.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerCubital.FormattingEnabled = true;
             this.cboMunecaDerCubital.Location = new System.Drawing.Point(132, 33);
             this.cboMunecaDerCubital.Name = "cboMunecaDerCubital";
-            this.cboMunecaDerCubital.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerCubital.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerCubital.TabIndex = 417;
             // 
             // label176
@@ -4721,7 +4861,7 @@
             this.groupBox32.Controls.Add(this.label184);
             this.groupBox32.Controls.Add(this.label185);
             this.groupBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox32.Location = new System.Drawing.Point(590, 3536);
+            this.groupBox32.Location = new System.Drawing.Point(598, 3469);
             this.groupBox32.Name = "groupBox32";
             this.groupBox32.Size = new System.Drawing.Size(282, 95);
             this.groupBox32.TabIndex = 422;
@@ -4730,37 +4870,41 @@
             // cboMunecaIzqInversion
             // 
             this.cboMunecaIzqInversion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqInversion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqInversion.FormattingEnabled = true;
             this.cboMunecaIzqInversion.Location = new System.Drawing.Point(211, 64);
             this.cboMunecaIzqInversion.Name = "cboMunecaIzqInversion";
-            this.cboMunecaIzqInversion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqInversion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqInversion.TabIndex = 414;
             // 
             // cboMunecaIzqEversion
             // 
             this.cboMunecaIzqEversion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaIzqEversion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaIzqEversion.FormattingEnabled = true;
             this.cboMunecaIzqEversion.Location = new System.Drawing.Point(132, 64);
             this.cboMunecaIzqEversion.Name = "cboMunecaIzqEversion";
-            this.cboMunecaIzqEversion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaIzqEversion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaIzqEversion.TabIndex = 415;
             // 
             // cboMunecaDerInversion
             // 
             this.cboMunecaDerInversion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerInversion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerInversion.FormattingEnabled = true;
             this.cboMunecaDerInversion.Location = new System.Drawing.Point(211, 33);
             this.cboMunecaDerInversion.Name = "cboMunecaDerInversion";
-            this.cboMunecaDerInversion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerInversion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerInversion.TabIndex = 416;
             // 
             // cboMunecaDerEversion
             // 
             this.cboMunecaDerEversion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMunecaDerEversion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMunecaDerEversion.FormattingEnabled = true;
             this.cboMunecaDerEversion.Location = new System.Drawing.Point(132, 33);
             this.cboMunecaDerEversion.Name = "cboMunecaDerEversion";
-            this.cboMunecaDerEversion.Size = new System.Drawing.Size(61, 23);
+            this.cboMunecaDerEversion.Size = new System.Drawing.Size(61, 21);
             this.cboMunecaDerEversion.TabIndex = 417;
             // 
             // label181
@@ -4811,7 +4955,7 @@
             // groupBox33
             // 
             this.groupBox33.Controls.Add(this.txtDescripcionHallazgos);
-            this.groupBox33.Location = new System.Drawing.Point(4, 3637);
+            this.groupBox33.Location = new System.Drawing.Point(12, 3570);
             this.groupBox33.Name = "groupBox33";
             this.groupBox33.Size = new System.Drawing.Size(874, 69);
             this.groupBox33.TabIndex = 431;
@@ -4832,7 +4976,7 @@
             this.groupBox34.Controls.Add(this.cboConclusiones);
             this.groupBox34.Controls.Add(this.label186);
             this.groupBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox34.Location = new System.Drawing.Point(4, 3712);
+            this.groupBox34.Location = new System.Drawing.Point(12, 3645);
             this.groupBox34.Name = "groupBox34";
             this.groupBox34.Size = new System.Drawing.Size(872, 56);
             this.groupBox34.TabIndex = 429;
@@ -4863,7 +5007,7 @@
             this.panel3.Controls.Add(this.rbAbdomenLateralRegular);
             this.panel3.Controls.Add(this.rbAbdomenLateralPromedio);
             this.panel3.Controls.Add(this.rbAbdomenLateralExcelente);
-            this.panel3.Location = new System.Drawing.Point(174, 378);
+            this.panel3.Location = new System.Drawing.Point(146, 378);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(582, 22);
             this.panel3.TabIndex = 107;
@@ -4916,7 +5060,7 @@
             this.panel2.Controls.Add(this.rbMusloRegular);
             this.panel2.Controls.Add(this.rbMusloPromedio);
             this.panel2.Controls.Add(this.rbMusloExcelente);
-            this.panel2.Location = new System.Drawing.Point(174, 278);
+            this.panel2.Location = new System.Drawing.Point(146, 278);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(582, 22);
             this.panel2.TabIndex = 107;
@@ -4969,7 +5113,7 @@
             this.panel1.Controls.Add(this.rbCaderaRegular);
             this.panel1.Controls.Add(this.rbCaderaPromedio);
             this.panel1.Controls.Add(this.rbCaderaExcelente);
-            this.panel1.Location = new System.Drawing.Point(174, 175);
+            this.panel1.Location = new System.Drawing.Point(146, 175);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(582, 22);
             this.panel1.TabIndex = 107;
@@ -5022,7 +5166,7 @@
             this.panel16.Controls.Add(this.rbAbdomenRegular);
             this.panel16.Controls.Add(this.rbAbdomenPromedio);
             this.panel16.Controls.Add(this.rbAbdomenExcelente);
-            this.panel16.Location = new System.Drawing.Point(174, 82);
+            this.panel16.Location = new System.Drawing.Point(146, 82);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(582, 22);
             this.panel16.TabIndex = 107;
@@ -5069,31 +5213,11 @@
             this.rbAbdomenExcelente.UseVisualStyleBackColor = true;
             this.rbAbdomenExcelente.CheckedChanged += new System.EventHandler(this.rbAbdomenExcelente_CheckedChanged);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo01;
-            this.pictureBox9.Location = new System.Drawing.Point(186, 303);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 109;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad03;
-            this.pictureBox7.Location = new System.Drawing.Point(415, 203);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 109;
-            this.pictureBox7.TabStop = false;
-            // 
             // label191
             // 
             this.label191.AutoSize = true;
             this.label191.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label191.Location = new System.Drawing.Point(32, 50);
+            this.label191.Location = new System.Drawing.Point(8, 50);
             this.label191.Name = "label191";
             this.label191.Size = new System.Drawing.Size(74, 16);
             this.label191.TabIndex = 106;
@@ -5104,7 +5228,7 @@
             // 
             this.label190.AutoSize = true;
             this.label190.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label190.Location = new System.Drawing.Point(22, 17);
+            this.label190.Location = new System.Drawing.Point(8, 17);
             this.label190.Name = "label190";
             this.label190.Size = new System.Drawing.Size(172, 16);
             this.label190.TabIndex = 106;
@@ -5114,7 +5238,7 @@
             // 
             this.label189.AutoSize = true;
             this.label189.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label189.Location = new System.Drawing.Point(300, 50);
+            this.label189.Location = new System.Drawing.Point(272, 50);
             this.label189.Name = "label189";
             this.label189.Size = new System.Drawing.Size(95, 16);
             this.label189.TabIndex = 105;
@@ -5125,7 +5249,7 @@
             // 
             this.label188.AutoSize = true;
             this.label188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label188.Location = new System.Drawing.Point(187, 50);
+            this.label188.Location = new System.Drawing.Point(159, 50);
             this.label188.Name = "label188";
             this.label188.Size = new System.Drawing.Size(96, 16);
             this.label188.TabIndex = 104;
@@ -5136,7 +5260,7 @@
             // 
             this.label187.AutoSize = true;
             this.label187.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label187.Location = new System.Drawing.Point(742, 50);
+            this.label187.Location = new System.Drawing.Point(714, 50);
             this.label187.Name = "label187";
             this.label187.Size = new System.Drawing.Size(96, 16);
             this.label187.TabIndex = 103;
@@ -5146,7 +5270,7 @@
             // 
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(639, 50);
+            this.label71.Location = new System.Drawing.Point(611, 50);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(55, 16);
             this.label71.TabIndex = 103;
@@ -5156,7 +5280,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(545, 50);
+            this.label70.Location = new System.Drawing.Point(517, 50);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(70, 16);
             this.label70.TabIndex = 102;
@@ -5167,7 +5291,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(423, 50);
+            this.label69.Location = new System.Drawing.Point(395, 50);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(83, 16);
             this.label69.TabIndex = 100;
@@ -5178,7 +5302,7 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(32, 120);
+            this.label68.Location = new System.Drawing.Point(8, 120);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(149, 32);
             this.label68.TabIndex = 99;
@@ -5189,7 +5313,7 @@
             // 
             this.txtAbdomenObservaciones.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAbdomenObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbdomenObservaciones.Location = new System.Drawing.Point(714, 111);
+            this.txtAbdomenObservaciones.Location = new System.Drawing.Point(686, 111);
             this.txtAbdomenObservaciones.Multiline = true;
             this.txtAbdomenObservaciones.Name = "txtAbdomenObservaciones";
             this.txtAbdomenObservaciones.Size = new System.Drawing.Size(152, 50);
@@ -5201,7 +5325,7 @@
             // 
             this.txtAbdomenPuntos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAbdomenPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbdomenPuntos.Location = new System.Drawing.Point(651, 128);
+            this.txtAbdomenPuntos.Location = new System.Drawing.Point(623, 128);
             this.txtAbdomenPuntos.Multiline = true;
             this.txtAbdomenPuntos.Name = "txtAbdomenPuntos";
             this.txtAbdomenPuntos.Size = new System.Drawing.Size(30, 16);
@@ -5209,48 +5333,11 @@
             this.txtAbdomenPuntos.Text = "1";
             this.txtAbdomenPuntos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(298, 105);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 109;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(415, 105);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 109;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(531, 105);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 109;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad01;
-            this.pictureBox5.Location = new System.Drawing.Point(186, 203);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 109;
-            this.pictureBox5.TabStop = false;
-            // 
             // txtCaderaPuntos
             // 
             this.txtCaderaPuntos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtCaderaPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCaderaPuntos.Location = new System.Drawing.Point(651, 226);
+            this.txtCaderaPuntos.Location = new System.Drawing.Point(623, 226);
             this.txtCaderaPuntos.Multiline = true;
             this.txtCaderaPuntos.Name = "txtCaderaPuntos";
             this.txtCaderaPuntos.Size = new System.Drawing.Size(30, 16);
@@ -5258,21 +5345,11 @@
             this.txtCaderaPuntos.Text = "1";
             this.txtCaderaPuntos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad02;
-            this.pictureBox6.Location = new System.Drawing.Point(298, 203);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 109;
-            this.pictureBox6.TabStop = false;
-            // 
             // txtCaderaOnservaciones
             // 
             this.txtCaderaOnservaciones.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtCaderaOnservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCaderaOnservaciones.Location = new System.Drawing.Point(714, 209);
+            this.txtCaderaOnservaciones.Location = new System.Drawing.Point(686, 209);
             this.txtCaderaOnservaciones.Multiline = true;
             this.txtCaderaOnservaciones.Name = "txtCaderaOnservaciones";
             this.txtCaderaOnservaciones.Size = new System.Drawing.Size(152, 50);
@@ -5284,58 +5361,18 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(32, 226);
+            this.label67.Location = new System.Drawing.Point(8, 226);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(70, 16);
             this.label67.TabIndex = 99;
             this.label67.Text = "CADERA";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad04;
-            this.pictureBox8.Location = new System.Drawing.Point(531, 203);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 109;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo04;
-            this.pictureBox12.Location = new System.Drawing.Point(531, 303);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 109;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo03;
-            this.pictureBox11.Location = new System.Drawing.Point(415, 303);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 109;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo02;
-            this.pictureBox10.Location = new System.Drawing.Point(298, 303);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 109;
-            this.pictureBox10.TabStop = false;
-            // 
             // txtMusloPuntos
             // 
             this.txtMusloPuntos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtMusloPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMusloPuntos.Location = new System.Drawing.Point(651, 326);
+            this.txtMusloPuntos.Location = new System.Drawing.Point(623, 326);
             this.txtMusloPuntos.Multiline = true;
             this.txtMusloPuntos.Name = "txtMusloPuntos";
             this.txtMusloPuntos.Size = new System.Drawing.Size(30, 16);
@@ -5347,7 +5384,7 @@
             // 
             this.txtMusloObservaciones.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtMusloObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMusloObservaciones.Location = new System.Drawing.Point(714, 309);
+            this.txtMusloObservaciones.Location = new System.Drawing.Point(686, 309);
             this.txtMusloObservaciones.Multiline = true;
             this.txtMusloObservaciones.Name = "txtMusloObservaciones";
             this.txtMusloObservaciones.Size = new System.Drawing.Size(152, 50);
@@ -5359,58 +5396,18 @@
             // 
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(32, 326);
+            this.label66.Location = new System.Drawing.Point(8, 326);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(60, 16);
             this.label66.TabIndex = 99;
             this.label66.Text = "MUSLO";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd04;
-            this.pictureBox16.Location = new System.Drawing.Point(531, 403);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 109;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd03;
-            this.pictureBox15.Location = new System.Drawing.Point(415, 403);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 109;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd02;
-            this.pictureBox14.Location = new System.Drawing.Point(298, 403);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 109;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd01;
-            this.pictureBox13.Location = new System.Drawing.Point(186, 403);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 109;
-            this.pictureBox13.TabStop = false;
-            // 
             // txtAbdomenLateralPuntos
             // 
             this.txtAbdomenLateralPuntos.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAbdomenLateralPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbdomenLateralPuntos.Location = new System.Drawing.Point(651, 426);
+            this.txtAbdomenLateralPuntos.Location = new System.Drawing.Point(623, 426);
             this.txtAbdomenLateralPuntos.Multiline = true;
             this.txtAbdomenLateralPuntos.Name = "txtAbdomenLateralPuntos";
             this.txtAbdomenLateralPuntos.Size = new System.Drawing.Size(30, 16);
@@ -5422,7 +5419,7 @@
             // 
             this.txtAbdomenLateralObservaciones.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtAbdomenLateralObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbdomenLateralObservaciones.Location = new System.Drawing.Point(714, 409);
+            this.txtAbdomenLateralObservaciones.Location = new System.Drawing.Point(686, 409);
             this.txtAbdomenLateralObservaciones.Multiline = true;
             this.txtAbdomenLateralObservaciones.Name = "txtAbdomenLateralObservaciones";
             this.txtAbdomenLateralObservaciones.Size = new System.Drawing.Size(152, 50);
@@ -5434,7 +5431,7 @@
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(32, 426);
+            this.label65.Location = new System.Drawing.Point(8, 426);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(154, 16);
             this.label65.TabIndex = 99;
@@ -5445,7 +5442,7 @@
             // 
             this.txtTotalAptitudEspalda.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txtTotalAptitudEspalda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalAptitudEspalda.Location = new System.Drawing.Point(651, 484);
+            this.txtTotalAptitudEspalda.Location = new System.Drawing.Point(623, 484);
             this.txtTotalAptitudEspalda.Multiline = true;
             this.txtTotalAptitudEspalda.Name = "txtTotalAptitudEspalda";
             this.txtTotalAptitudEspalda.Size = new System.Drawing.Size(30, 16);
@@ -5457,24 +5454,15 @@
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(564, 484);
+            this.label50.Location = new System.Drawing.Point(536, 484);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(61, 16);
             this.label50.TabIndex = 113;
             this.label50.Text = "TOTAL:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(186, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 109;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox11
             // 
-            this.groupBox11.BackColor = System.Drawing.Color.White;
+            this.groupBox11.BackColor = System.Drawing.Color.Transparent;
             this.groupBox11.Controls.Add(this.pictureBox1);
             this.groupBox11.Controls.Add(this.label50);
             this.groupBox11.Controls.Add(this.txtTotalAptitudEspalda);
@@ -5524,6 +5512,175 @@
             this.groupBox11.TabIndex = 432;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "EVALUACION MUSCULOESQUELÉTICA";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(5, 120);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(274, 15);
+            this.label51.TabIndex = 413;
+            this.label51.Text = "Tiempo de permanencia em el puesto(en años): ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Sigesoft.Node.WinClient.UI.Properties.Resources._012;
+            this.pictureBox1.Location = new System.Drawing.Point(158, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 109;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd01;
+            this.pictureBox13.Location = new System.Drawing.Point(158, 403);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 109;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd02;
+            this.pictureBox14.Location = new System.Drawing.Point(270, 403);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 109;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd03;
+            this.pictureBox15.Location = new System.Drawing.Point(387, 403);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 109;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::Sigesoft.Node.WinClient.UI.Resources.abd04;
+            this.pictureBox16.Location = new System.Drawing.Point(503, 403);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 109;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo02;
+            this.pictureBox10.Location = new System.Drawing.Point(270, 303);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 109;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo03;
+            this.pictureBox11.Location = new System.Drawing.Point(387, 303);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 109;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo04;
+            this.pictureBox12.Location = new System.Drawing.Point(503, 303);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 109;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad04;
+            this.pictureBox8.Location = new System.Drawing.Point(503, 203);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 109;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad02;
+            this.pictureBox6.Location = new System.Drawing.Point(270, 203);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 109;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad01;
+            this.pictureBox5.Location = new System.Drawing.Point(158, 203);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 109;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Sigesoft.Node.WinClient.UI.Properties.Resources._331;
+            this.pictureBox4.Location = new System.Drawing.Point(503, 105);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 109;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Sigesoft.Node.WinClient.UI.Properties.Resources._221;
+            this.pictureBox3.Location = new System.Drawing.Point(387, 105);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 109;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Sigesoft.Node.WinClient.UI.Properties.Resources._0111;
+            this.pictureBox2.Location = new System.Drawing.Point(270, 105);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 109;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Sigesoft.Node.WinClient.UI.Resources.cad03;
+            this.pictureBox7.Location = new System.Drawing.Point(387, 203);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 109;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Sigesoft.Node.WinClient.UI.Resources.muslo01;
+            this.pictureBox9.Location = new System.Drawing.Point(158, 303);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(98, 62);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 109;
+            this.pictureBox9.TabStop = false;
             // 
             // panel12
             // 
@@ -5697,7 +5854,7 @@
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(8, 42);
+            this.label64.Location = new System.Drawing.Point(6, 42);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(72, 16);
             this.label64.TabIndex = 117;
@@ -5771,7 +5928,7 @@
             // 
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(8, 106);
+            this.label56.Location = new System.Drawing.Point(6, 106);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(159, 32);
             this.label56.TabIndex = 110;
@@ -5866,7 +6023,7 @@
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(8, 200);
+            this.label55.Location = new System.Drawing.Point(6, 200);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(159, 32);
             this.label55.TabIndex = 110;
@@ -5954,7 +6111,7 @@
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(8, 293);
+            this.label54.Location = new System.Drawing.Point(6, 293);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(125, 32);
             this.label54.TabIndex = 110;
@@ -6041,7 +6198,7 @@
             // label53
             // 
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(8, 385);
+            this.label53.Location = new System.Drawing.Point(6, 385);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(159, 61);
             this.label53.TabIndex = 110;
@@ -6203,7 +6360,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "UcOsteoMuscular";
-            this.Size = new System.Drawing.Size(897, 3800);
+            this.Size = new System.Drawing.Size(897, 3712);
             this.Load += new System.EventHandler(this.ucOsteoMuscular_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -6273,24 +6430,24 @@
             this.panel1.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -6807,6 +6964,7 @@
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.RadioButton rbAbduccion180DolorNO;
