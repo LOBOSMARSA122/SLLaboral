@@ -679,7 +679,7 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
             Utils.LoadDropDownList(cboAsimetriaCaderas, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000094"; 
             Utils.LoadDropDownList(cboAsimetriaHipercifocis, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000095"; 
             Utils.LoadDropDownList(cboAsimetriaRodillas, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000096"; 
-          Utils.LoadDropDownList(cboMarchaClaudicacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000101"; 
+            Utils.LoadDropDownList(cboMarchaClaudicacion, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 111), DropDownListAction.Select);// = "N009-OTM00000101"; 
             Utils.LoadDropDownList(cboTobilloIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 221), DropDownListAction.Select);// = "N009-OTM00000102"; 
             Utils.LoadDropDownList(cboRodillaIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 221), DropDownListAction.Select);// = "N009-OTM00000103"; 
             Utils.LoadDropDownList(cboCaderaIzqRotInt, "Value1", "Id", objSystemParameterBl.GetSystemParameterForCombo(ref objOperationResult, 221), DropDownListAction.Select);// = "N009-OTM00000104"; 
