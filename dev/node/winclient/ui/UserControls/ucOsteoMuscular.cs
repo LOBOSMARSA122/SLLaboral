@@ -35,6 +35,256 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
         {
             get
             {
+                SaveValueControlForInterfacingESO("N009-OTM00000001", txtAnamnesis.Text);
+                SaveValueControlForInterfacingESO("N009-OTM00000031", "0");
+
+
+                SaveValueControlForInterfacingESO("N009-OTM00000031", "0");
+                cbo2RiesgoDesplaza.SelectedValue = "0";//  = "N009-OTM00000032";
+                cbo2RiesgoSentado.SelectedValue = "0";//  = "N009-OTM00000033";
+                cbo2RiesgoPie.SelectedValue = "0";//  = "N009-OTM00000034";
+                cbo2RiesgoTracciona.SelectedValue = "0";//  = "N009-OTM00000035";
+                cbo2RiesgoEmpuja.SelectedValue = "0";//  = "N009-OTM00000036";
+                cbo2RiesgoColoca.SelectedValue = "0";//  = "N009-OTM00000037";
+
+                cboExpToxCadmio.SelectedValue = "0";//  = "N009-OTM00000022";
+                cboExpToxMercurio.SelectedValue = "0";//  = "N009-OTM00000023";
+                cboExpToxMagneso.SelectedValue = "0";//  = "N009-OTM00000024";
+
+                cboCarCargaPeso.SelectedValue = "0";//  = "N009-OTM00000018";
+                cboCarCargaManipulacion.SelectedValue = "0";//  = "N009-OTM00000019";
+                cboCarCargaEquilibrio.SelectedValue = "0";//  = "N009-OTM00000020";
+                cboCarCargaVolumen.SelectedValue = "0";//  = "N009-OTM00000021";
+
+                cboCondiAmbEspacio.SelectedValue = "0";// .Name = "N009-OTM00000002";
+                cboCondiAmbTemperatura.SelectedValue = "0";//  = "N009-OTM00000003";
+                cboCondiAmbVibraciones.SelectedValue = "0";//  = "N009-OTM00000004";
+                cboCondiAmbSueloInestable.SelectedValue = "0";//  = "N009-OTM00000005";
+                cboCondiAmbDesniveles.SelectedValue = "0";//  = "N009-OTM00000006";
+                cboCondiAmbAltura.SelectedValue = "0";//  = "N009-OTM00000007";
+                cboCondiAmbPostura.SelectedValue = "0";//  = "N009-OTM00000008";
+                cboCondiAmbSuelo.SelectedValue = "0";//  = "N009-OTM00000009";
+
+                cboEsfFisAlzar.SelectedValue = "0";//  = "N009-OTM00000014";
+                cboEsfFisExiste.SelectedValue = "0";//  = "N009-OTM00000015";
+                cboEsfFisCuerpo.SelectedValue = "0";//  = "N009-OTM00000016";
+                cboEsfFisExige.SelectedValue = "0";//  = "N009-OTM00000017";
+
+                cboExigRitmo.SelectedValue = "0";//  = "N009-OTM00000010";
+                cboExigDistancias.SelectedValue = "0";//  = "N009-OTM00000011";
+                cboExigPeriodo.SelectedValue = "0";//  = "N009-OTM00000012";
+                cboExigEsfuerzo.SelectedValue = "0";//  = "N009-OTM00000013";
+
+                cboEjeLordosisCervical.SelectedValue = "1";//  = "N009-OTM00000038";
+                cboEjeCifosisDorsal.SelectedValue = "1";//  = "N009-OTM00000039";
+                cboEjeLordosisLumbar.SelectedValue = "1";//  = "N009-OTM00000040";
+
+                cboAsimetriaEscoliosis.SelectedValue = "0";//  = "N009-OTM00000091";
+                cboAsimetriaHombros.SelectedValue = "0";//  = "N009-OTM00000092";
+                cboAsimetriaLumbar.SelectedValue = "0";//  = "N009-OTM00000093";
+                cboAsimetriaCaderas.SelectedValue = "0";//  = "N009-OTM00000094";
+                cboAsimetriaHipercifocis.SelectedValue = "0";//  = "N009-OTM00000095";
+                cboAsimetriaRodillas.SelectedValue = "0";//  = "N009-OTM00000096";
+
+                cboPalpacionDolor.SelectedValue = "0";//  = "N009-OTM00000071";
+                cboPalpacionContractura.SelectedValue = "0";//  = "N009-OTM00000072";
+                cboPalpacionApofisis.SelectedValue = "0";//  = "N009-OTM00000073";
+
+                cboPhalenIzq.SelectedValue = "2";//  = "N009-OTM00000067";
+                cboPhalenDer.SelectedValue = "2";//  = "N009-OTM00000070";
+
+                cboTinelIzq.SelectedValue = "2";//  = "N009-OTM00000068";
+                cboTinelDer.SelectedValue = "2";//  = "N009-OTM00000069";
+
+                cboEvaPropicepcion.SelectedValue = "1";//  = "N009-OTM00000059";
+                cboPruebaMancuerda.SelectedValue = "1";//  = "N009-OTM00000060";
+
+                cboFlexion.SelectedValue = "1";//  = "N009-OTM00000054";
+                cboExtension.SelectedValue = "1";//  = "N009-OTM00000052";
+                cboDesviacionCubital.SelectedValue = "1";//  = "N009-OTM00000053";
+                cboDesviacionRadial.SelectedValue = "1";//  = "N009-OTM00000051";
+                cboCircunduccion.SelectedValue = "1";//  = "N009-OTM00000050";
+
+                cboDorsoflexion.SelectedValue = "1";//  = "N009-OTM00000046";
+                cboPlantiflexion.SelectedValue = "1";//  = "N009-OTM00000044";
+                cboEversion.SelectedValue = "1";//  = "N009-OTM00000045";
+                cboInversion.SelectedValue = "1";//  = "N009-OTM00000043";
+                cboRotacionInt.SelectedValue = "1";//  = "N009-OTM00000042";
+                cboRotacionExt.SelectedValue = "1";//  = "N009-OTM00000041";
+
+                cboMmiiFlexion.SelectedValue = "1";//  = "N009-OTM00000047";
+                cboMmiiExtension.SelectedValue = "1";//  = "N009-OTM00000048";
+                cboMmiiContraResistencia.SelectedValue = "1";//  = "N009-OTM00000049";
+
+
+                cboGenuvaro.SelectedValue = "0";//  = "N009-OTM00000055";
+                cboGenuvalgo.SelectedValue = "0";//  = "N009-OTM00000056";
+                cboPieCavo.SelectedValue = "0";//  = "N009-OTM00000057";
+                cboPiePlano.SelectedValue = "0";//  = "N009-OTM00000058";
+
+
+
+
+
+
+
+
+
+
+
+
+
+                cboRotulianoIzq.SelectedValue = "1";//  = "N009-OTM00000061";
+                cboRotulianoDer.SelectedValue = "1";//  = "N009-OTM00000062";
+                cboLasegueIzq.SelectedValue = "2";//  = "N009-OTM00000063";
+                cboSchoverIzq.SelectedValue = "2";//  = "N009-OTM00000064";
+                cboSchoverDer.SelectedValue = "2";//  = "N009-OTM00000065";
+                cboLasegueDer.SelectedValue = "2";//  = "N009-OTM00000066";
+
+
+
+                cboLumbatExtension.SelectedValue = "2";//  = "N009-OTM00000077";
+                cboLumbatFlexion.SelectedValue = "2";//  = "N009-OTM00000078";
+                cboCervicalExtension.SelectedValue = "2";//  = "N009-OTM00000079";
+                cboCervicalFlexion.SelectedValue = "2";//  = "N009-OTM00000080";
+                cboLumbatLateIzquierda.SelectedValue = "2";//  = "N009-OTM00000081";
+                cboLumbatLateDerecha.SelectedValue = "2";//  = "N009-OTM00000082";
+                cboLumbatRotacionIzquierda.SelectedValue = "2";//  = "N009-OTM00000083";
+                cboLumbatRotacionDerecha.SelectedValue = "2";//  = "N009-OTM00000084";
+                cboCervicalLateIzquierda.SelectedValue = "2";//  = "N009-OTM00000085";
+                cboCervicalLateDerecha.SelectedValue = "2";//  = "N009-OTM00000086";
+                cboCervicalRotaIzquierda.SelectedValue = "2";//  = "N009-OTM00000087";
+                cboCervicalRotaDerecha.SelectedValue = "2";//  = "N009-OTM00000088";
+                cboLumbatIrradiacion.SelectedValue = "2";//  = "N009-OTM00000089";
+                cboCervicalIrradiacion.SelectedValue = "2";//  = "N009-OTM00000090";
+
+                cboEquilibrioLateralIzquierdo.SelectedValue = "2";//  = "N009-OTM00000097";
+                cboEquilibrioLateralDerecho.SelectedValue = "2";//  = "N009-OTM00000098";
+                cboEquilibrioPosterior.SelectedValue = "2";//  = "N009-OTM00000099";
+                cboEquilibrioAnterior.SelectedValue = "2";//  = "N009-OTM00000100";
+                cboMarchaClaudicacion.SelectedValue = "0";//  = "N009-OTM00000101";
+                cboTobilloIzqRotInt.SelectedValue = "2";//  = "N009-OTM00000102";
+                cboRodillaIzqRotInt.SelectedValue = "2";//  = "N009-OTM00000103";
+                cboCaderaIzqRotInt.SelectedValue = "2";//  = "N009-OTM00000104";
+                cboMunecaIzqRotInt.SelectedValue = "2";//  = "N009-OTM00000105";
+                cboCodoIzqRotInt.SelectedValue = "2";//  = "N009-OTM00000106";
+                cboHombroIzqRotInt.SelectedValue = "2";//  = "N009-OTM00000107";
+                cboTobilloIzqExtension.SelectedValue = "2";//  = "N009-OTM00000108";
+                cboRodillaIzqExtension.SelectedValue = "2";//  = "N009-OTM00000109";
+                cboCaderaIzqExtension.SelectedValue = "2";//  = "N009-OTM00000110";
+                cboMunecaIzqExtension.SelectedValue = "2";//  = "N009-OTM00000111";
+                cboCodoIzqExtension.SelectedValue = "2";//  = "N009-OTM00000112";
+                cboTobilloIzqFlexion.SelectedValue = "2";//  = "N009-OTM00000113";
+                cboRodillaIzqFlexion.SelectedValue = "2";//  = "N009-OTM00000114";
+                cboCaderaIzqFlexion.SelectedValue = "2";//  = "N009-OTM00000115";
+                cboMunecaIzqFlexion.SelectedValue = "2";//  = "N009-OTM00000116";
+                cboHombroIzqExtension.SelectedValue = "2";//  = "N009-OTM00000117";
+                cboCodoIzqFlexion.SelectedValue = "2";//  = "N009-OTM00000118";
+                cboTobilloDerRotInt.SelectedValue = "2";//  = "N009-OTM00000119";
+                cboRodillaDerRotInt.SelectedValue = "2";//  = "N009-OTM00000120";
+                cboCaderaDerRotInt.SelectedValue = "2";//  = "N009-OTM00000121";
+                cboMunecaDerRotInt.SelectedValue = "2";//  = "N009-OTM00000122";
+                cboHombroIzqFlexion.SelectedValue = "2";//  = "N009-OTM00000123";
+                cboCodoDerRotInt.SelectedValue = "2";//  = "N009-OTM00000124";
+                cboTobilloDerExtension.SelectedValue = "2";//  = "N009-OTM00000125";
+                cboRodillaDerExtension.SelectedValue = "2";//  = "N009-OTM00000126";
+                cboCaderaDerExtension.SelectedValue = "2";//  = "N009-OTM00000127";
+                cboMunecaDerExtension.SelectedValue = "2";//  = "N009-OTM00000128";
+                cboHombroDerRotInt.SelectedValue = "2";//  = "N009-OTM00000129";
+                cboCodoDerExtension.SelectedValue = "2";//  = "N009-OTM00000130";
+                cboTobilloDerFlexion.SelectedValue = "2";//  = "N009-OTM00000131";
+                cboRodillaDerFlexion.SelectedValue = "2";//  = "N009-OTM00000132";
+                cboCaderaDerFlexion.SelectedValue = "2";//  = "N009-OTM00000133";
+                cboMunecaDerFlexion.SelectedValue = "2";//  = "N009-OTM00000134";
+                cboHombroDerExtension.SelectedValue = "2";//  = "N009-OTM00000135";
+                cboCodoDerFlexion.SelectedValue = "2";//  = "N009-OTM00000136";
+                cboHombroDerFlexion.SelectedValue = "2";//  = "N009-OTM00000137";
+                cboTobilloIzqTono.SelectedValue = "2";//  = "N009-OTM00000138";
+                cboRodillaIzqTono.SelectedValue = "2";//  = "N009-OTM00000139";
+                cboCaderaIzqTono.SelectedValue = "2";//  = "N009-OTM00000140";
+                cboTobilloIzqFuerza.SelectedValue = "2";//  = "N009-OTM00000141";
+                cboMunecaIzqTono.SelectedValue = "2";//  = "N009-OTM00000142";
+                cboRodillaIzqFuerza.SelectedValue = "2";//  = "N009-OTM00000143";
+                cboCaderaIzqFuerza.SelectedValue = "2";//  = "N009-OTM00000144";
+                cboCodoIzqTono.SelectedValue = "2";//  = "N009-OTM00000145";
+                cboTobilloIzqAbduccion.SelectedValue = "2";//  = "N009-OTM00000146";
+                cboMunecaIzqFuerza.SelectedValue = "2";//  = "N009-OTM00000147";
+                cboRodillaIzqAbduccion.SelectedValue = "2";//  = "N009-OTM00000148";
+                cboCaderaIzqAbduccion.SelectedValue = "2";//  = "N009-OTM00000149";
+                cboCodoIzqFuerza.SelectedValue = "2";//  = "N009-OTM00000150";
+                cboTobilloIzqAduccion.SelectedValue = "2";//  = "N009-OTM00000151";
+                cboMunecaIzqAbduccion.SelectedValue = "2";//  = "N009-OTM00000152";
+                cboRodillaIzqAduccion.SelectedValue = "2";//  = "N009-OTM00000153";
+                cboHombroIzqTono.SelectedValue = "2";//  = "N009-OTM00000154";
+                cboCaderaIzqAduccion.SelectedValue = "2";//  = "N009-OTM00000155";
+                cboCodoIzqAbduccion.SelectedValue = "2";//  = "N009-OTM00000156";
+                cboTobilloIzqRotExt.SelectedValue = "2";//  = "N009-OTM00000157";
+                cboMunecaIzqAduccion.SelectedValue = "2";//  = "N009-OTM00000158";
+                cboRodillaIzqRotExt.SelectedValue = "2";//  = "N009-OTM00000159";
+                cboHombroIzqFuerza.SelectedValue = "2";//  = "N009-OTM00000160";
+                cboCaderaIzqRotExt.SelectedValue = "2";//  = "N009-OTM00000161";
+                cboCodoIzqAduccion.SelectedValue = "2";//  = "N009-OTM00000162";
+                cboTobilloDerTono.SelectedValue = "2";//  = "N009-OTM00000163";
+                cboMunecaIzqRotExt.SelectedValue = "2";//  = "N009-OTM00000164";
+                cboRodillaDerTono.SelectedValue = "2";//  = "N009-OTM00000165";
+                cboHombroIzqAbduccion.SelectedValue = "2";//  = "N009-OTM00000166";
+                cboCaderaDerTono.SelectedValue = "2";//  = "N009-OTM00000167";
+                cboCodoIzqRotExt.SelectedValue = "2";//  = "N009-OTM00000168";
+                cboTobilloDerFuerza.SelectedValue = "2";//  = "N009-OTM00000169";
+                cboMunecaDerTono.SelectedValue = "2";//  = "N009-OTM00000170";
+                cboRodillaDerFuerza.SelectedValue = "2";//  = "N009-OTM00000171";
+                cboHombroIzqAduccion.SelectedValue = "2";//  = "N009-OTM00000172";
+                cboCaderaDerFuerza.SelectedValue = "2";//  = "N009-OTM00000173";
+                cboCodoDerTono.SelectedValue = "2";//  = "N009-OTM00000174";
+                cboTobilloDerAbduccion.SelectedValue = "2";//  = "N009-OTM00000175";
+                cboMunecaDerFuerza.SelectedValue = "2";//  = "N009-OTM00000176";
+                cboRodillaDerAbduccion.SelectedValue = "2";//  = "N009-OTM00000177";
+                cboHombroIzqRotExt.SelectedValue = "2";//  = "N009-OTM00000178";
+                cboCaderaDerAbduccion.SelectedValue = "2";//  = "N009-OTM00000179";
+                cboCodoDerFuerza.SelectedValue = "2";//  = "N009-OTM00000180";
+                cboTobilloDerAduccion.SelectedValue = "2";//  = "N009-OTM00000181";
+                cboMunecaDerAbduccion.SelectedValue = "2";//  = "N009-OTM00000182";
+                cboRodillaDerAduccion.SelectedValue = "2";//  = "N009-OTM00000183";
+                cboHombroDerTono.SelectedValue = "2";//  = "N009-OTM00000184";
+                cboCaderaDerAduccion.SelectedValue = "2";//  = "N009-OTM00000185";
+                cboCodoDerAbduccion.SelectedValue = "2";//  = "N009-OTM00000186";
+                cboTobilloDerRotExt.SelectedValue = "2";//  = "N009-OTM00000187";
+                cboMunecaDerAduccion.SelectedValue = "2";//  = "N009-OTM00000189";
+                cboRodillaDerRotExt.SelectedValue = "2";//  = "N009-OTM00000190";
+                cboHombroDerFuerza.SelectedValue = "2";//  = "N009-OTM00000191";
+                cboCaderaDerRotExt.SelectedValue = "2";//  = "N009-OTM00000192";
+                cboCodoDerAduccion.SelectedValue = "2";//  = "N009-OTM00000193";
+                cboTobilloIzqDolor.SelectedValue = "2";//  = "N009-OTM00000194";
+                cboMunecaDerRotExt.SelectedValue = "2";//  = "N009-OTM00000195";
+                cboRodillaIzqDolor.SelectedValue = "2";//  = "N009-OTM00000196";
+                cboHombroDerAbduccion.SelectedValue = "2";//  = "N009-OTM00000197";
+                cboCaderaIzqDolor.SelectedValue = "2";//  = "N009-OTM00000198";
+                cboCodoDerRotExt.SelectedValue = "2";//  = "N009-OTM00000221";
+                cboTobilloDerDolor.SelectedValue = "2";//  = "N009-OTM00000200";
+                cboMunecaIzqDolor.SelectedValue = "2";//  = "N009-OTM00000201";
+                cboRodillaDerDolor.SelectedValue = "2";//  = "N009-OTM00000202";
+                cboHombroDerAduccion.SelectedValue = "2";//  = "N009-OTM00000203";
+                cboCaderaDerDolor.SelectedValue = "2";//  = "N009-OTM00000204";
+                cboCodoIzqDolor.SelectedValue = "2";//  = "N009-OTM00000205";
+                cboMunecaDerDolor.SelectedValue = "2";//  = "N009-OTM00000206";
+                cboHombroDerRotExt.SelectedValue = "2";//  = "N009-OTM00000207";
+                cboCodoDerDolor.SelectedValue = "2";//  = "N009-OTM00000208";
+                cboHombroIzqDolor.SelectedValue = "2";//  = "N009-OTM00000209";
+                cboHombroDerDolor.SelectedValue = "2";//  = "N009-OTM00000210";
+                cboCodoIzqSupinacion.SelectedValue = "2";//  = "N009-OTM00000211";
+                cboCodoIzqPronacion.SelectedValue = "2";//  = "N009-OTM00000212";
+                cboCodoDerSupinacion.SelectedValue = "2";//  = "N009-OTM00000213";
+                cboCodoDerPronacion.SelectedValue = "2";//  = "N009-OTM00000214";
+                cboMunecaIzqRadial.SelectedValue = "2";//  = "N009-OTM00000215";
+                cboMunecaIzqCubital.SelectedValue = "2";//  = "N009-OTM00000216";
+                cboMunecaDerRadial.SelectedValue = "2";//  = "N009-OTM00000217";
+                cboMunecaDerCubital.SelectedValue = "2";//  = "N009-OTM00000218";
+                cboMunecaIzqInversion.SelectedValue = "2";//  = "N009-OTM00000219";
+                cboMunecaIzqEversion.SelectedValue = "2";//  = "N009-OTM00000220";
+                cboMunecaDerInversion.SelectedValue = "2";//  = "N009-OTM00000221";
+                cboMunecaDerEversion.SelectedValue = "2";//  = "N009-OTM00000222";
+                cboConclusiones.SelectedValue = "2";//  = "N009-OTM00000224"; 
+                
                 return _listOfAtencionAdulto1;
             }
             set
