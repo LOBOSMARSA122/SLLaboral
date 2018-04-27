@@ -35,6 +35,266 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
         {
             get
             {
+                SaveValueControlForInterfacingESO("N009-OTM00000001", txtAnamnesis.Text);
+                SaveValueControlForInterfacingESO("N009-OTM00000031", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000032", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000033", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000034", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000035", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000036", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000037", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000022", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000023", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000024", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000018", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000019", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000020", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000021", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000002", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000003", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000004", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000005", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000006", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000007", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000008", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000009", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000014", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000015", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000016", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000017", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000010", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000011", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000012", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000013", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000038", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000039", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000040", "1");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000091", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000092", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000093", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000094", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000095", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000096", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000071", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000072", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000073", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000067", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000070", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000068", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000069", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000059", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000060", "1");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000054", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000052", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000053", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000051", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000050", "1");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000046", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000044", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000045", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000043", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000042", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000041", "1");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000047", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000048", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000049", "1");
+
+
+                SaveValueControlForInterfacingESO("N009-OTM00000055", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000056", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000057", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000058", "0");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000061", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000062", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000063", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000064", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000065", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000066", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000077", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000078", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000079", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000080", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000081", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000082", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000083", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000084", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000085", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000086", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000087", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000088", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000089", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000090", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000097", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000098", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000099", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000100", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000101", "0");
+                SaveValueControlForInterfacingESO("N009-OTM00000102", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000103", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000104", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000105", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000106", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000107", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000108", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000109", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000110", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000111", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000112", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000113", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000114", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000115", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000116", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000117", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000118", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000119", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000120", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000121", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000122", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000123", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000124", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000125", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000126", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000127", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000128", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000129", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000130", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000131", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000132", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000133", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000134", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000135", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000136", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000137", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000138", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000139", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000140", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000141", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000142", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000143", "2");
+                SaveValueControlForInterfacingESO( "N009-OTM00000144", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000145", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000146", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000147", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000148", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000149", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000150", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000151", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000152", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000153", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000154", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000155", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000156", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000157", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000158", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000159", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000160", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000161", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000162", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000163", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000164", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000165", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000166", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000167", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000168", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000169", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000170", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000171", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000172", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000173", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000174", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000175", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000176", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000177", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000178", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000179", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000180", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000181", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000182", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000183", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000184", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000185", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000186", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000187", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000189", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000190", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000191", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000192", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000193", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000194", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000195", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000196", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000197", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000198", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000221", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000200", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000201", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000202", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000203", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000204", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000205", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000206", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000207", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000208", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000209", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000210", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000211", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000212", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000213", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000214", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000215", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000216", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000217", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000218", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000219", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000220", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000221", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000222", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000224", "2");
+
+
+                SaveValueControlForInterfacingESO("N009-OTM00000228", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000234", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000240", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000246", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000249", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000257", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000263", "1");
+                SaveValueControlForInterfacingESO("N009-OTM00000269", "1");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000229", txtAbdomenObservaciones.Text);
+                SaveValueControlForInterfacingESO("N009-OTM00000235", txtCaderaOnservaciones.Text);
+                SaveValueControlForInterfacingESO("N009-OTM00000247", txtAbdomenLateralObservaciones.Text);
+                SaveValueControlForInterfacingESO("N009-OTM00000241", txtMusloObservaciones.Text); 
+
+                SaveValueControlForInterfacingESO("N009-OTM00000252", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000258", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000264", "2");
+                SaveValueControlForInterfacingESO("N009-OTM00000270", "2");
+
+                SaveValueControlForInterfacingESO("N009-OTM00000272", "4");
+                SaveValueControlForInterfacingESO("N009-OTM00000273", "4");
+
+
                 return _listOfAtencionAdulto1;
             }
             set
