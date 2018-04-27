@@ -19631,7 +19631,7 @@ namespace Sigesoft.Node.WinClient.BLL
                                  }).ToList();
 
                 var valor = ValoresComponentesUserControl(pstrServiceId, pstrComponentId).ToList();
-                var sql = (from a in servicios.ToList()
+                var sql = (from a in servicios
                            select new ReporteUcOsteoMuscular
                            {
                                 ServiceId = a.ServiceId,
@@ -19655,7 +19655,7 @@ namespace Sigesoft.Node.WinClient.BLL
                                 FirmaTrabajador = a.FirmaTrabajador,
                                 HuellaTrabajador = a.HuellaTrabajador,
                                 FirmaUsuarioGraba = a.FirmaUsuarioGraba,
-                                 txtAnamnesis = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001").v_Value1,//// = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001").v_Value1,////"N009-OTM00000001";//System.Windows.Forms.TextBox();
+                                txtAnamnesis = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001").v_Value1,//// = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001").v_Value1,////"N009-OTM00000001";//System.Windows.Forms.TextBox();
                                 cboCondiAmbEspacio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000002") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000002").v_Value1,//// = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001").v_Value1,////"N009-OTM00000002";//System.Windows.Forms.ComboBox();
                                 cboCondiAmbTemperatura = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000003") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000003").v_Value1,//// = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000001").v_Value1,////"N009-OTM00000003";//System.Windows.Forms.ComboBox();
                                 cboCondiAmbVibraciones = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000004") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000004").v_Value1,////"N009-OTM00000004";//System.Windows.Forms.ComboBox();
@@ -19675,6 +19675,7 @@ namespace Sigesoft.Node.WinClient.BLL
                                 cboCarCargaPeso = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000018") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000018").v_Value1,////"N009-OTM00000018";//System.Windows.Forms.ComboBox();
                                 cboCarCargaManipulacion = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000019") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000019").v_Value1,////"N009-OTM00000019";//System.Windows.Forms.ComboBox();
                                 cboCarCargaEquilibrio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000020") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000020").v_Value1,////"N009-OTM00000020";//System.Windows.Forms.ComboBox();
+
                                 cboCarCargaVolumen = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000021") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000021").v_Value1,////"N009-OTM00000021";//System.Windows.Forms.ComboBox();
                                 cboExpToxCadmio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000022") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000022").v_Value1,////"N009-OTM00000022";//System.Windows.Forms.ComboBox();
                                 cboExpToxMercurio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000023") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000023").v_Value1,////"N009-OTM00000023";//System.Windows.Forms.ComboBox();
@@ -19705,6 +19706,7 @@ namespace Sigesoft.Node.WinClient.BLL
                                 cboMmiiExtension = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000048") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000048").v_Value1,////"N009-OTM00000048";//System.Windows.Forms.ComboBox();
                                 cboMmiiContraResistencia = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000049") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000049").v_Value1,////"N009-OTM00000049";//System.Windows.Forms.ComboBox();
                                 cboCircunduccion = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000050") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000050").v_Value1,////"N009-OTM00000050";//System.Windows.Forms.ComboBox();
+
                                 cboDesviacionRadial = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000051") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000051").v_Value1,////"N009-OTM00000051";//System.Windows.Forms.ComboBox();
                                 cboExtension = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000052") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000052").v_Value1,////"N009-OTM00000052";//System.Windows.Forms.ComboBox();
                                 cboDesviacionCubital = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000053") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000053").v_Value1,////"N009-OTM00000053";//System.Windows.Forms.ComboBox();
@@ -19738,6 +19740,7 @@ namespace Sigesoft.Node.WinClient.BLL
                                 cboLumbatLateIzquierda = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000081") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000081").v_Value1,////"N009-OTM00000081";//System.Windows.Forms.ComboBox();
                                 LumbatLateDerecha = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000082") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000082").v_Value1,////"N009-OTM00000082";//System.Windows.Forms.ComboBox();
                                 LumbatRotacionIzquierda = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000083") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000083").v_Value1,////"N009-OTM00000083";//System.Windows.Forms.ComboBox();
+
                                 LumbatRotacionDerecha = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000084") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000084").v_Value1,////"N009-OTM00000084";//System.Windows.Forms.ComboBox();
                                 CervicalLateIzquierda = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000085") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000085").v_Value1,////"N009-OTM00000085";//System.Windows.Forms.ComboBox();
                                 CervicalLateDerecha = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000086") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000086").v_Value1,////"N009-OTM00000086";//System.Windows.Forms.ComboBox();
@@ -19880,13 +19883,13 @@ namespace Sigesoft.Node.WinClient.BLL
                                 Conclusiones = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000224") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000224").v_Value1,////"N009-OTM00000224";//System.Windows.Forms.ComboBox();
 
 
-                                rbAbdomenExcelente = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000274") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000225").v_Value1,////"N009-OTM00000225";
+                                rbAbdomenExcelente = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000274") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000274").v_Value1,////"N009-OTM00000225";
+
                                 rbAbdomenPromedio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000225") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000225").v_Value1,////"N009-OTM00000225";
                                 rbAbdomenRegular = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000226") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000226").v_Value1,////"N009-OTM00000226";
                                 rbAbdomenPobre = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000227") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000227").v_Value1,////"N009-OTM00000227";
                                 txtAbdomenPuntos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000228") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000228").v_Value1,////"N009-OTM00000228";
                                 txtAbdomenObservaciones = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000229") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000229").v_Value1,////"N009-OTM00000229";
-
                                 rbCaderaExcelente = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000230") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000230").v_Value1,////"N009-OTM00000230";
                                 rbCaderaPromedio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000231") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000231").v_Value1,////"N009-OTM00000231";
                                 rbCaderaRegular = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000232") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000232").v_Value1,////"N009-OTM00000232";
@@ -19894,17 +19897,19 @@ namespace Sigesoft.Node.WinClient.BLL
                                 txtCaderaPuntos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000234") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000234").v_Value1,////"N009-OTM00000234";
                                 txtCaderaOnservaciones = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235").v_Value1,////"N009-OTM00000235";
 
-                                rbMusloExcelente = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
-                                rbMusloPromedio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
-                                rbMusloRegular = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
-                                rbMusloPobre = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
-                                txtMusloPuntos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000235OTM00000236";
+                                rbMusloExcelente = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
+                                //rbMusloPromedio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
+                                //rbMusloRegular = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
+                                //rbMusloPobre = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000236";
+                                //txtMusloPuntos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000235") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000236").v_Value1,////"N009-OTM00000235OTM00000236";
+                               
                                 txtMusloObservaciones = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000241") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000241").v_Value1,////"N009-OTM00000241";
 
                                 rbAbdomenLateralExcelente = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242").v_Value1,////"N009-OTM00000242";
-                                rbAbdomenLateralPromedio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242").v_Value1,////"N009-OTM00000242";
-                                rbAbdomenLateralRegular = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242").v_Value1,////"N009-OTM00000242";
-                                rbAbdomenLateralPobre = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242").v_Value1,////"N009-OTM00000242OTM00000242";
+                                //rbAbdomenLateralPromedio = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242").v_Value1,////"N009-OTM00000242";
+                                //rbAbdomenLateralRegular = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242").v_Value1,////"N009-OTM00000242";
+                                //rbAbdomenLateralPobre = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000242").v_Value1,////"N009-OTM00000242OTM00000242";
+                               
                                 txtAbdomenLateralPuntos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000246") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000246").v_Value1,////"N009-OTM00000246";
                                 txtAbdomenLateralObservaciones = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000247") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000247").v_Value1,////"N009-OTM00000247";
 
@@ -19914,7 +19919,6 @@ namespace Sigesoft.Node.WinClient.BLL
                                 txtAbduccion180Puntos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000251") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000251").v_Value1,////"N009-OTM00000251";
                                 rbAbduccion180DolorSI = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000252") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000252").v_Value1,////"N009-OTM00000252";
                                 rbAbduccion180DolorNO = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000253") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000253").v_Value1,////"N009-OTM00000253";
-
                                 rbAbduccion60Optimo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000254") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000254").v_Value1,////"N009-OTM00000254";
                                 rbAbduccion60Limitado = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000255") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000255").v_Value1,////"N009-OTM00000255";
                                 rbAbduccion60MuyLimitado = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000256") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000256").v_Value1,////"N009-OTM00000256";
@@ -19928,7 +19932,6 @@ namespace Sigesoft.Node.WinClient.BLL
                                 txtRotacion090Puntos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000263") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000263").v_Value1,////"N009-OTM00000263";
                                 rbRotacion090DolorSI = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000264") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000264").v_Value1,////"N009-OTM00000264";
                                 rbRotacion090DolorNO = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000265") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000265").v_Value1,////"N009-OTM00000265";
-
                                 rbRotacionExtIntOptimo = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000266") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000266").v_Value1,////"N009-OTM00000266";
                                 rbRotacionExtIntLimitado = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000267") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000267").v_Value1,////"N009-OTM00000267";
                                 rbRotacionExtIntMuyLimitado = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000268") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000268").v_Value1,////"N009-OTM00000268";
@@ -19937,6 +19940,7 @@ namespace Sigesoft.Node.WinClient.BLL
                                 rbRotacionExtIntDolorNO = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000271") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000271").v_Value1,////"N009-OTM00000271";
                                 txtTotalAptitudEspalda = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000272") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000272").v_Value1,////"N009-OTM00000272";
                                 txtTotalRangos = valor.Count() == 0 || valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000273") == null ? string.Empty : valor.Find(p => p.v_ComponentFieldId == "N009-OTM00000273").v_Value1,////"N009-OTM00000273";
+                         
                            }).ToList();
 
                 return sql;

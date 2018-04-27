@@ -117,6 +117,12 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     var ent = serviceComponents.FirstOrDefault(o => o.v_ComponentId == item.v_ComponentId);
                     if (ent != null) ent.Orden = 12;
                 }
+                else if (item.v_ComponentId == "N009-ME000000096")
+                {
+                    var ent = serviceComponents.FirstOrDefault(o => o.v_ComponentId == item.v_ComponentId);
+                    if (ent != null) ent.Orden = 12;
+                }
+
                 else if (item.v_ComponentId == Constants.TEST_SINTOMATICO_RESP_ID)
                 {
                     var ent = serviceComponents.FirstOrDefault(o => o.v_ComponentId == item.v_ComponentId);
@@ -208,7 +214,8 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                 Constants.GINECOLOGIA_ID,
                 Constants.C_N_ID,
                 "N009-ME000000094",
-                "N009-ME000000095"
+                "N009-ME000000095",
+                "N009-ME000000096"
                 //Constants.TEST_VERTIGO_ID,
             };
 
@@ -371,7 +378,8 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                 Constants.TEST_CHOFERES_ID,
                 Constants.TEST_SINTOMATICO_RESP_ID,
                 "N009-ME000000094",
-                "N009-ME000000095"
+                "N009-ME000000095",
+                "N009-ME000000096"
             };
 
             #endregion
@@ -1454,9 +1462,9 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     DataTable dtCuestionarioNordicoUserControl = BLL.Utils.ConvertToDatatable(cuestionarioNordico);
                     dtCuestionarioNordicoUserControl.TableName = "dtCuestionarioNordicoUserControl";
                     dsGetRepo.Tables.Add(dtCuestionarioNordicoUserControl);
+                   
                     rp = new crCuestionarioNordicoUserControl();
                     rp.SetDataSource(dsGetRepo);
-
                     rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
                     rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
                     objDiskOpt = new DiskFileDestinationOptions
@@ -1467,18 +1475,30 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     rp.ExportOptions.DestinationOptions = objDiskOpt;
                     rp.Export();
 
+                    rp = new crCuestionarioNordicoUserControl_02();
+                    rp.SetDataSource(dsGetRepo);
+                    rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
+                    rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
+                    objDiskOpt = new DiskFileDestinationOptions
+                    {
+                        DiskFileName = Application.StartupPath + @"\TempMerge\" + "N009-ME000000095" + "02"+".pdf"
+                    };
+                    _filesNameToMerge.Add(objDiskOpt.DiskFileName);
+                    rp.ExportOptions.DestinationOptions = objDiskOpt;
+                    rp.Export();
+
                     break;
 
 
                 case "N009-ME000000096":
-                    var ucOsteoMuscular = new ServiceBL().ReporteCuestionarioNordico(_serviceId, "N002-ME000000022");
+                    var ucOsteoMuscular = new ServiceBL().ReporteUcOSteoMuscular(_serviceId, "N002-ME000000022");
                     dsGetRepo = new DataSet();
                     DataTable dtUcOsteoMuscular = BLL.Utils.ConvertToDatatable(ucOsteoMuscular);
                     dtUcOsteoMuscular.TableName = "dtUcOsteoMuscular";
                     dsGetRepo.Tables.Add(dtUcOsteoMuscular);
+
                     rp = new crUcOsteoMuscular();
                     rp.SetDataSource(dsGetRepo);
-
                     rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
                     rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
                     objDiskOpt = new DiskFileDestinationOptions
@@ -1488,6 +1508,31 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     _filesNameToMerge.Add(objDiskOpt.DiskFileName);
                     rp.ExportOptions.DestinationOptions = objDiskOpt;
                     rp.Export();
+
+                     rp = new crUcOsteoMuscular_02();
+                    rp.SetDataSource(dsGetRepo);
+                    rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
+                    rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
+                    objDiskOpt = new DiskFileDestinationOptions
+                    {
+                        DiskFileName = Application.StartupPath + @"\TempMerge\" + "N009-ME000000096" +"02"+ ".pdf"
+                    };
+                    _filesNameToMerge.Add(objDiskOpt.DiskFileName);
+                    rp.ExportOptions.DestinationOptions = objDiskOpt;
+                    rp.Export();
+
+                     rp = new crUcOsteoMuscular_03();
+                    rp.SetDataSource(dsGetRepo);
+                    rp.ExportOptions.ExportFormatType = ExportFormatType.PortableDocFormat;
+                    rp.ExportOptions.ExportDestinationType = ExportDestinationType.DiskFile;
+                    objDiskOpt = new DiskFileDestinationOptions
+                    {
+                        DiskFileName = Application.StartupPath + @"\TempMerge\" + "N009-ME000000096" +"03" + ".pdf"
+                    };
+                    _filesNameToMerge.Add(objDiskOpt.DiskFileName);
+                    rp.ExportOptions.DestinationOptions = objDiskOpt;
+                    rp.Export();
+
 
                     break;
 
