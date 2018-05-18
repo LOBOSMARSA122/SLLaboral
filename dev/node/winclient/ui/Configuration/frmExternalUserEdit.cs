@@ -41,7 +41,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
         private List<KeyValueDTO> _notificationUserExternal = null;
         private professionalDto _professionalDto = null;
         frmWaiting frmWaiting = new frmWaiting("Enviando Notificación");
-      
+
 
         #endregion
 
@@ -155,11 +155,11 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                     return;
                 }
 
-                
+
                 #endregion
 
                 if (_tmpListProtocolSystemUser == null)
-                    _tmpListProtocolSystemUser = new List<protocolsystemuserDto>();                     
+                    _tmpListProtocolSystemUser = new List<protocolsystemuserDto>();
 
                 if (_mode == "New")
                 {
@@ -196,21 +196,21 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                         if (!string.IsNullOrEmpty(txtProfessionalInformation.Text))
                             _professionalDto.v_ProfessionalInformation = txtProfessionalInformation.Text.Trim();
                     }
-                       
+
                     // Datos de usuario
                     systemuserDto pobjSystemUser = new systemuserDto();
                     pobjSystemUser.v_UserName = txtUserName.Text.Trim();
                     pobjSystemUser.v_Password = SecurityBL.Encrypt(txtPassword2.Text.Trim());
-                    if (rbFEchaExpiracion.Checked)                  
+                    if (rbFEchaExpiracion.Checked)
                         pobjSystemUser.d_ExpireDate = dtpExpiredDate.Value.Date;
-                                     
+
 
                     #region Eval CheckedList for create new ->  chklPermisosOpciones / chklNotificaciones
 
                     for (int i = 0; i < chklPermisosOpciones.CheckedItems.Count; i++)
                     {
                         protocolsystemuserDto protocolSystemUser = new protocolsystemuserDto();
-                        KeyValueDTO obj = (KeyValueDTO) chklPermisosOpciones.CheckedItems[i];
+                        KeyValueDTO obj = (KeyValueDTO)chklPermisosOpciones.CheckedItems[i];
                         protocolSystemUser.v_ProtocolId = _protocolId;
                         protocolSystemUser.i_ApplicationHierarchyId = int.Parse(obj.Id);
                         _tmpListProtocolSystemUser.Add(protocolSystemUser);
@@ -219,7 +219,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                     for (int i = 0; i < chklNotificaciones.CheckedItems.Count; i++)
                     {
                         protocolsystemuserDto protocolSystemUser = new protocolsystemuserDto();
-                        KeyValueDTO obj = (KeyValueDTO) chklNotificaciones.CheckedItems[i];
+                        KeyValueDTO obj = (KeyValueDTO)chklNotificaciones.CheckedItems[i];
                         protocolSystemUser.v_ProtocolId = _protocolId;
                         protocolSystemUser.i_ApplicationHierarchyId = int.Parse(obj.Id);
                         _tmpListProtocolSystemUser.Add(protocolSystemUser);
@@ -245,7 +245,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                             return;
                         }
                     }
-                   
+
                     this.Enabled = false;
                     frmWaiting.Show(this);
                     bgwSendEmail.RunWorkerAsync();
@@ -253,7 +253,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                 }
                 else if (_mode == "Edit")
                 {
-                   
+
                     bool isChangeUserName = false;
                     bool isChangeDocNumber = false;
 
@@ -276,7 +276,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                         isChangeDocNumber = true;
                     }
                     #endregion
-              
+
                     // Almacenar temporalmente el password del usuario actual
                     var passTemp = _objSystemUserTemp.v_Password;
 
@@ -312,8 +312,8 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
 
                     #endregion
 
-                    #region Datos de Profesional 
-                                      
+                    #region Datos de Profesional
+
                     // Datos de Profesional                 
                     if (ddlProfession.SelectedNode.Tag.ToString() != "-1" ||
                         !string.IsNullOrEmpty(txtProfessionalCode.Text) ||
@@ -347,7 +347,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
 
                     //
                     LoadCheckedListForUpdate();
-                                                                     
+
                     // Actualiza persona                 
                     _protocolBL.UpdateSystemUserExternal(ref objOperationResult,
                                                     isChangeDocNumber,
@@ -366,7 +366,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                         this.Enabled = false;
                         frmWaiting.Show(this);
                         bgwSendEmail.RunWorkerAsync();
-                    }                        
+                    }
 
                 }
 
@@ -374,7 +374,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                 {
                     //MessageBox.Show("Por favor ingrese un nombre apropiado para Nombres.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     //return;
-                    MessageBox.Show(objOperationResult.ErrorMessage,"Error de validación",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show(objOperationResult.ErrorMessage, "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
@@ -383,7 +383,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                     {
                         MessageBox.Show("Error en operación:" + System.Environment.NewLine + objOperationResult.ExceptionMessage);
                         return;
-                    }                  
+                    }
                 }
 
                 if (!sendNotification && _mode != "New")
@@ -407,8 +407,8 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
             {
                 #region UPDATE chklPermisosOpciones
 
-                KeyValueDTO obj = (KeyValueDTO) chklPermisosOpciones.CheckedItems[i];
-              
+                KeyValueDTO obj = (KeyValueDTO)chklPermisosOpciones.CheckedItems[i];
+
                 // Buscar Id en mi lista temp
                 var findResult = _permissesUserExternal.Find(p => p.Id == obj.Id);
                 // Si se encontro una coincidencia quiere decir que se ha removido el permiso
@@ -423,7 +423,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                     protocolSystemUser.i_ApplicationHierarchyId = int.Parse(obj.Id);
                     _listProtocolSystemUserPermisoUpdate.Add(protocolSystemUser);
                 }
-               
+
 
                 #endregion
 
@@ -434,7 +434,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
             {
                 #region DELETE chklPermisosOpciones
 
-                KeyValueDTO obj = (KeyValueDTO) chklPermisosOpciones.Items[i];
+                KeyValueDTO obj = (KeyValueDTO)chklPermisosOpciones.Items[i];
 
                 // verificar si esta deschekado el item actual
                 if (chklPermisosOpciones.GetItemCheckState(i) == CheckState.Unchecked)
@@ -464,7 +464,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                 #region UPDATE chklNotificaciones
 
                 KeyValueDTO obj = (KeyValueDTO)chklNotificaciones.CheckedItems[i];
-               
+
                 // Buscar Id en mi lista temp
                 var findResult = _notificationUserExternal.Find(p => p.Id == obj.Id);
                 // Si se encontro una coincidencia quiere decir que se ha removido el permiso
@@ -479,7 +479,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                     protocolSystemUser.i_ApplicationHierarchyId = int.Parse(obj.Id);
                     _listProtocolSystemUserNotifcacionUpdate.Add(protocolSystemUser);
                 }
-               
+
                 #endregion
 
             }
@@ -528,7 +528,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
             Utils.LoadDropDownList(ddlSexType, "Value1", "Id", BLL.Utils.GetSystemParameterForCombo(ref objOperationResult, 100, null), DropDownListAction.Select);
             Utils.LoadDropDownList(ddlLevelOfId, "Value1", "Id", BLL.Utils.GetDataHierarchyForCombo(ref objOperationResult, 108, null), DropDownListAction.Select);
 
-         
+
             ////Llenado de combos
             Utils.LoadComboTreeBoxList(ddlProfession, BLL.Utils.GetDataHierarchyForComboTreeBox(ref objOperationResult, 101, null), DropDownListAction.Select);
         }
@@ -567,18 +567,18 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
             if (_permissesUserExternal == null || _permissesUserExternal.Count == 0) return;
 
             foreach (var item in _permissesUserExternal)
-	        {
-		        for (int i = 0; i < chklPermisosOpciones.Items.Count; i++)
+            {
+                for (int i = 0; i < chklPermisosOpciones.Items.Count; i++)
                 {
-                    KeyValueDTO obj = (KeyValueDTO) chklPermisosOpciones.Items[i];
+                    KeyValueDTO obj = (KeyValueDTO)chklPermisosOpciones.Items[i];
 
                     if (obj.Id == item.Id)
                     {
-                        chklPermisosOpciones.SetItemChecked(i, true);                      
+                        chklPermisosOpciones.SetItemChecked(i, true);
                     }
                 }
-	        }
-                    
+            }
+
             // NOTIFICACIONES USUARIO EXTERNO WEB
             _notificationUserExternal = _protocolBL.GetExternalPermisionByProtocolIdAndSystemUserId(ref objOperationResult, _protocolId, _systemUserId, (int)ExternalUserFunctionalityType.NotificacionesUsuarioExternoWeb);
 
@@ -640,14 +640,14 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
             }
             else if (_mode == "Edit")
             {
-               
+
                 // Setear lenght dimamicos de numero de documento
                 SetLenght(ddlDocType.SelectedValue.ToString());
 
                 OperationResult objCommonOperationResultedit = new OperationResult();
                 objPerson = _objPacientBL.GetPerson(ref objCommonOperationResultedit, _personId);
 
-                this.Text = this.Text + " (" + objPerson.v_FirstName + " " + objPerson.v_FirstLastName + " "+ objPerson.v_SecondLastName + ")";
+                this.Text = this.Text + " (" + objPerson.v_FirstName + " " + objPerson.v_FirstLastName + " " + objPerson.v_SecondLastName + ")";
 
                 // Informacion de la persona
                 txtName.Text = objPerson.v_FirstName;
@@ -672,10 +672,10 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                 if (objProfessional != null)
                 {
                     ComboTreeNode nodoABuscar = ddlProfession.AllNodes.First(x => x.Tag.ToString() == objProfessional.i_ProfessionId.ToString());
-                    ddlProfession.SelectedNode = nodoABuscar;                 
+                    ddlProfession.SelectedNode = nodoABuscar;
                     txtProfessionalCode.Text = objProfessional.v_ProfessionalCode;
                     txtProfessionalInformation.Text = objProfessional.v_ProfessionalInformation;
-                  
+
                 }
 
                 // Informacion del usuario
@@ -772,7 +772,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
                 e.Result = false;
                 CloseErrorfrmWaiting();
             }
-                                                   
+
         }
 
         private void CloseErrorfrmWaiting()
@@ -796,7 +796,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
         }
 
         private void bgwSendEmail_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {         
+        {
             //frmWaiting.lblMessageText.Text = "Su correo ha sido enviado \n correctamente.";
             //frmWaiting.lblMessageText.Refresh();
             //System.Threading.Thread.Sleep(3000);
@@ -807,7 +807,7 @@ namespace Sigesoft.Node.WinClient.UI.Configuration
             {
                 MessageBox.Show("Su correo ha sido enviado correctamente.", "¡INFORMACIÓN!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-           
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

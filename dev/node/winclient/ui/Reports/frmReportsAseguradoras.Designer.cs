@@ -115,6 +115,9 @@
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn42 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("AgudezaVisualLejosCorregidaOI");
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn43 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Oftalmologia");
             Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn44 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Trigliceridos");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn45 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("GlucosaDx");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn46 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("TrigliceridoDx");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn48 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ColesterolDx");
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
@@ -471,6 +474,9 @@
             ultraGridColumn42.Header.VisiblePosition = 81;
             ultraGridColumn43.Header.VisiblePosition = 82;
             ultraGridColumn44.Header.VisiblePosition = 83;
+            ultraGridColumn45.Header.VisiblePosition = 84;
+            ultraGridColumn46.Header.VisiblePosition = 85;
+            ultraGridColumn48.Header.VisiblePosition = 86;
             ultraGridBand1.Columns.AddRange(new object[] {
             ultraGridColumn6,
             ultraGridColumn7,
@@ -555,7 +561,10 @@
             ultraGridColumn41,
             ultraGridColumn42,
             ultraGridColumn43,
-            ultraGridColumn44});
+            ultraGridColumn44,
+            ultraGridColumn45,
+            ultraGridColumn46,
+            ultraGridColumn48});
             this.grdData.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
             this.grdData.DisplayLayout.InterBandSpacing = 10;
             this.grdData.DisplayLayout.MaxColScrollRegions = 1;

@@ -14,5 +14,8 @@ namespace Sigesoft.Node.WinClient.BE
         public string IdComponente { get; set; }
         public string IdDeseases { get; set; }
         public DateTime? FechaControl { get; set; }
+        public int? i_FinalQualiticationId { get; set; }
+        public string DiseasesName { get; set; }
+        public int? i_DiagnosticTypeId { get; set; }
     }
 }
