@@ -1276,6 +1276,8 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                     }
                 }
 
+
+                
                 //ODONTO
                 rutaOrigen = new DirectoryInfo(Common.Utils.GetApplicationConfigValue("ImgODNTOOrigen").ToString());
                 FileInfo[] files6 = rutaOrigen.GetFiles();
@@ -1305,6 +1307,22 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                         };
                     }
                 }
+
+                //CONSENTIMIENTO
+                rutaOrigen = new DirectoryInfo(Common.Utils.GetApplicationConfigValue("ImgConsentimientoOrigen").ToString());
+                FileInfo[] files8 = rutaOrigen.GetFiles();
+
+                foreach (FileInfo file in files5)
+                {
+                    if (file.ToString().Count() > 16)
+                    {
+                        if (file.ToString().Substring(0, 17) == o.DNI + "-" + Fecha)
+                        {
+                            _filesNameToMerge.Add(rutaOrigen + file.ToString());
+                        };
+                    }
+                }
+
 
                 var x = _filesNameToMerge.ToList();
                 _mergeExPDF.FilesName = x;
