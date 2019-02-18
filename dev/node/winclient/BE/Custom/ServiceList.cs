@@ -391,6 +391,8 @@ namespace Sigesoft.Node.WinClient.BE
         public string SignoLasagueDerechoSiNo { get; set; }
         public string SignoBragardIzquierdoSiNo { get; set; }
         public string SignoBragardDerechoSiNo { get; set; }
+        public string NombreMedicoMedicina { get; set; }
+        public string CMPMedicoMedicina { get; set; }
 
         public int? i_IsFac { get; set; }
 

@@ -2764,8 +2764,8 @@ namespace NetPdf
 
                 //Foto del Doctor
 
-                if (DataService.FirmaDoctor != null)
-                    cellFirmaDoctor = new PdfPCell(HandlingItextSharp.GetImage(DataService.FirmaDoctor, 15F));
+                if (DataService.FirmaMedicoMedicina != null)
+                    cellFirmaDoctor = new PdfPCell(HandlingItextSharp.GetImage(DataService.FirmaMedicoMedicina, 20F));
                 else
                     cellFirmaDoctor = new PdfPCell(new Phrase("Sin Firma", fontColumnValue));
                 cellFirmaDoctor.Colspan = 6;
@@ -5131,7 +5131,7 @@ namespace NetPdf
                        
                     //Linea
                     new PdfPCell(new Phrase("Apto para Trabajar", fontColumnValue)){ Colspan=2,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
-                    new PdfPCell(new Phrase("Médico :" + DataService.NombreDoctor + " Colegiatura N° " + DataService.CMP, fontColumnValue)){ Colspan=6, HorizontalAlignment = PdfPCell.ALIGN_CENTER},
+                    new PdfPCell(new Phrase("Médico :" + DataService.NombreMedicoMedicina + " Colegiatura N° " + DataService.CMPMedicoMedicina, fontColumnValue)){ Colspan=6, HorizontalAlignment = PdfPCell.ALIGN_CENTER},
                        
                     //Linea
                     new PdfPCell(new Phrase("Apto", fontColumnValue)){HorizontalAlignment = PdfPCell.ALIGN_CENTER},

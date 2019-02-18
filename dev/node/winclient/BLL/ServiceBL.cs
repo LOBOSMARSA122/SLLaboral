@@ -512,6 +512,8 @@ namespace Sigesoft.Node.WinClient.BLL
 
                 var sql = (from a in objEntity.ToList()
                            let FirmaMedicoMedicina = ObtenerFirmaMedicoExamen(pstrServiceId, Constants.EXAMEN_FISICO_ID, Constants.EXAMEN_FISICO_7C_ID)
+                           let NombreMedicoMedicina = ObtenerNombreMedicoMedicina(pstrServiceId, Constants.EXAMEN_FISICO_ID, Constants.EXAMEN_FISICO_7C_ID)
+                           let CMPMedicoMedicina = ObtenerCMPMedicoMedicina(pstrServiceId, Constants.EXAMEN_FISICO_ID, Constants.EXAMEN_FISICO_7C_ID)
 
                            select new ServiceList
                            {
@@ -591,7 +593,9 @@ namespace Sigesoft.Node.WinClient.BLL
                                 v_Gestapara = a.v_Gestapara,
                                 v_Menarquia = a.v_Menarquia,
                                 v_Findings = a.v_Findings,
-                                FirmaMedicoMedicina = FirmaMedicoMedicina
+                                FirmaMedicoMedicina = FirmaMedicoMedicina,
+                                NombreMedicoMedicina = NombreMedicoMedicina,
+                                CMPMedicoMedicina = CMPMedicoMedicina
                                 //FirmaMedicoMedicina = null
                            }).FirstOrDefault();
 
@@ -624,6 +628,67 @@ namespace Sigesoft.Node.WinClient.BLL
                                         }).FirstOrDefault();
 
                 return objEntity.FirmaMedicoMedicina;
+        }
+        private string ObtenerNombreMedicoMedicina(string pstrServiceId, string p1, string p2)
+        {
+            SigesoftEntitiesModel dbContext = new SigesoftEntitiesModel();
+
+            var objEntity = (from E in dbContext.servicecomponent
+
+                join me in dbContext.systemuser on E.i_ApprovedUpdateUserId equals me.i_SystemUserId into me_join
+                from me in me_join.DefaultIfEmpty()
+
+
+                             join pr in dbContext.professional on me.v_PersonId equals pr.v_PersonId into pr_join
+                from pr in pr_join.DefaultIfEmpty()
+
+
+                join P1 in dbContext.person on new { a = pr.v_PersonId }
+                    equals new { a = P1.v_PersonId } into P1_join
+                from P1 in P1_join.DefaultIfEmpty()
+
+
+
+                where E.v_ServiceId == pstrServiceId &&
+                      (E.v_ComponentId == p1 || E.v_ComponentId == p2)
+                select new
+                {
+
+                    NombreDoctor = P1.v_FirstName + " " + P1.v_FirstLastName + " " + P1.v_SecondLastName,
+                }).FirstOrDefault();
+
+            return objEntity.NombreDoctor;
+        }
+
+        private string ObtenerCMPMedicoMedicina(string pstrServiceId, string p1, string p2)
+        {
+            SigesoftEntitiesModel dbContext = new SigesoftEntitiesModel();
+
+            var objEntity = (from E in dbContext.servicecomponent
+
+                join me in dbContext.systemuser on E.i_ApprovedUpdateUserId equals me.i_SystemUserId into me_join
+                from me in me_join.DefaultIfEmpty()
+
+
+                join pr in dbContext.professional on me.v_PersonId equals pr.v_PersonId into pr_join
+                from pr in pr_join.DefaultIfEmpty()
+
+
+                join P1 in dbContext.person on new { a = pr.v_PersonId }
+                    equals new { a = P1.v_PersonId } into P1_join
+                from P1 in P1_join.DefaultIfEmpty()
+
+
+
+                where E.v_ServiceId == pstrServiceId &&
+                      (E.v_ComponentId == p1 || E.v_ComponentId == p2)
+                select new
+                {
+
+                    CMPDoctor = pr.v_ProfessionalCode,
+                }).FirstOrDefault();
+
+            return objEntity.CMPDoctor;
         }
 
         #region Info Cabecera / Anamnesis  del sericio
