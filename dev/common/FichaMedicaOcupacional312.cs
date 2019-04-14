@@ -1165,10 +1165,10 @@ namespace NetPdf
             // si es mujer el trabajador mostrar sus antecedentes
 
             int? sex = DataService.i_SexTypeId;
-
+            string ApaGenitoUrinario_Concatena = "";
             if (sex == (int?)Sigesoft.Common.Gender.FEMENINO)
             {
-                ApaGenitoUrinario = string.Format("Menarquia: {0} ," +
+                ApaGenitoUrinario_Concatena = string.Format("Menarquia: {0} ," +
                                                    "FUM: {1} ," +
                                                    "Régimen Catamenial: {2} ," +
                                                    "Gestación y Paridad: {3} ," +
@@ -1178,7 +1178,7 @@ namespace NetPdf
                                                                                 string.IsNullOrEmpty(DataService.v_CatemenialRegime) ? "No refiere" : DataService.v_CatemenialRegime,
                                                                                 DataService.v_Gestapara,  
                                                                                 DataService.v_Mac,
-                                                                                string.IsNullOrEmpty(DataService.v_CiruGine) ? "No refiere" : DataService.v_CiruGine);
+                                                                                string.IsNullOrEmpty(DataService.v_CiruGine) ? "No refiere" : DataService.v_CiruGine) +". " + " \n" +"Hallazgos: "+ ApaGenitoUrinario;
                                                                                                                                                                                                                                                                                                                         
             }
 
@@ -1524,7 +1524,7 @@ namespace NetPdf
                                        //fila                                                
                      new PdfPCell(new Phrase("Aparato Genitourinario", fontColumnValue)),                      
                     new PdfPCell(new Phrase(ApaGenitoUrinarioX, fontColumnValue)){HorizontalAlignment = PdfPCell.ALIGN_CENTER},
-                    new PdfPCell(new Phrase(ApaGenitoUrinario, fontColumnValue))
+                    new PdfPCell(new Phrase(ApaGenitoUrinario_Concatena, fontColumnValue))
                                       { Colspan=4, HorizontalAlignment = PdfPCell.ALIGN_LEFT},                                               
                      new PdfPCell(new Phrase("Aparato Locomotor", fontColumnValue)),                     
                     new PdfPCell(new Phrase(ApaLocomotorX, fontColumnValue)){HorizontalAlignment = PdfPCell.ALIGN_CENTER},

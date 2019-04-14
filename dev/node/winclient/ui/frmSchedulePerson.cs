@@ -12,6 +12,7 @@ using Sigesoft.Node.WinClient.BE;
 using System.IO;
 using System.Drawing.Imaging;
 using Infragistics.Win;
+using ScrapperReniecSunat;
 
 namespace Sigesoft.Node.WinClient.UI
 {
@@ -306,8 +307,8 @@ namespace Sigesoft.Node.WinClient.UI
                     txtNumberDependentChildren.Text = "";
                     txtPuesto.Text = "";
 
-                    var DialogResult = MessageBox.Show("El paciente no se encuentra registrado en el sistema. Puede registrar al paciente en Datos Generales del Paciente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    //var DialogResult = MessageBox.Show("El paciente no se encuentra registrado en el sistema. Puede registrar al paciente en Datos Generales del Paciente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ObtenerDatosDNI(txtSearchNroDocument.Text.Trim());
                     grdDataService.DataSource = new List<ServiceList>();
                     rbNew.Checked = true;
                     rbNew_CheckedChanged(sender, e);
@@ -326,6 +327,37 @@ namespace Sigesoft.Node.WinClient.UI
             }
         }
 
+        private void ObtenerDatosDNI(string dni)
+        {
+            var f = new frmBuscarDatos(dni);
+            if (f.ConexionDisponible)
+            {
+                f.ShowDialog();
+
+                switch (f.Estado)
+                {
+                    case Estado.NoResul:
+                        MessageBox.Show("No se encontró datos de el DNI");
+                        break;
+
+                    case Estado.Ok:
+                        if (f.Datos != null)
+                        {
+                            if (!f.EsContribuyente)
+                            {
+                                var datos = (ReniecResultDto)f.Datos;
+                                txtName.Text = datos.Nombre;
+                                txtFirstLastName.Text = datos.ApellidoPaterno;
+                                txtSecondLastName.Text = datos.ApellidoMaterno;
+                                dtpBirthdate.Value = datos.FechaNacimiento;
+                            }
+                        }
+                        break;
+                }
+            }
+            else
+                MessageBox.Show("No se pudo conectar la página", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
         private void btnSavePacient_Click(object sender, EventArgs e)
         {
             OperationResult objOperationResult = new OperationResult();

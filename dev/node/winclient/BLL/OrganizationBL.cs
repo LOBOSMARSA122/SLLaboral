@@ -11,6 +11,20 @@ namespace Sigesoft.Node.WinClient.BLL
 {
    public class OrganizationBL
     {
+        public bool OrganizacionExiste(string ruc)
+        {
+            try
+            {
+                using (var dbContext = new SigesoftEntitiesModel())
+                {
+                    return dbContext.organization.Any(p => p.v_IdentificationNumber.Equals(ruc) && p.i_IsDeleted == 0);
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
        public List<OrganizationList> GetOrganizationsPagedAndFiltered(ref OperationResult pobjOperationResult, int? pintPageIndex, int? pintResultsPerPage, string pstrSortExpression, string pstrFilterExpression)
        {
            //mon.IsActive = true;

@@ -11,6 +11,7 @@ using Sigesoft.Node.WinClient.BLL;
 using Sigesoft.Node.WinClient.BE;
 using System.IO;
 using System.Drawing.Imaging;
+using ScrapperReniecSunat;
 
 namespace Sigesoft.Node.WinClient.UI
 {
@@ -57,6 +58,8 @@ namespace Sigesoft.Node.WinClient.UI
         string ModeOccupation;
         private string _fileName;
         private string _filePath;
+        string _SectorName;
+        string _SectorCodigo;
 
         #endregion
 
@@ -612,6 +615,8 @@ namespace Sigesoft.Node.WinClient.UI
                     objOrganizationDto.v_ContacName = txtContacName1.Text.Trim();
                     objOrganizationDto.v_Observation = txtObservation.Text.Trim();
                     objOrganizationDto.v_Mail = txtEmail.Text.Trim();
+                    var arr = txtAddress.Text.Split('-').Reverse().ToArray();
+                    var sede = arr[0].ToString();
 
                     if (pbEmpresaImage.Image != null)
                     {
@@ -636,7 +641,40 @@ namespace Sigesoft.Node.WinClient.UI
                     {
                         // Save the data
                          _organizationId = _objBL.AddOrganization(ref objOperationResult, objOrganizationDto, Globals.ClientSession.GetAsList());
+                         //Agregar Sede
+                         objLocationDto = new locationDto();
+                         // Populate the entity
+                         objLocationDto.v_OrganizationId = _organizationId;
+                         objLocationDto.v_Name = sede;
+                         // Save the data
+                         var locationId = _objLocationBL.AddLocation(ref objOperationResult, objLocationDto, Globals.ClientSession.GetAsList());
+                         //Rutina para Asignar la Empresa creada automaticamente al nodo actual
+                         NodeOrganizationLoactionWarehouseList objNodeOrganizationLoactionWarehouseList = new NodeOrganizationLoactionWarehouseList();
 
+                         //Llenar Entidad Empresa/sede
+                         objNodeOrganizationLoactionWarehouseList.i_NodeId = Globals.ClientSession.i_CurrentExecutionNodeId;
+                         objNodeOrganizationLoactionWarehouseList.v_OrganizationId = _organizationId;
+                         objNodeOrganizationLoactionWarehouseList.v_LocationId = locationId;
+
+                         _objBL.AddNodeOrganizationLoactionWarehouse(ref objOperationResult, objNodeOrganizationLoactionWarehouseList, null, Globals.ClientSession.GetAsList());
+
+                         //Crear GESO
+                         objgroupoccupationDto = new groupoccupationDto();
+                         // Populate the entity
+                         objgroupoccupationDto.v_Name = "ADMINISTRATIVO";
+                         objgroupoccupationDto.v_LocationId = locationId;
+                         // Save the data
+                         _objGroupOccupationBL.AddGroupOccupation(ref objOperationResult, objgroupoccupationDto, Globals.ClientSession.GetAsList());
+
+                         objgroupoccupationDto = new groupoccupationDto();
+                         // Populate the entity
+                         objgroupoccupationDto.v_Name = "OPERARIO";
+                         objgroupoccupationDto.v_LocationId = locationId;
+                         // Save the data
+                         _objGroupOccupationBL.AddGroupOccupation(ref objOperationResult, objgroupoccupationDto, Globals.ClientSession.GetAsList());
+                         txtIdentificationNumber1.Text = objOrganizationDto.v_IdentificationNumber;
+
+                         btnFilter_Click(sender, e);
                          //// Datos de nodo / Empresa / Sede 
                          //NodeOrganizationLoactionWarehouseList objNodeOrgLocaWarehouse = new NodeOrganizationLoactionWarehouseList();
                          //objNodeOrgLocaWarehouse.i_NodeId = Globals.ClientSession.i_CurrentExecutionNodeId;
@@ -1648,16 +1686,13 @@ namespace Sigesoft.Node.WinClient.UI
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             pbEmpresaImage.Image = null;
-
+            txtCiiu.Text = String.Empty;
             tabControl1.SelectedIndex = 0;
-
             LoadData("0", "New");
-
             ActivarControles(true);
             btnEditar.Enabled = false;
             btnOK.Enabled = true;
             btnNuevo.Enabled = false;
-
             ddlOrganizationypeId1.SelectedIndex = 0;
             ddlSectorTypeId.SelectedIndex = 0;
             txtName.Text = "";
@@ -1667,6 +1702,8 @@ namespace Sigesoft.Node.WinClient.UI
             txtPhoneNumber.Text = "";
             txtEmail.Text = "";
             txtAddress.Text = "";
+            txtSector.Text = "";
+            ddlOrganizationypeId1.SelectedValue = "1";
 
             
         }
@@ -1884,6 +1921,62 @@ namespace Sigesoft.Node.WinClient.UI
         private void btnClear_Click(object sender, EventArgs e)
         {
             pbEmpresaImage.Image = null;
+        }
+
+        private void txtIdentificationNumber_KeyDown(object sender, KeyEventArgs e)
+        {
+            //using (new LoadingClass.PleaseWait(this.Location, "Consultando..."))
+            //{                
+
+            if (e.KeyCode == Keys.Enter && txtIdentificationNumber.TextLength >= 8)
+            {
+                if (_objBL.OrganizacionExiste(txtIdentificationNumber.Text.Trim()))
+                {
+                    MessageBox.Show(@"El Nro. Identificación ya existe", @"ADVERTENCIA!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var f = new frmBuscarDatos(txtIdentificationNumber.Text);
+                if (f.ConexionDisponible)
+                {
+                    if (f.EsContribuyente && !ScrapperReniecSunat.Utils.EsRucValido(txtIdentificationNumber.Text))
+                    {
+                        MessageBox.Show(@"RUC Inválido", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    f.ShowDialog();
+
+                    switch (f.Estado)
+                    {
+                        case Estado.NoResul:
+                            MessageBox.Show(@"No se encontró datos de el RUC");
+                            break;
+
+                        case Estado.Ok:
+                            if (f.Datos != null)
+                            {
+                                if (f.EsContribuyente)
+                                {
+                                    var datos = (SunatResultDto)f.Datos;
+                                    var actividad = datos.ActividadEconomica.Split(new[] { '-', '\n' });
+                                    txtName.Text = datos.RazonSocial;
+                                    txtAddress.Text = datos.DireccionFiscal;
+                                    txtPhoneNumber.Text = datos.Telefonos;
+                                    if (actividad.Length >= 2)
+                                    {
+                                        _SectorCodigo = txtCiiu.Text = actividad[0];
+                                        _SectorName = txtSector.Text = actividad[1];
+                                    }
+                                }
+                            }
+                            break;
+                    }
+                }
+                else
+                    MessageBox.Show(@"No se pudo conectar a la página de la SUNAT", @"Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            //};
         }
 
     }

@@ -3703,20 +3703,20 @@ namespace NetPdf
 
                 if (item.i_TypeHabitsId == (int)Sigesoft.Common.TypeHabit.Alcohol)
                 {
-                    if (item.v_FrecuenciaHabito.Trim() == "Nunca" || item.v_FrecuenciaHabito.Trim() == "Nada")
+                    if (item.v_FrecuenciaHabito.Trim().ToUpper() == "NUNCA" || item.v_FrecuenciaHabito.Trim().ToUpper() == "NADA" || item.v_FrecuenciaHabito.Trim().ToUpper() == "NO")
                     {
                         AlcoholNada = cellConCheck;
 
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Poco")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "POCO")
                     {
                         AlcoholPoco = cellConCheck;
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Habitual")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "HABITUAL")
                     {
                         AlcoholHabitual = cellConCheck;
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Excesivo")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "EXCESIVO")
                     {
                         AlcoholExcesivo = cellConCheck;
                     }
@@ -3724,20 +3724,20 @@ namespace NetPdf
 
                 if (item.i_TypeHabitsId == (int)Sigesoft.Common.TypeHabit.Tabaco)
                 {
-                    if (item.v_FrecuenciaHabito.Trim() == "Nunca" || item.v_FrecuenciaHabito.Trim() == "Nada")
+                    if (item.v_FrecuenciaHabito.Trim().ToUpper() == "NUNCA" || item.v_FrecuenciaHabito.Trim().ToUpper() == "NADA" || item.v_FrecuenciaHabito.Trim().ToUpper() == "NO")
                     {
                         TabacoNada = cellConCheck;
 
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Poco")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "POCO")
                     {
                         TabacoPoco = cellConCheck;
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Habitual")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "HABITUAL")
                     {
                         TabacoHabitual = cellConCheck;
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Excesivo")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "EXCESIVO")
                     {
                         TabacoExcesivo = cellConCheck;
                     }
@@ -3745,20 +3745,20 @@ namespace NetPdf
 
                 if (item.i_TypeHabitsId == (int)Sigesoft.Common.TypeHabit.Drogas)
                 {
-                    if (item.v_FrecuenciaHabito.Trim() == "Nunca" || item.v_FrecuenciaHabito.Trim() == "Nada")
+                    if (item.v_FrecuenciaHabito.Trim().ToUpper() == "NUNCA" || item.v_FrecuenciaHabito.Trim().ToUpper() == "NADA" || item.v_FrecuenciaHabito.Trim().ToUpper() == "NO")
                     {
                         DrogasNada = cellConCheck;
 
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Poco")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "POCO")
                     {
                         DrogasPoco = cellConCheck;
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Habitual")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "HABITUAL")
                     {
                         DrogasHabitual = cellConCheck;
                     }
-                    else if (item.v_FrecuenciaHabito.Trim() == "Excesivo")
+                    else if (item.v_FrecuenciaHabito.Trim().ToUpper() == "EXCESIVO")
                     {
                         DrogasExcesivo = cellConCheck;
                     }
@@ -4734,7 +4734,7 @@ namespace NetPdf
                     ValorFechaToma = FechaToma.v_Value1;
                 }
 
-                var Calidad = findRayosX.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.RX_CALIDAD_ID);
+                var Calidad = findOIT.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.RX_CALIDAD_ID);
                 if (Calidad != null)
                 {
                     ValorCalidad = Calidad.v_Value1Name;
@@ -4795,28 +4795,51 @@ namespace NetPdf
 
             ServiceComponentList findLaboratorioHemoglobina = serviceComponent.Find(p => p.v_ComponentId == Sigesoft.Common.Constants.LABORATORIO_HEMOGLOBINA_ID);
             ServiceComponentList findLaboratorioHematocrito = serviceComponent.Find(p => p.v_ComponentId == Sigesoft.Common.Constants.LABORATORIO_HEMATOCRITO_ID);
-
+            ServiceComponentList oHEMOGRAMA = serviceComponent.Find(p => p.v_ComponentId == Sigesoft.Common.Constants.HEMOGRAMA_COMPLETO_ID);
+            ServiceComponentList oLABORATORIO_HEMOGLOBINA_ID = serviceComponent.Find(p => p.v_ComponentId == Sigesoft.Common.Constants.LABORATORIO_HEMOGLOBINA_ID);
+            ServiceComponentList oLABORATORIO_HEMATOCRITO_ID = serviceComponent.Find(p => p.v_ComponentId == Sigesoft.Common.Constants.LABORATORIO_HEMATOCRITO_ID);
             //ServiceComponentList findLaboratorioHematocrito = serviceComponent.Find(p => p.v_ComponentId == Sigesoft.Common.Constants.FACTOR_SANGUINEO_ID);
 
             PdfPCell ReaccionPositivo = cellSinCheck, ReaccionNegativo = cellSinCheck;
             PdfPCell SangreO = cellSinCheck, SangreA = cellSinCheck, SangreB = cellSinCheck, SangreAB = cellSinCheck, SangreRHPositivo = cellSinCheck, SangreRHNegativo = cellSinCheck;
             PdfPCell rhPositivo = cellSinCheck, rhNegativo = cellSinCheck;
 
-            string ValorHemoglobina = "", ValorHematocrito = "";
+            string ValorHemoglobina1 = "", ValorHematocrito1 = "";
+            string ValorHemoglobina2 = "", ValorHematocrito2 = "";
+            var Resultado_HEMOGLOBINA = "";
+            var Resultado_HEMATOCRITO = "";
 
-            if (findLaboratorioHemoglobina != null)
+
+            if (oHEMOGRAMA != null)
             {
-                var Hemoglobina = findLaboratorioHemoglobina.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.HEMOGLOBINA_ID);
-                if (Hemoglobina != null)
+                var Value_HEMOGLOBINA = oHEMOGRAMA.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.HEMOGRAMA_COMPLETO_HEMOGLOBINA);
+
+                if (Value_HEMOGLOBINA != null)
                 {
-                    ValorHemoglobina = Hemoglobina.v_Value1;
+                    Resultado_HEMOGLOBINA = Value_HEMOGLOBINA.v_Value1;
                 }
 
-                var Hematocrito = findLaboratorioHematocrito.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.HEMATOCRITO_ID);
-                if (Hematocrito != null)
+                var Value_HEMATOCRITO = oHEMOGRAMA.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.HEMOGRAMA_COMPLETO_HEMATOCRITO);
+
+                if (Value_HEMATOCRITO != null)
                 {
-                    ValorHematocrito = Hematocrito.v_Value1;
+                    Resultado_HEMATOCRITO = Value_HEMATOCRITO.v_Value1;
                 }
+
+
+                ValorHemoglobina1 = Resultado_HEMOGLOBINA + " / HTO:" + Resultado_HEMATOCRITO;
+            }
+
+
+            if (oLABORATORIO_HEMOGLOBINA_ID != null || oLABORATORIO_HEMATOCRITO_ID != null)
+            {
+
+                var Value_HEMOGLOBINA_ID = oLABORATORIO_HEMOGLOBINA_ID.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.HEMOGLOBINA_ID);
+                var Value_HEMATOCRITO_ID = oLABORATORIO_HEMATOCRITO_ID.ServiceComponentFields.Find(p => p.v_ComponentFieldsId == Sigesoft.Common.Constants.HEMATOCRITO_ID);
+
+
+
+                ValorHemoglobina2 = Value_HEMOGLOBINA_ID.v_Value1 + " / HTO:" + Value_HEMATOCRITO_ID.v_Value1;
 
             }
 
@@ -5115,7 +5138,7 @@ namespace NetPdf
                     new PdfPCell(new Phrase("AB", fontColumnValue)){Border = PdfPCell.LEFT_BORDER ,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
                     new PdfPCell(new Phrase("Rh (+)", fontColumnValue)){Border = PdfPCell.LEFT_BORDER ,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
                     new PdfPCell(new Phrase("Rh (-)", fontColumnValue)){Border = PdfPCell.LEFT_BORDER ,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
-                    new PdfPCell(new Phrase(ValorHemoglobina + " / " + ValorHematocrito, fontColumnValue)){Colspan=2,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
+                    new PdfPCell(new Phrase("HB"+ValorHemoglobina1 , fontColumnValue)){Colspan=2,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
 
                     //Linea
                     new PdfPCell(SangreO){Rowspan=2, Border = PdfPCell.LEFT_BORDER ,HorizontalAlignment = PdfPCell.ALIGN_CENTER, VerticalAlignment=PdfPCell.ALIGN_TOP },                      
@@ -5124,10 +5147,10 @@ namespace NetPdf
                     new PdfPCell(SangreAB){Rowspan=2,Border = PdfPCell.LEFT_BORDER ,HorizontalAlignment = PdfPCell.ALIGN_CENTER, VerticalAlignment=PdfPCell.ALIGN_TOP },   
                     new PdfPCell(rhPositivo){Rowspan=2,Border = PdfPCell.LEFT_BORDER ,HorizontalAlignment = PdfPCell.ALIGN_CENTER, VerticalAlignment=PdfPCell.ALIGN_TOP },   
                     new PdfPCell(rhNegativo){Rowspan=2,Border = PdfPCell.LEFT_BORDER ,HorizontalAlignment = PdfPCell.ALIGN_CENTER, VerticalAlignment=PdfPCell.ALIGN_TOP }, 
-                    new PdfPCell(new Phrase("", fontColumnValue)){Colspan=2,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
+                    new PdfPCell(new Phrase(ValorHemoglobina2, fontColumnValue)){Colspan=2,HorizontalAlignment = PdfPCell.ALIGN_CENTER},
 
                     //Linea
-                    new PdfPCell(new Phrase(" ", fontColumnValue)){Colspan=2, HorizontalAlignment = PdfPCell.ALIGN_CENTER},
+                    new PdfPCell(new Phrase(""+ValorHematocrito1, fontColumnValue)){Colspan=2, HorizontalAlignment = PdfPCell.ALIGN_CENTER},
                        
                     //Linea
                     new PdfPCell(new Phrase("Apto para Trabajar", fontColumnValue)){ Colspan=2,HorizontalAlignment = PdfPCell.ALIGN_CENTER},

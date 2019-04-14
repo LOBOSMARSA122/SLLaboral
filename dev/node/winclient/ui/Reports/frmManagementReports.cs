@@ -1312,7 +1312,7 @@ namespace Sigesoft.Node.WinClient.UI.Reports
                 rutaOrigen = new DirectoryInfo(Common.Utils.GetApplicationConfigValue("ImgConsentimientoOrigen").ToString());
                 FileInfo[] files8 = rutaOrigen.GetFiles();
 
-                foreach (FileInfo file in files5)
+                foreach (FileInfo file in files8)
                 {
                     if (file.ToString().Count() > 16)
                     {

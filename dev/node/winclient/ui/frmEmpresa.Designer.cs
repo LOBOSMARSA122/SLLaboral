@@ -298,6 +298,8 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.txtCiiu = new System.Windows.Forms.TextBox();
+            this.txtSector = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
@@ -680,6 +682,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtSector);
+            this.groupBox2.Controls.Add(this.ddlSectorTypeId);
+            this.groupBox2.Controls.Add(this.txtCiiu);
             this.groupBox2.Controls.Add(this.pnlImage);
             this.groupBox2.Controls.Add(this.txtObservation);
             this.groupBox2.Controls.Add(this.txtContacName1);
@@ -694,7 +699,6 @@
             this.groupBox2.Controls.Add(this.txtIdentificationNumber);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.ddlSectorTypeId);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
@@ -857,7 +861,7 @@
             this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.MaxLength = 250;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(400, 20);
+            this.txtName.Size = new System.Drawing.Size(625, 20);
             this.txtName.TabIndex = 4;
             // 
             // ddlOrganizationypeId1
@@ -890,19 +894,20 @@
             // 
             this.txtIdentificationNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtIdentificationNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdentificationNumber.Location = new System.Drawing.Point(825, 74);
+            this.txtIdentificationNumber.Location = new System.Drawing.Point(824, 17);
             this.txtIdentificationNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdentificationNumber.MaxLength = 11;
             this.txtIdentificationNumber.Name = "txtIdentificationNumber";
             this.txtIdentificationNumber.Size = new System.Drawing.Size(177, 20);
             this.txtIdentificationNumber.TabIndex = 5;
+            this.txtIdentificationNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIdentificationNumber_KeyDown);
             this.txtIdentificationNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdentificationNumber_KeyPress);
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(780, 75);
+            this.label7.Location = new System.Drawing.Point(784, 18);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 19);
@@ -924,10 +929,12 @@
             // 
             // ddlSectorTypeId
             // 
+            this.ddlSectorTypeId.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.ddlSectorTypeId.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ddlSectorTypeId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ddlSectorTypeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ddlSectorTypeId.FormattingEnabled = true;
-            this.ddlSectorTypeId.Location = new System.Drawing.Point(376, 45);
+            this.ddlSectorTypeId.Location = new System.Drawing.Point(377, 47);
             this.ddlSectorTypeId.Margin = new System.Windows.Forms.Padding(2);
             this.ddlSectorTypeId.Name = "ddlSectorTypeId";
             this.ddlSectorTypeId.Size = new System.Drawing.Size(626, 21);
@@ -2849,6 +2856,30 @@
             this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // txtCiiu
+            // 
+            this.txtCiiu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCiiu.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCiiu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCiiu.Location = new System.Drawing.Point(678, 22);
+            this.txtCiiu.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCiiu.MaxLength = 11;
+            this.txtCiiu.Name = "txtCiiu";
+            this.txtCiiu.Size = new System.Drawing.Size(92, 13);
+            this.txtCiiu.TabIndex = 101;
+            // 
+            // txtSector
+            // 
+            this.txtSector.Enabled = false;
+            this.txtSector.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSector.Location = new System.Drawing.Point(351, -7);
+            this.txtSector.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSector.MaxLength = 250;
+            this.txtSector.Name = "txtSector";
+            this.txtSector.Size = new System.Drawing.Size(625, 20);
+            this.txtSector.TabIndex = 103;
+            this.txtSector.Visible = false;
+            // 
             // frmEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3093,6 +3124,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pbEmpresaImage;
         private System.Windows.Forms.Panel pnlImage;
+        private System.Windows.Forms.TextBox txtSector;
+        private System.Windows.Forms.TextBox txtCiiu;
     }
 }
 

@@ -70,7 +70,7 @@ namespace Sigesoft.Node.WinClient.UI.UserControls
                 SaveValueControlForInterfacingESO(   "N009-OTM00000038",  cboEjeLordosisCervical.SelectedValue.ToString());
                 SaveValueControlForInterfacingESO(   "N009-OTM00000039",  cboEjeCifosisDorsal.SelectedValue.ToString());
                 SaveValueControlForInterfacingESO(   "N009-OTM00000040",  cboEjeLordosisLumbar.SelectedValue.ToString());
-                SaveValueControlForInterfacingESO(   "N009-OTM00000041",  cboRotacionExt.SelectedValue.ToString());
+                //SaveValueControlForInterfacingESO(   "N009-OTM00000041",  cboRotacionExt.SelectedValue.ToString());
                 SaveValueControlForInterfacingESO(   "N009-OTM00000042",  cboRotacionInt.SelectedValue.ToString());
                 SaveValueControlForInterfacingESO(   "N009-OTM00000043",  cboInversion.SelectedValue.ToString());
                 SaveValueControlForInterfacingESO(   "N009-OTM00000044",  cboPlantiflexion.SelectedValue.ToString());
