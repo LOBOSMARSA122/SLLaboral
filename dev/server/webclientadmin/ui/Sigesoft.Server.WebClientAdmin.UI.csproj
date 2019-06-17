@@ -3024,9 +3024,6 @@
     <Content Include="Sync\FRM029.aspx" />
     <Content Include="Sync\FRM029A.aspx" />
     <Content Include="Sync\FRM030.aspx" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\FRM001.aspx.cs">
@@ -4709,6 +4706,7 @@
       <DependentUpon>dsTiempoTrabajador.xsd</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\Sigesoft2Web.pubxml" />
+    <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

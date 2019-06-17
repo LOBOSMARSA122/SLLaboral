@@ -2832,9 +2832,7 @@
     <EmbeddedResource Include="UserControls\UcOsteoMuscular.resx">
       <DependentUpon>UcOsteoMuscular.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="app.config" />
     <None Include="Dataset\Anexo7D.xsc">
       <DependentUpon>Anexo7D.xsd</DependentUpon>
     </None>
